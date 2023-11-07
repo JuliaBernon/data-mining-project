@@ -4,11 +4,15 @@ import random
 cities = ["Rome", "Milan", "Verona", "Venezia", "Bergamo", "Bolzano", "Trento"]
 merchandise_types = ["milk", "honey", "butter", "tomatoes", "pens", "bread", "coca-cola"]
 
+# for testing purposes
+# nb_cities = len(cities)
+# nb_merchandise_types = len(merchandise_types)
+
 ## Generate our data for actual and standard routes
 
 # Generate standard routes
 standard_routes = []
-nb_standard_routes = 10 # define the number of standard routes
+nb_standard_routes = 500 # define the number of standard routes
 nb_trip_per_standard_route = random.randint(1,5) # define the number of trips per standard route
 
 for i in range(nb_standard_routes):
@@ -16,10 +20,11 @@ for i in range(nb_standard_routes):
     route = []
     from_city = random.choice(cities)
     to_city = random.choice(cities)
-    while from_city == to_city:
+    
+    while from_city == to_city: # make sure that the from and to cities are different
         to_city = random.choice(cities)
     
-    for j in range(nb_trip_per_standard_route):
+    for j in range(random.randint(2,5)):
         merchandise = {item: random.randint(1, 50) for item in random.sample(merchandise_types, random.randint(1, len(merchandise_types)))}
         route.append({"from": from_city, "to": to_city, "merchandise": merchandise})
         from_city = to_city
@@ -33,7 +38,7 @@ with open("./data/standard.json", "w") as standard_file:
 
 # Generate actual routes
 actual_routes = []
-nb_actual_routes = 10 # define the number of actual routes
+nb_actual_routes = 1000 # define the number of actual routes
 nb_trip_per_actual_route = random.randint(1,5) # define the number of trips per actual route
 
 # Define the drivers
@@ -43,14 +48,15 @@ nb_drivers = len(drivers)
 for i in range(nb_actual_routes):
     route_id = f"a{i+1}"
     driver = random.choice(drivers)
-    standard_route = f"s{i+1}"
+    standard_route = f's{random.randint(1, nb_standard_routes)}'
     route = []
     from_city = random.choice(cities)
     to_city = random.choice(cities)
-    while from_city == to_city:
+
+    while from_city == to_city: # make sure that the from and to cities are different
         to_city = random.choice(cities)
     
-    for j in range(nb_trip_per_actual_route):
+    for j in range(random.randint(2,5)):
         merchandise = {item: random.randint(1, 50) for item in random.sample(merchandise_types, random.randint(1, len(merchandise_types)))}
         route.append({"from": from_city, "to": to_city, "merchandise": merchandise})
         from_city = to_city
@@ -61,12 +67,3 @@ for i in range(nb_actual_routes):
 # save data into actual.json
 with open("./data/actual.json", "w") as actual_file:
     json.dump(actual_routes, actual_file, indent=4)
-
-
-## Read and parse our data
-
-# Read and parse standard routes
-with open("./data/standard.json", "r") as standard_file:
-    standard_routes = json.load(standard_file)
-
-# Read and parse actual routes
