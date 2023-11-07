@@ -1,0 +1,172 @@
+[
+    {
+        "id": "a1",
+        "driver": "C",
+        "sroute": "s1",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Milan",
+                "merchandise": {
+                    "butter": 33
+                }
+            }
+        ]
+    },
+    {
+        "id": "a2",
+        "driver": "B",
+        "sroute": "s2",
+        "route": [
+            {
+                "from": "Verona",
+                "to": "Rome",
+                "merchandise": {
+                    "pens": 47,
+                    "coca-cola": 26,
+                    "milk": 25
+                }
+            }
+        ]
+    },
+    {
+        "id": "a3",
+        "driver": "E",
+        "sroute": "s3",
+        "route": [
+            {
+                "from": "Venezia",
+                "to": "Bolzano",
+                "merchandise": {
+                    "coca-cola": 20,
+                    "tomatoes": 39,
+                    "pens": 37,
+                    "milk": 40,
+                    "honey": 23,
+                    "butter": 28
+                }
+            }
+        ]
+    },
+    {
+        "id": "a4",
+        "driver": "E",
+        "sroute": "s4",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Trento",
+                "merchandise": {
+                    "butter": 5,
+                    "honey": 13,
+                    "coca-cola": 45,
+                    "pens": 36,
+                    "bread": 17,
+                    "tomatoes": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": "a5",
+        "driver": "E",
+        "sroute": "s5",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Venezia",
+                "merchandise": {
+                    "bread": 10
+                }
+            }
+        ]
+    },
+    {
+        "id": "a6",
+        "driver": "B",
+        "sroute": "s6",
+        "route": [
+            {
+                "from": "Venezia",
+                "to": "Verona",
+                "merchandise": {
+                    "milk": 38,
+                    "bread": 43,
+                    "butter": 43,
+                    "coca-cola": 12,
+                    "tomatoes": 14
+                }
+            }
+        ]
+    },
+    {
+        "id": "a7",
+        "driver": "B",
+        "sroute": "s7",
+        "route": [
+            {
+                "from": "Venezia",
+                "to": "Milan",
+                "merchandise": {
+                    "tomatoes": 46,
+                    "butter": 34,
+                    "coca-cola": 9,
+                    "milk": 36,
+                    "bread": 20,
+                    "pens": 16,
+                    "honey": 6
+                }
+            }
+        ]
+    },
+    {
+        "id": "a8",
+        "driver": "A",
+        "sroute": "s8",
+        "route": [
+            {
+                "from": "Milan",
+                "to": "Trento",
+                "merchandise": {
+                    "honey": 40,
+                    "bread": 50
+                }
+            }
+        ]
+    },
+    {
+        "id": "a9",
+        "driver": "B",
+        "sroute": "s9",
+        "route": [
+            {
+                "from": "Verona",
+                "to": "Rome",
+                "merchandise": {
+                    "tomatoes": 48,
+                    "bread": 22,
+                    "pens": 46,
+                    "coca-cola": 14,
+                    "milk": 8,
+                    "butter": 2
+                }
+            }
+        ]
+    },
+    {
+        "id": "a10",
+        "driver": "D",
+        "sroute": "s10",
+        "route": [
+            {
+                "from": "Venezia",
+                "to": "Verona",
+                "merchandise": {
+                    "milk": 12,
+                    "pens": 21,
+                    "butter": 23
+                }
+            }
+        ]
+    }
+]

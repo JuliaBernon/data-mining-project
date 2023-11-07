@@ -1,0 +1,353 @@
+[
+    {
+        "id": "s1",
+        "route": [
+            {
+                "from": "Verona",
+                "to": "Bolzano",
+                "merchandise": {
+                    "butter": 1,
+                    "pens": 19,
+                    "tomatoes": 20,
+                    "coca-cola": 49,
+                    "honey": 19,
+                    "bread": 34
+                }
+            },
+            {
+                "from": "Bolzano",
+                "to": "Bergamo",
+                "merchandise": {
+                    "pens": 13,
+                    "honey": 43
+                }
+            },
+            {
+                "from": "Bergamo",
+                "to": "Bolzano",
+                "merchandise": {
+                    "pens": 20,
+                    "milk": 43,
+                    "butter": 33,
+                    "honey": 49
+                }
+            }
+        ]
+    },
+    {
+        "id": "s2",
+        "route": [
+            {
+                "from": "Venezia",
+                "to": "Trento",
+                "merchandise": {
+                    "bread": 2,
+                    "tomatoes": 15,
+                    "butter": 50,
+                    "honey": 11,
+                    "milk": 9,
+                    "pens": 27
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Bolzano",
+                "merchandise": {
+                    "honey": 2,
+                    "coca-cola": 11,
+                    "pens": 45,
+                    "tomatoes": 22,
+                    "bread": 39
+                }
+            },
+            {
+                "from": "Bolzano",
+                "to": "Bolzano",
+                "merchandise": {
+                    "coca-cola": 47,
+                    "tomatoes": 41,
+                    "butter": 43,
+                    "milk": 6,
+                    "pens": 15
+                }
+            }
+        ]
+    },
+    {
+        "id": "s3",
+        "route": [
+            {
+                "from": "Verona",
+                "to": "Trento",
+                "merchandise": {
+                    "honey": 24,
+                    "milk": 45
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Verona",
+                "merchandise": {
+                    "tomatoes": 45,
+                    "butter": 50,
+                    "pens": 45,
+                    "milk": 5,
+                    "coca-cola": 38,
+                    "bread": 22
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Verona",
+                "merchandise": {
+                    "coca-cola": 26,
+                    "tomatoes": 33,
+                    "butter": 17,
+                    "pens": 43,
+                    "honey": 16,
+                    "bread": 44,
+                    "milk": 40
+                }
+            }
+        ]
+    },
+    {
+        "id": "s4",
+        "route": [
+            {
+                "from": "Venezia",
+                "to": "Bergamo",
+                "merchandise": {
+                    "tomatoes": 23,
+                    "butter": 49,
+                    "milk": 47,
+                    "coca-cola": 43,
+                    "honey": 40,
+                    "bread": 21
+                }
+            },
+            {
+                "from": "Bergamo",
+                "to": "Verona",
+                "merchandise": {
+                    "milk": 39
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Bolzano",
+                "merchandise": {
+                    "bread": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": "s5",
+        "route": [
+            {
+                "from": "Venezia",
+                "to": "Milan",
+                "merchandise": {
+                    "honey": 47,
+                    "butter": 12,
+                    "pens": 5,
+                    "milk": 14,
+                    "coca-cola": 35,
+                    "tomatoes": 11
+                }
+            },
+            {
+                "from": "Milan",
+                "to": "Venezia",
+                "merchandise": {
+                    "honey": 11,
+                    "bread": 17
+                }
+            },
+            {
+                "from": "Venezia",
+                "to": "Bergamo",
+                "merchandise": {
+                    "butter": 44,
+                    "tomatoes": 48
+                }
+            }
+        ]
+    },
+    {
+        "id": "s6",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Bolzano",
+                "merchandise": {
+                    "tomatoes": 15,
+                    "butter": 7
+                }
+            },
+            {
+                "from": "Bolzano",
+                "to": "Bergamo",
+                "merchandise": {
+                    "bread": 3,
+                    "butter": 19,
+                    "pens": 10,
+                    "tomatoes": 30,
+                    "honey": 6
+                }
+            },
+            {
+                "from": "Bergamo",
+                "to": "Bolzano",
+                "merchandise": {
+                    "butter": 20,
+                    "milk": 4,
+                    "pens": 28,
+                    "honey": 47
+                }
+            }
+        ]
+    },
+    {
+        "id": "s7",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Venezia",
+                "merchandise": {
+                    "tomatoes": 9,
+                    "honey": 44,
+                    "coca-cola": 18,
+                    "pens": 45
+                }
+            },
+            {
+                "from": "Venezia",
+                "to": "Bergamo",
+                "merchandise": {
+                    "pens": 27,
+                    "coca-cola": 19,
+                    "bread": 33,
+                    "honey": 36,
+                    "milk": 24,
+                    "butter": 12,
+                    "tomatoes": 4
+                }
+            },
+            {
+                "from": "Bergamo",
+                "to": "Bolzano",
+                "merchandise": {
+                    "coca-cola": 10,
+                    "butter": 25,
+                    "honey": 46,
+                    "tomatoes": 35
+                }
+            }
+        ]
+    },
+    {
+        "id": "s8",
+        "route": [
+            {
+                "from": "Bergamo",
+                "to": "Rome",
+                "merchandise": {
+                    "bread": 37,
+                    "honey": 17,
+                    "butter": 28,
+                    "milk": 48,
+                    "pens": 49,
+                    "coca-cola": 35,
+                    "tomatoes": 47
+                }
+            },
+            {
+                "from": "Rome",
+                "to": "Milan",
+                "merchandise": {
+                    "milk": 39,
+                    "pens": 45,
+                    "coca-cola": 8,
+                    "tomatoes": 1,
+                    "bread": 31,
+                    "butter": 46,
+                    "honey": 37
+                }
+            },
+            {
+                "from": "Milan",
+                "to": "Trento",
+                "merchandise": {
+                    "bread": 29,
+                    "tomatoes": 34
+                }
+            }
+        ]
+    },
+    {
+        "id": "s9",
+        "route": [
+            {
+                "from": "Milan",
+                "to": "Rome",
+                "merchandise": {
+                    "milk": 14,
+                    "pens": 35
+                }
+            },
+            {
+                "from": "Rome",
+                "to": "Bolzano",
+                "merchandise": {
+                    "honey": 1
+                }
+            },
+            {
+                "from": "Bolzano",
+                "to": "Milan",
+                "merchandise": {
+                    "milk": 15,
+                    "honey": 26
+                }
+            }
+        ]
+    },
+    {
+        "id": "s10",
+        "route": [
+            {
+                "from": "Venezia",
+                "to": "Verona",
+                "merchandise": {
+                    "honey": 29
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Verona",
+                "merchandise": {
+                    "coca-cola": 9,
+                    "pens": 43,
+                    "butter": 18,
+                    "tomatoes": 22,
+                    "milk": 20,
+                    "honey": 8,
+                    "bread": 39
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Milan",
+                "merchandise": {
+                    "milk": 37,
+                    "bread": 22,
+                    "honey": 31,
+                    "tomatoes": 1,
+                    "butter": 36
+                }
+            }
+        ]
+    }
+]
