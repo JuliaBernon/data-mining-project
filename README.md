@@ -38,6 +38,26 @@ code .
 
 **Generating and reading the data**
 
-- Run dataGeneration.py to create actual.json and standard.json into *data* directory
-- Run ./tests/dataParsing.py to display the data
+- Create actual.json and standard.json into *data* directory
+
+```sh
+# on Linux or WSL
+python3 ./src/dataGeneration.py
+
+# on PowerShell
+```
+- Display the data in shell
+
+```sh
+# on Linux or WSL
+python3 ./tests/dataParsing.py
+
+# on PowerShell
+```
+
+### Step 1 : Recommended standard routes
+
+### Step 2 : List of 5 standard routes for each driver to minimize diversions
+
+### Step 3 : Best standard route for each driver
 
