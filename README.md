@@ -36,3 +36,8 @@ code .
 
 ## How2 - Run the programs
 
+**Generating and reading the data**
+
+- Run dataGeneration.py to create actual.json and standard.json into *data* directory
+- Run ./tests/dataParsing.py to display the data
+
