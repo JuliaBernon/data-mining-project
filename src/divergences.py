@@ -28,8 +28,6 @@ def jaccard_sim(set1, set2):
 
     intersection = set1.intersection(set2)
     union = set1.union(set2)
-    print(intersection)
-    print(union)
     if len(union) == 0:
         return 0
     else:
@@ -45,16 +43,3 @@ def jaccard_dist(set1, set2):
     return 1 - jaccard_sim(set1, set2)
 
 ## Using Cosine distance
-
-
-
-
-# Tests
-all_cities = ["Rome", "Milan", "Verona", "Venezia", "Bergamo", "Bolzano", "Trento"]
-route_standard = ["Rome", "Milan", "Verona"]
-route_actual = ["Rome", "Milan", "Bergamo"]
-
-
-# Test for jaccard_dist
-jaccard_similarity = jaccard_sim(set(route_standard), set(route_actual))
-print("Jaccard similarity : ", jaccard_similarity)
