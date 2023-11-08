@@ -50,7 +50,7 @@ source env/bin/activate
 
 **Commands for PowerShell**
 
-```bash
+```powershell
 # open the directory
 PS C:\> cd .\data-mining-project
 
@@ -65,7 +65,7 @@ In case you encounter issues when running the activation script, you must change
 
 For that, execute PowerShell in admin mode, and run the following command : 
 
-```bash
+```powershell
 PS C:\> Set-ExecutionPolicy AllSigned
 ```
 
