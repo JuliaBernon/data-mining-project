@@ -1,5 +1,10 @@
 # Data Mining project - DM23_Bernon_Marcandella
 
+Authors : Julia Bernon - Ulysse Marcandella
+
+Team name : TNCY
+
+## Description
 Subject : 
 **On identifying the compensation for vaguely followed trips**
 
@@ -7,12 +12,6 @@ This project falls within the *Data Mining Course, University of Trento*, 2023-2
 
 Instructor : Prof. Yannis Valagrakis
 
-## Members
-Julia Bernon - Ulysse Marcandella
-
-Team name : 
-
-## Description
 
 ## How2 - Step1 : Clone the project from GitHub
 *See Step3 for Google Drive instructions*
