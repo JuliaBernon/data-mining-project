@@ -2,25 +2,16 @@
 
 import random as r
 import copy as cp
-import json
-
-# read and parse cities.json
-with open("./data/cities.json", "r") as cities_file:
-    cities = json.load(cities_file)
-
-# read and parse merchTypes.json
-with open("./data/merchTypes.json", "r") as merchTypes_file:
-    merchandise_types = json.load(merchTypes_file)
 
 merch_add_or_del_min = 0
-merch_add_or_del_max = 0
+merch_add_or_del_max = 5
 merch_add_max = 20
 
 merch_modif_min = 0
-merch_modif_max = 0
+merch_modif_max = 5
 merch_modif_qty_max = 10
 
-city_add_or_del_min = 2
+city_add_or_del_min = 0
 city_add_or_del_max = 2
 
 # function to generate a route
@@ -39,7 +30,7 @@ def generate_actual_route(standard_route, cities, merchandise_types):
     for i in range(merch_add_or_del_number) :
         step = r.randint(0,l-1)
         merch = r.choice(merchandise_types)
-        if actual_route[step]["merchandise"][merch] != 0 :
+        if merch in actual_route[step]["merchandise"].keys():
             actual_route[step]["merchandise"][merch] = 0
         else :
             actual_route[step]["merchandise"][merch] = r.randint(1,merch_add_max)
@@ -47,7 +38,7 @@ def generate_actual_route(standard_route, cities, merchandise_types):
     merch_more_or_less_number = r.randint(merch_modif_min,merch_modif_max)
     for i in range(merch_more_or_less_number) :
         step = r.randint(0,l-1)
-        merch = r.choice(actual_route[step]["merchandise"].keys)
+        merch = r.choice(list(actual_route[step]["merchandise"].keys()))
         more_or_less = r.choice([-1,1])
         actual_route[step]["merchandise"][merch] += r.randint(1,merch_modif_qty_max)*more_or_less
     #adding or suppressing cities
@@ -77,28 +68,11 @@ def generate_actual_route(standard_route, cities, merchandise_types):
                 actual_route.pop(step)
     return actual_route
 
-route = [
-            {
-                "from": "Perugia",
-                "to": "Potenza",
-                "merchandise": {
-                    "milk": 35,
-                    "coffee": 46,
-                    "honey": 25,
-                }
-            },
-            {
-                "from": "Potenza",
-                "to": "Verona",
-                "merchandise": {
-                    "salt": 2,
-                    "coca-cola": 34,
-                    "tomatoes": 49
-                }
-            }
-]
+#test
+""" route = [{"from": "Perugia","to": "Potenza","merchandise": {"milk": 35,"coffee": 46,"honey": 25,}},
+         {"from": "Potenza","to": "Verona","merchandise": {"salt": 2,"coca-cola": 34,"tomatoes": 49}}]
 
-print(generate_actual_route(route,cities,merchandise_types))
+print(generate_actual_route(route,cities,merchandise_types)) """
 
 # create a variation in the number of visited cities, of visited cities, of merchandise types, of merchandise quantities
 # create an actual route based on a standard route, with a probability that gives which variations we apply
