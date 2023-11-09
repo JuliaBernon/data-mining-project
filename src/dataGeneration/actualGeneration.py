@@ -10,11 +10,11 @@ with open("./data/drivers.json", "r") as drivers_file:
     drivers = json.load(drivers_file)
 
 #get the number of std routes
-#todo
+#TODO
 nb_std_routes = 10
 
 #extraction des routes 
-#todo
+#TODO
 liste_std_routes = []
 
 ## generate actual.json
