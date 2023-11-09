@@ -84,21 +84,21 @@ def matrix_sparse(matrix):
     return matrix
 
 
-# for tests
+# # for tests
 
-with open("./data/standard.json", "r") as standard_file:
-    standard_routes = json.load(standard_file)
+# with open("./data/standard.json", "r") as standard_file:
+#     standard_routes = json.load(standard_file)
 
-routes = []
-for route in standard_routes:
-    routes.append(route["route"])
+# routes = []
+# for route in standard_routes:
+#     routes.append(route["route"])
 
-pairs = pairs_of_cities(cities)
-merch_types = merchandise_types
+# pairs = pairs_of_cities(cities)
+# merch_types = merchandise_types
 
-# transform the first route of the standard_routes into a matrix
-matrix = route_to_matrix(routes[0])
-matrix2 = matrix_sparse(matrix)
+# # transform the first route of the standard_routes into a matrix
+# matrix = route_to_matrix(routes[0])
+# matrix2 = matrix_sparse(matrix)
 
-print(matrix)
-print(matrix2)
+# print(matrix)
+# print(matrix2)
