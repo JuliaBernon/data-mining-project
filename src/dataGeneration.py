@@ -33,7 +33,7 @@ with open("./data/standard.json", "w") as standard_file:
     json.dump(standard_routes, standard_file, indent=4)
 
 ## generate actual.json
-nb_act_routes = 500 # define the number of actual routes
+nb_act_routes = 500 # define the number of actual routes 
 actual_routes = []
 for i in range(nb_act_routes):
     actual_routes.append({
@@ -46,6 +46,10 @@ for i in range(nb_act_routes):
 # save data into actual.json
 with open("./data/actual.json", "w") as actual_file:
     json.dump(actual_routes, actual_file, indent=4)
+
+
+# create a variation in the number of visited cities, of visited cities, of merchandise types, of merchandise quantities
+# create an actual route based on a standard route, with a probability that gives which variations we apply
 
 
 

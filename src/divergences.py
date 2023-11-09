@@ -55,6 +55,15 @@ def cosine_dist(set1, set2, elts):
 
     return distance.cosine(set1, set2)
 
+# Using Hamming distance
+def hamming_dist(route1, route2, elts):
+    '''
+    '''
+
+    
+    return distance.hamming(route1, route2)
+
+# Using Levenshtein distance
 
 ## Innovative divergences :
 
