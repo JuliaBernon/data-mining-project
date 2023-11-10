@@ -21,14 +21,14 @@ with open("./data/drivers.json", "r") as drivers_file:
     drivers = json.load(drivers_file)
 
 ## generate actual.json
-nb_act_routes = 500 # define the number of actual routes 
+nb_act_routes = 1 # define the number of actual routes 
 actual_routes = []
 for i in range(nb_act_routes):
-    std_route_number = random.randint(1, nb_std_routes)
+    std_route_number = random.randint(0, nb_std_routes-1)
     actual_routes.append({
         "id": f"a{i + 1}",
         "driver": random.choice(drivers),
-        "sroute": f"s{standard_routes[std_route_number]['id']}",
+        "sroute": f"{standard_routes[std_route_number]['id']}",
         "route": generate_actual_route(standard_routes[std_route_number]["route"], cities, merchandise_types)
     })
 

@@ -49,7 +49,11 @@ def generate_actual_route(standard_route, cities, merchandise_types):
         if add_or_del :
             step = r.randint(-1,l)
             city_add = r.choice(cities)
-            if step == -1 :
+            if actual_route == []:
+                city_add2 = r.choice(cities)
+                if city_add != city_add2 :
+                    actual_route.insert(0,{ "from" : city_add, "to" : city_add2, "merchandise" : {}})
+            elif step == -1 :
                 actual_route.insert(0,{ "from" : city_add, "to" : actual_route[0]["from"], "merchandise" : {}})
             elif step == l :
                 actual_route.append({ "from" : actual_route[l-1]["to"], "to" : city_add, "merchandise" : {}})
@@ -57,7 +61,7 @@ def generate_actual_route(standard_route, cities, merchandise_types):
                 temp = actual_route[step]["from"]
                 actual_route[step]["from"] = city_add
                 actual_route.insert(step,{ "from" : temp, "to" : city_add, "merchandise" : {}})
-        else :
+        elif actual_route != [] :
             step = r.randint(0,l-1)
             if step == -1 :
                 actual_route.pop(0)
