@@ -1,4 +1,4 @@
-### This file is used to generate data for standard and actual routes ###
+### This file is used to generate data for standard routes ###
 
 import json
 import random
