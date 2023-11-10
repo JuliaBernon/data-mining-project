@@ -15,7 +15,7 @@ city_add_or_del_min = 0
 city_add_or_del_max = 2
 
 # function to generate a route
-def generate_actual_route(standard_route, cities, merchandise_types):
+def generate_actual_route(standard_route, cities, merchandise_types, driver):
 
     '''
     Generate an actual route, given a standard route
@@ -30,10 +30,13 @@ def generate_actual_route(standard_route, cities, merchandise_types):
     for i in range(merch_add_or_del_number) :
         step = r.randint(0,l-1)
         merch = r.choice(merchandise_types)
+        number = r.random()
         if merch in actual_route[step]["merchandise"].keys():
-            actual_route[step]["merchandise"][merch] = 0
+            if number > driver["agenda"]["pref_merch"][merch] :
+                actual_route[step]["merchandise"][merch] = 0
         else :
-            actual_route[step]["merchandise"][merch] = r.randint(1,merch_add_max)
+            if number < driver["agenda"]["pref_merch"][merch] :
+                actual_route[step]["merchandise"][merch] = r.randint(1,merch_add_max)
     #transporting a little more or a little less merchandise
     merch_more_or_less_number = r.randint(merch_modif_min,merch_modif_max)
     for i in range(merch_more_or_less_number) :
@@ -45,31 +48,41 @@ def generate_actual_route(standard_route, cities, merchandise_types):
     city_add_or_del_number = r.randint(city_add_or_del_min,city_add_or_del_max)
     for i in range(city_add_or_del_number) :
         l = len(actual_route)
-        add_or_del = r.randint(0,1)
-        if add_or_del :
-            step = r.randint(-1,l)
-            city_add = r.choice(cities)
-            if actual_route == []:
-                city_add2 = r.choice(cities)
-                if city_add != city_add2 :
-                    actual_route.insert(0,{ "from" : city_add, "to" : city_add2, "merchandise" : {}})
-            elif step == -1 :
-                actual_route.insert(0,{ "from" : city_add, "to" : actual_route[0]["from"], "merchandise" : {}})
-            elif step == l :
-                actual_route.append({ "from" : actual_route[l-1]["to"], "to" : city_add, "merchandise" : {}})
-            elif (city_add != actual_route[step]["from"]) and (city_add != actual_route[step]["to"]) :
-                temp = actual_route[step]["from"]
-                actual_route[step]["from"] = city_add
-                actual_route.insert(step,{ "from" : temp, "to" : city_add, "merchandise" : {}})
+        list_cities = []
+        for j in actual_route :
+            list_cities.append(j["from"])
+        if actual_route != [] :
+            list_cities.append(actual_route[-1]["to"])
+        rd_city = r.choice(cities)
+        number = r.random()
+        if rd_city not in list_cities :
+            if number < driver["agenda"]["pref_cities"][rd_city] :
+                step = r.randint(-1,l)
+                if actual_route == []:
+                    rd_city2 = r.choice(cities)
+                    if rd_city != rd_city2 :
+                        actual_route.insert(0,{ "from" : rd_city, "to" : rd_city2, "merchandise" : {}})
+                elif step == -1 :
+                    actual_route.insert(0,{ "from" : rd_city, "to" : actual_route[0]["from"], "merchandise" : {}})
+                elif step == l :
+                    actual_route.append({ "from" : actual_route[l-1]["to"], "to" : rd_city, "merchandise" : {}})
+                elif (rd_city != actual_route[step]["from"]) and (rd_city != actual_route[step]["to"]) :
+                    temp = actual_route[step]["from"]
+                    actual_route[step]["from"] = rd_city
+                    actual_route.insert(step,{ "from" : temp, "to" : rd_city, "merchandise" : {}})
         elif actual_route != [] :
             step = r.randint(0,l-1)
+            number = r.random()
             if step == -1 :
-                actual_route.pop(0)
+                if number > driver["agenda"]["pref_cities"][actual_route[0]["from"]] :
+                    actual_route.pop(0)
             elif step == l-1 :
-                actual_route.pop(step)
+                if number > driver["agenda"]["pref_cities"][actual_route[l-1]["to"]] :
+                    actual_route.pop(step)
             else :
-                actual_route[step+1]["from"] = actual_route[step]["from"]
-                actual_route.pop(step)
+                if number > driver["agenda"]["pref_cities"][actual_route[step]["to"]] :
+                    actual_route[step+1]["from"] = actual_route[step]["from"]
+                    actual_route.pop(step)
     return actual_route
 
 #test

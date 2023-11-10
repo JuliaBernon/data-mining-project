@@ -1,78 +1,26 @@
 [
     {
         "id": "a1",
-        "driver": "A",
-        "sroute": "s26",
+        "driver": "d3",
+        "sroute": "s24",
         "route": [
             {
                 "from": "Trieste",
-                "to": "Cagliari",
+                "to": "Bologna",
                 "merchandise": {
-                    "eggs": 38,
-                    "tea": 43,
-                    "juice": 40,
-                    "cheese": 22,
-                    "coffee": 11,
-                    "milk": 28,
-                    "chocolate": 27,
-                    "honey": 44,
-                    "beer": 10,
-                    "sugar": 14,
+                    "cheese": 2,
+                    "pens": 28,
+                    "tomatoes": 46,
+                    "honey": 29,
+                    "sugar": 27,
+                    "eggs": 26,
+                    "pepper": 28,
                     "water": 0,
-                    "pepper": 26,
-                    "pens": 7,
-                    "tomatoes": 17,
-                    "salt": 9,
-                    "bread": 13,
-                    "butter": 43
-                }
-            },
-            {
-                "from": "Cagliari",
-                "to": "Rome",
-                "merchandise": {
-                    "beer": 26,
-                    "pepper": 30,
-                    "coca-cola": 10,
-                    "milk": 38,
-                    "salt": 9,
-                    "eggs": 7,
-                    "coffee": 44,
-                    "chocolate": 14,
-                    "water": 24,
-                    "tea": 38,
-                    "pens": 14,
-                    "cheese": 41,
-                    "sugar": 9,
-                    "tomatoes": 33,
-                    "bread": 8,
-                    "butter": 19,
-                    "juice": 30,
-                    "honey": 44
-                }
-            },
-            {
-                "from": "Rome",
-                "to": "Aquila",
-                "merchandise": {
-                    "chocolate": 30,
-                    "eggs": 14,
-                    "cheese": 21,
-                    "milk": 25,
-                    "bread": 0,
-                    "beer": 19,
-                    "juice": 42,
-                    "water": 24,
-                    "sugar": 28,
-                    "butter": 45,
-                    "salt": 14,
-                    "pens": 14,
-                    "tomatoes": 0,
-                    "pepper": 0,
-                    "coffee": 9,
-                    "coca-cola": 17,
-                    "tea": 9,
-                    "honey": 10
+                    "milk": 5,
+                    "beer": 0,
+                    "salt": 25,
+                    "juice": 20,
+                    "tea": 14
                 }
             }
         ]

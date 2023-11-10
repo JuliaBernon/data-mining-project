@@ -25,11 +25,12 @@ nb_act_routes = 1 # define the number of actual routes
 actual_routes = []
 for i in range(nb_act_routes):
     std_route_number = random.randint(0, nb_std_routes-1)
+    driver = random.choice(drivers)
     actual_routes.append({
         "id": f"a{i + 1}",
-        "driver": random.choice(drivers),
+        "driver": driver["id"],
         "sroute": f"{standard_routes[std_route_number]['id']}",
-        "route": generate_actual_route(standard_routes[std_route_number]["route"], cities, merchandise_types)
+        "route": generate_actual_route(standard_routes[std_route_number]["route"], cities, merchandise_types, driver)
     })
 
 # save data into actual.json
