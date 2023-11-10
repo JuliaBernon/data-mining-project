@@ -2,6 +2,7 @@ import random
 import json
 from dataGenerator.actualGenerator import generate_actual_route
 
+
 # read and parse cities.json
 with open("./data/cities.json", "r") as cities_file:
     cities = json.load(cities_file)

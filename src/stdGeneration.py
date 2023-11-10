@@ -2,7 +2,7 @@
 
 import json
 import random
-import dataGenerator.stdGenerator
+import src.dataGenerator.stdGenerator
 
 ## getting the list of cities, merchandise types and drivers
 
@@ -21,7 +21,7 @@ standard_routes = []
 for i in range(nb_std_routes):
     standard_routes.append({
         "id": f"s{i + 1}",
-        "route": dataGenerator.stdGenerator.generate_route(cities, merchandise_types)
+        "route": src.dataGenerator.stdGenerator.generate_route(cities, merchandise_types)
     })
 
 # save data into standard.json
