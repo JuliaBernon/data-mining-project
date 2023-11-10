@@ -1,14 +1,5 @@
 ### This file contains scripts to create driver agenda ###
 
-# drivers.json
-# { “id” : “A”,
-# 	“pref_cities” : {“a” : proba_a, “b” : proba_b ,...},
-# 	“pref_merch” : {“merch1” : proba1, “merch2” : proba2,...},
-# 	“tendancy” : {“merch1” : 1, “merch2”: -1, …},
-# 	“amp_tendancy” : 5
-# },
-
-
 # function to generate a driver
 
 import random
