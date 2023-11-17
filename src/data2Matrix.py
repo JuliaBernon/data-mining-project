@@ -84,7 +84,7 @@ def matrix_sparse(matrix):
     return matrix
 
 
-# # for tests
+# for tests
 
 # with open("./data/standard.json", "r") as standard_file:
 #     standard_routes = json.load(standard_file)
