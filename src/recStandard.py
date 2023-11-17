@@ -8,6 +8,7 @@ from mlxtend.preprocessing import TransactionEncoder
 
 import pandas as pd
 import json
+from mlxtend.frequent_patterns import fpgrowth
 
 with open("./data/actual.json") as actual_file:
     actual_routes = json.load(actual_file)
@@ -105,11 +106,6 @@ for route in actual_routes:
     merchandise_types_in_actual_routes.append(route_to_list_merch(route["route"]))
 print(merchandise_types_in_actual_routes)
 
-
-##########
-
-
-
 # Assuming merchandise_types_in_actual_routes is the list of routes
 
 all_frequent_itemsets = []
@@ -122,7 +118,8 @@ for route_merchandise_types in merchandise_types_in_actual_routes:
     df = pd.DataFrame(te_ary, columns=te.columns_)
 
     # Apply Apriori algorithm
-    frequent_itemsets = apriori(df, min_support=0.5, use_colnames=True)
+    # frequent_itemsets = apriori(df, min_support=0.1, use_colnames=True, n_jobs=-1)
+    frequent_itemsets = fpgrowth(df, min_support=0.1, use_colnames=True)
 
     # Generate association rules
     rules = association_rules(frequent_itemsets, metric="confidence", min_threshold=0.7)
@@ -131,12 +128,18 @@ for route_merchandise_types in merchandise_types_in_actual_routes:
     all_frequent_itemsets.append(frequent_itemsets)
     all_association_rules.append(rules)
 
-# Print the results for each route
+# # Print the results for each route
 # for i, route_frequent_itemsets in enumerate(all_frequent_itemsets):
 #     print(f"Route {i + 1} - Frequent Itemsets:")
-# print(route_frequent_itemsets)
+#     print(route_frequent_itemsets)
 
 # for i, route_association_rules in enumerate(all_association_rules):
 #     print(f"Route {i + 1} - Association Rules:")
-# print(route_association_rules)
+#     print(route_association_rules)
 
+
+# Print the results for one route
+# print(f"Route 1 - Frequent Itemsets:")
+# print(all_frequent_itemsets[0])
+# print(f"Route 1 - Association Rules:")
+# print(all_association_rules[0])
