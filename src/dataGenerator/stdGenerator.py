@@ -1,12 +1,12 @@
-### This file contains a function to generate a route, given a set of cities and merchandise types ###
+### This file contains a function to generate a standard route, given a set of cities and merchandise types ###
 
 import random
 
-# function to generate a route
+# function to generate a standard route
 def generate_route(cities, merchandise_types):
 
     '''
-    Generate a route, given a set of cities and merchandise types
+    Generate a standard route, given a set of cities and merchandise types
     
     cities : List[str]
     merchandise_types : List[str]
