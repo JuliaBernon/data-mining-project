@@ -1,0 +1,4 @@
+,support,itemsets
+0,1.0,frozenset({'milk'})
+1,0.8,frozenset({'sugar'})
+2,0.8,"frozenset({'sugar', 'milk'})"
