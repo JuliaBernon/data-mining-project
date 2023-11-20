@@ -1,17 +1,15 @@
 # in actual.json, identify every couple of cities that compose each route
 
 import json
-from mlxtend.frequent_patterns import apriori
-from mlxtend.frequent_patterns import association_rules
-
-from mlxtend.preprocessing import TransactionEncoder
-
 import pandas as pd
-import json
-from mlxtend.frequent_patterns import fpgrowth
+import random
+import dataGenerator.newStdGenerator
 
 with open("./data/actual.json") as actual_file:
     actual_routes = json.load(actual_file)
+
+with open("./data/merchTypes.json","r") as merchTypes_file:
+    merchandise_types = json.load(merchTypes_file)
 
 # function to transform a route into a list of pairs of cities
 def route_to_pairs(route):
@@ -28,11 +26,12 @@ def route_to_pairs(route):
 pairs_in_actual_routes = []
 for route in actual_routes:
     pairs_in_actual_routes.append(route_to_pairs(route["route"]))
+print(pairs_in_actual_routes)
 
-# create a function that returns the frequency of a pair of cities in the list of lists of pairs
-def frequency_of_pair(pair, pairs):
+# create a function that returns the number of a pair of cities in the list of lists of pairs
+def number_of_pair(pair, pairs):
     '''
-    Returns the frequency of a pair of cities in the list of lists of pairs.
+    Returns the number of a pair of cities in the list of lists of pairs.
     pair : tuple(str, str)
     pairs : list(list(tuple(str, str)))
     '''
@@ -43,103 +42,46 @@ def frequency_of_pair(pair, pairs):
     return count
 
 for pair_actual in pairs_in_actual_routes:
-    # for pair in pair_actual:
-    #     print(pair, " : ", frequency_of_pair(pair, pairs_in_actual_routes))
-    # print("\n")
     pair_number = {}
 
-    # iterate over each pair in pairs_in_actual_routes and update the frequency in pair_number
+    # iterate over each pair in pairs_in_actual_routes and update the number in pair_number
     for pair_actual in pairs_in_actual_routes:
         for pair in pair_actual:
             if pair in pair_number:
                 pair_number[pair] += 1
             else:
                 pair_number[pair] = 1
+            
+# create a function that computes the frequency of each pair
+def compute_pair_frequency(pair, pairs):
+    '''
+    Computes the frequency of a pair based on the formula: frequency_of_a_pair = number_of_pair / total_number_of_pairs.
+    pair : tuple(str, str)
+    pairs : list(list(tuple(str, str)))
+    '''
+    total_pairs = sum(len(route) for route in pairs)
+    pair_count = number_of_pair(pair, pairs)
+    frequency = pair_count / total_pairs
+    return frequency
 
-# iterate over the dictionary and print each pair with its frequency, sorted by frequency
+# compute the frequency of each pair
+most_frequent_pairs = []
 for pair in sorted(pair_number, key=pair_number.get, reverse=True):
-    print(pair, " : ", pair_number[pair])
+    frequency = compute_pair_frequency(pair, pairs_in_actual_routes)
+    print(pair, " : ", frequency)
+    if frequency > 0.0075:
+        most_frequent_pairs.append(pair)
+# print(most_frequent_pairs)
 
-# function to transform a route into a list of merchandises for each step
-def route_to_merchandises(route):
-    '''
-    Returns a list of merchandises for each step in a route.
-    route : list(dict(str, str))
-    '''
-    merchandises = []
-    for i in range(len(route)):
-        merchandises.append(route[i]["merchandise"])
-    return merchandises
+# generate recStandard.json
+nb_recstd_routes = 100 # define the number of standard routes
+recstd_routes = []
+for i in range(nb_recstd_routes):
+    recstd_routes.append({
+        "id": f"r{i + 1}",
+        "route": dataGenerator.newStdGenerator.generate_new_route(most_frequent_pairs, merchandise_types)
+    })
 
-def merchandise_types(merchandises):
-    '''
-    Returns the list of merchandise types in a list of merchandises.
-    merchandises : list(dict(str, int))
-    '''
-    types = []
-    for i in range(len(merchandises)):
-        if merchandises[i] not in types:
-            types.append(merchandises[i])
-    return types
-
-# select one route from actual.json
-route = actual_routes[0]["route"]
-print(route_to_merchandises(route))
-print("\n")
-
-
-def route_to_list_merch(route):
-    '''
-    Returns a list of dictionaries with the merchandise types for each step in a route.
-    route : list(dict(str, str))
-    '''
-    route_merchandise_types = []
-    for i, dictionary in enumerate(route_to_merchandises(route)):
-        merchandise_types = list(dictionary.keys())
-
-        route_merchandise_types.append(merchandise_types)
-    return route_merchandise_types
-
-# store the merchandise types of each actual route in a list
-merchandise_types_in_actual_routes = []
-for route in actual_routes:
-    merchandise_types_in_actual_routes.append(route_to_list_merch(route["route"]))
-print(merchandise_types_in_actual_routes)
-
-# Assuming merchandise_types_in_actual_routes is the list of routes
-
-all_frequent_itemsets = []
-all_association_rules = []
-
-for route_merchandise_types in merchandise_types_in_actual_routes:
-    # Convert the data format for Apriori
-    te = TransactionEncoder()
-    te_ary = te.fit(route_merchandise_types).transform(route_merchandise_types)
-    df = pd.DataFrame(te_ary, columns=te.columns_)
-
-    # Apply Apriori algorithm
-    # frequent_itemsets = apriori(df, min_support=0.1, use_colnames=True, n_jobs=-1)
-    frequent_itemsets = fpgrowth(df, min_support=0.1, use_colnames=True)
-
-    # Generate association rules
-    rules = association_rules(frequent_itemsets, metric="confidence", min_threshold=0.7)
-
-    # Append results to the list
-    all_frequent_itemsets.append(frequent_itemsets)
-    all_association_rules.append(rules)
-
-# # Print the results for each route
-# for i, route_frequent_itemsets in enumerate(all_frequent_itemsets):
-#     print(f"Route {i + 1} - Frequent Itemsets:")
-#     print(route_frequent_itemsets)
-
-# for i, route_association_rules in enumerate(all_association_rules):
-#     print(f"Route {i + 1} - Association Rules:")
-#     print(route_association_rules)
-
-
-# Print the results for one route
-# print(f"Route 1 - Frequent Itemsets:")
-# print(all_frequent_itemsets[0])
-# print(f"Route 1 - Association Rules:")
-# print(all_association_rules[0])
+# save data into recStandard.json
+with open("./data/recStandard.json", "w") as recstd_file:
+    json.dump(recstd_routes, recstd_file, indent=4)
