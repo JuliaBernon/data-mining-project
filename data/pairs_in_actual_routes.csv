@@ -1,0 +1,859 @@
+['Perugia', 'Milan']
+['Milan', 'Potenza']
+['Potenza', 'Bolzano']
+['Bolzano', 'Milan']
+
+['Venezia', 'Napoli']
+
+['Firenze', 'Potenza']
+
+['Bergamo', 'Cagliari']
+['Cagliari', 'Bergamo']
+
+['Venezia', 'Napoli']
+['Napoli', 'Cagliari']
+['Cagliari', 'Bologna']
+['Bologna', 'Genova']
+['Genova', 'Venezia']
+
+['Perugia', 'Ancona']
+['Ancona', 'Trieste']
+
+['Firenze', 'Bolzano']
+
+['Firenze', 'Verona']
+['Verona', 'Napoli']
+['Napoli', 'Potenza']
+['Potenza', 'Cagliari']
+['Cagliari', 'Napoli']
+
+['Trento', 'Bolzano']
+['Bolzano', 'Bari']
+
+['Milan', 'Genova']
+
+['Napoli', 'Milan']
+['Milan', 'Trento']
+['Trento', 'Potenza']
+['Potenza', 'Firenze']
+['Firenze', 'Catanzaro']
+['Catanzaro', 'Napoli']
+
+['Firenze', 'Potenza']
+
+['Venezia', 'Palermo']
+['Palermo', 'Catanzaro']
+['Catanzaro', 'Bergamo']
+['Bergamo', 'Napoli']
+['Napoli', 'Bolzano']
+
+['Ancona', 'Trieste']
+['Trieste', 'Perugia']
+['Perugia', 'Napoli']
+['Napoli', 'Verona']
+
+['Rome', 'Firenze']
+['Firenze', 'Aquila']
+['Aquila', 'Palermo']
+['Palermo', 'Potenza']
+
+['Rome', 'Cagliari']
+['Cagliari', 'Rome']
+['Rome', 'Palermo']
+
+['Verona', 'Napoli']
+['Napoli', 'Perugia']
+['Perugia', 'Verona']
+
+['Palermo', 'Trento']
+['Trento', 'Aquila']
+['Aquila', 'Trento']
+
+['Bergamo', 'Trieste']
+
+['Trieste', 'Trento']
+['Trento', 'Potenza']
+['Potenza', 'Rome']
+['Rome', 'Bologna']
+['Bologna', 'Cagliari']
+
+['Venezia', 'Napoli']
+['Napoli', 'Cagliari']
+['Cagliari', 'Bologna']
+['Bologna', 'Genova']
+['Genova', 'Venezia']
+
+['Verona', 'Bari']
+['Bari', 'Trento']
+['Trento', 'Cagliari']
+['Cagliari', 'Rome']
+['Rome', 'Firenze']
+
+['Potenza', 'Rome']
+['Rome', 'Cagliari']
+['Cagliari', 'Rome']
+['Rome', 'Palermo']
+
+['Rome', 'Cagliari']
+['Cagliari', 'Rome']
+['Rome', 'Palermo']
+
+['Bolzano', 'Verona']
+['Verona', 'Genova']
+
+['Trieste', 'Ancona']
+['Ancona', 'Ancona']
+['Ancona', 'Verona']
+
+['Perugia', 'Napoli']
+['Napoli', 'Trieste']
+['Trieste', 'Verona']
+['Verona', 'Catanzaro']
+['Catanzaro', 'Verona']
+
+['Milan', 'Trento']
+['Trento', 'Bergamo']
+
+['Bolzano', 'Genova']
+
+['Bergamo', 'Perugia']
+
+['Trieste', 'Aquila']
+['Aquila', 'Verona']
+['Verona', 'Venezia']
+['Venezia', 'Bergamo']
+['Bergamo', 'Ancona']
+
+['Ancona', 'Bolzano']
+['Bolzano', 'Rome']
+['Rome', 'Cagliari']
+['Cagliari', 'Trieste']
+
+['Potenza', 'Bari']
+
+['Trieste', 'Palermo']
+['Palermo', 'Bari']
+['Bari', 'Verona']
+
+['Bari', 'Trento']
+['Trento', 'Cagliari']
+['Cagliari', 'Rome']
+['Rome', 'Firenze']
+
+['Catanzaro', 'Bologna']
+['Bologna', 'Venezia']
+['Venezia', 'Palermo']
+['Palermo', 'Palermo']
+['Palermo', 'Venezia']
+['Venezia', 'Trento']
+
+['Rome', 'Firenze']
+['Firenze', 'Potenza']
+
+['Firenze', 'Bolzano']
+
+['Trieste', 'Aquila']
+['Aquila', 'Verona']
+['Verona', 'Venezia']
+['Venezia', 'Bergamo']
+['Bergamo', 'Rome']
+['Rome', 'Ancona']
+
+['Napoli', 'Trento']
+['Trento', 'Potenza']
+['Potenza', 'Firenze']
+['Firenze', 'Catanzaro']
+['Catanzaro', 'Napoli']
+
+['Aquila', 'Ancona']
+['Ancona', 'Bolzano']
+['Bolzano', 'Genova']
+
+['Napoli', 'Bari']
+['Bari', 'Genova']
+['Genova', 'Genova']
+['Genova', 'Trento']
+['Trento', 'Milan']
+
+['Bolzano', 'Genova']
+['Genova', 'Cagliari']
+['Cagliari', 'Verona']
+['Verona', 'Bari']
+
+['Bergamo', 'Perugia']
+
+['Perugia', 'Napoli']
+['Napoli', 'Napoli']
+['Napoli', 'Trieste']
+['Trieste', 'Bergamo']
+['Bergamo', 'Verona']
+['Verona', 'Verona']
+
+['Venezia', 'Bergamo']
+['Bergamo', 'Rome']
+['Rome', 'Napoli']
+['Napoli', 'Genova']
+['Genova', 'Bari']
+['Bari', 'Trento']
+
+['Cagliari', 'Verona']
+['Verona', 'Catanzaro']
+['Catanzaro', 'Ancona']
+['Ancona', 'Potenza']
+['Potenza', 'Bari']
+
+['Verona', 'Napoli']
+['Napoli', 'Bergamo']
+['Bergamo', 'Bologna']
+['Bologna', 'Potenza']
+
+['Trieste', 'Aquila']
+['Aquila', 'Verona']
+['Verona', 'Venezia']
+['Venezia', 'Rome']
+['Rome', 'Bergamo']
+['Bergamo', 'Firenze']
+['Firenze', 'Ancona']
+
+['Milan', 'Trieste']
+['Trieste', 'Ancona']
+['Ancona', 'Firenze']
+['Firenze', 'Genova']
+
+['Rome', 'Ancona']
+['Ancona', 'Milan']
+['Milan', 'Cagliari']
+['Cagliari', 'Bergamo']
+
+['Venezia', 'Bergamo']
+['Bergamo', 'Rome']
+['Rome', 'Bari']
+['Bari', 'Trento']
+
+['Catanzaro', 'Napoli']
+['Napoli', 'Firenze']
+['Firenze', 'Aquila']
+['Aquila', 'Napoli']
+
+['Trento', 'Palermo']
+['Palermo', 'Trento']
+
+['Bergamo', 'Trieste']
+['Trieste', 'Ancona']
+
+['Rome', 'Verona']
+['Verona', 'Milan']
+['Milan', 'Bolzano']
+
+['Milan', 'Trieste']
+['Trieste', 'Ancona']
+['Ancona', 'Firenze']
+['Firenze', 'Genova']
+
+['Napoli', 'Aquila']
+['Aquila', 'Milan']
+['Milan', 'Bergamo']
+
+['Firenze', 'Bolzano']
+
+['Bergamo', 'Perugia']
+['Perugia', 'Trento']
+['Trento', 'Rome']
+['Rome', 'Venezia']
+
+['Perugia', 'Trento']
+['Trento', 'Rome']
+
+['Catanzaro', 'Trieste']
+['Trieste', 'Bergamo']
+['Bergamo', 'Trento']
+['Trento', 'Potenza']
+['Potenza', 'Rome']
+['Rome', 'Bologna']
+['Bologna', 'Cagliari']
+
+['Milan', 'Trieste']
+['Trieste', 'Ancona']
+['Ancona', 'Firenze']
+['Firenze', 'Genova']
+
+['Bergamo', 'Potenza']
+
+['Perugia', 'Bergamo']
+['Bergamo', 'Rome']
+
+['Trieste', 'Palermo']
+['Palermo', 'Bari']
+
+['Venezia', 'Palermo']
+['Palermo', 'Catanzaro']
+['Catanzaro', 'Bergamo']
+['Bergamo', 'Napoli']
+['Napoli', 'Bolzano']
+['Bolzano', 'Verona']
+
+['Milan', 'Trieste']
+['Trieste', 'Ancona']
+['Ancona', 'Firenze']
+['Firenze', 'Genova']
+
+['Perugia', 'Bari']
+
+['Rome', 'Napoli']
+['Napoli', 'Bologna']
+['Bologna', 'Trieste']
+
+['Genova', 'Milan']
+['Milan', 'Verona']
+
+['Firenze', 'Milan']
+['Milan', 'Milan']
+['Milan', 'Trieste']
+['Trieste', 'Milan']
+
+['Milan', 'Bologna']
+
+['Ancona', 'Potenza']
+['Potenza', 'Verona']
+['Verona', 'Bolzano']
+['Bolzano', 'Bari']
+['Bari', 'Firenze']
+['Firenze', 'Napoli']
+
+['Ancona', 'Firenze']
+['Firenze', 'Genova']
+['Genova', 'Cagliari']
+['Cagliari', 'Firenze']
+
+['Potenza', 'Verona']
+['Verona', 'Bolzano']
+['Bolzano', 'Bari']
+['Bari', 'Firenze']
+['Firenze', 'Napoli']
+
+['Genova', 'Bolzano']
+['Bolzano', 'Milan']
+['Milan', 'Bergamo']
+['Bergamo', 'Cagliari']
+
+['Potenza', 'Verona']
+['Verona', 'Bolzano']
+['Bolzano', 'Bari']
+['Bari', 'Firenze']
+['Firenze', 'Napoli']
+['Napoli', 'Bergamo']
+
+['Rome', 'Firenze']
+['Firenze', 'Potenza']
+
+['Napoli', 'Rome']
+['Rome', 'Catanzaro']
+['Catanzaro', 'Bolzano']
+
+['Perugia', 'Rome']
+['Rome', 'Bari']
+
+['Milan', 'Genova']
+
+['Bologna', 'Rome']
+['Rome', 'Firenze']
+['Firenze', 'Genova']
+
+['Venezia', 'Genova']
+['Genova', 'Palermo']
+['Palermo', 'Bologna']
+
+['Bergamo', 'Cagliari']
+['Cagliari', 'Bergamo']
+
+['Bergamo', 'Catanzaro']
+['Catanzaro', 'Rome']
+['Rome', 'Bolzano']
+
+['Bologna', 'Bari']
+['Bari', 'Rome']
+['Rome', 'Trento']
+['Trento', 'Firenze']
+['Firenze', 'Genova']
+
+['Perugia', 'Ancona']
+['Ancona', 'Trieste']
+['Trieste', 'Genova']
+
+['Verona', 'Napoli']
+['Napoli', 'Bergamo']
+['Bergamo', 'Bologna']
+['Bologna', 'Firenze']
+['Firenze', 'Potenza']
+
+['Firenze', 'Rome']
+['Rome', 'Cagliari']
+['Cagliari', 'Rome']
+['Rome', 'Palermo']
+
+['Catanzaro', 'Potenza']
+['Potenza', 'Firenze']
+
+['Potenza', 'Cagliari']
+
+['Bergamo', 'Catanzaro']
+['Catanzaro', 'Rome']
+
+['Cagliari', 'Potenza']
+
+['Venezia', 'Bergamo']
+['Bergamo', 'Rome']
+['Rome', 'Milan']
+['Milan', 'Potenza']
+['Potenza', 'Bari']
+['Bari', 'Trento']
+
+['Genova', 'Trento']
+
+['Trieste', 'Bolzano']
+['Bolzano', 'Palermo']
+['Palermo', 'Bari']
+
+['Trento', 'Napoli']
+['Napoli', 'Genova']
+['Genova', 'Venezia']
+['Venezia', 'Rome']
+
+['Cagliari', 'Napoli']
+['Napoli', 'Ancona']
+
+['Rome', 'Firenze']
+['Firenze', 'Potenza']
+
+['Perugia', 'Bergamo']
+['Bergamo', 'Rome']
+
+['Rome', 'Cagliari']
+['Cagliari', 'Rome']
+['Rome', 'Palermo']
+
+['Genova', 'Firenze']
+['Firenze', 'Potenza']
+['Potenza', 'Palermo']
+['Palermo', 'Potenza']
+
+['Firenze', 'Genova']
+['Genova', 'Bologna']
+['Bologna', 'Rome']
+['Rome', 'Potenza']
+['Potenza', 'Aquila']
+
+['Napoli', 'Milan']
+['Milan', 'Bergamo']
+['Bergamo', 'Bologna']
+
+['Ancona', 'Trieste']
+['Trieste', 'Perugia']
+['Perugia', 'Napoli']
+['Napoli', 'Verona']
+
+['Genova', 'Firenze']
+['Firenze', 'Perugia']
+['Perugia', 'Catanzaro']
+
+['Verona', 'Genova']
+['Genova', 'Milan']
+['Milan', 'Perugia']
+
+['Aquila', 'Genova']
+['Genova', 'Perugia']
+['Perugia', 'Bergamo']
+['Bergamo', 'Trieste']
+['Trieste', 'Venezia']
+['Venezia', 'Catanzaro']
+
+['Trieste', 'Aquila']
+['Aquila', 'Verona']
+['Verona', 'Venezia']
+['Venezia', 'Bergamo']
+['Bergamo', 'Ancona']
+
+['Bari', 'Trento']
+['Trento', 'Cagliari']
+['Cagliari', 'Rome']
+['Rome', 'Firenze']
+
+['Aquila', 'Genova']
+['Genova', 'Bergamo']
+['Bergamo', 'Trieste']
+['Trieste', 'Venezia']
+['Venezia', 'Catanzaro']
+
+['Perugia', 'Bari']
+['Bari', 'Bolzano']
+
+['Trento', 'Bolzano']
+
+['Aquila', 'Bolzano']
+['Bolzano', 'Trento']
+['Trento', 'Napoli']
+['Napoli', 'Napoli']
+
+['Trieste', 'Verona']
+['Verona', 'Ancona']
+
+['Palermo', 'Potenza']
+['Potenza', 'Firenze']
+['Firenze', 'Verona']
+['Verona', 'Genova']
+['Genova', 'Milan']
+
+['Aquila', 'Genova']
+['Genova', 'Bergamo']
+['Bergamo', 'Trieste']
+['Trieste', 'Venezia']
+['Venezia', 'Catanzaro']
+
+['Milan', 'Firenze']
+['Firenze', 'Ancona']
+['Ancona', 'Napoli']
+['Napoli', 'Bologna']
+['Bologna', 'Bolzano']
+['Bolzano', 'Trento']
+
+['Perugia', 'Ancona']
+['Ancona', 'Trieste']
+['Trieste', 'Bari']
+
+['Trieste', 'Ancona']
+['Ancona', 'Bolzano']
+['Bolzano', 'Ancona']
+
+
+['Perugia', 'Trento']
+['Trento', 'Rome']
+
+['Perugia', 'Bari']
+
+['Potenza', 'Napoli']
+['Napoli', 'Venezia']
+['Venezia', 'Bari']
+
+['Cagliari', 'Milan']
+['Milan', 'Genova']
+
+['Milan', 'Firenze']
+['Firenze', 'Potenza']
+
+['Bari', 'Cagliari']
+['Cagliari', 'Napoli']
+['Napoli', 'Genova']
+['Genova', 'Potenza']
+['Potenza', 'Trieste']
+['Trieste', 'Venezia']
+
+['Bari', 'Trento']
+['Trento', 'Cagliari']
+['Cagliari', 'Rome']
+['Rome', 'Firenze']
+
+['Palermo', 'Trento']
+['Trento', 'Aquila']
+['Aquila', 'Trento']
+
+['Perugia', 'Ancona']
+['Ancona', 'Trieste']
+
+['Napoli', 'Firenze']
+['Firenze', 'Bari']
+['Bari', 'Trento']
+['Trento', 'Bolzano']
+['Bolzano', 'Bolzano']
+['Bolzano', 'Genova']
+
+['Trieste', 'Potenza']
+['Potenza', 'Verona']
+['Verona', 'Bari']
+['Bari', 'Firenze']
+['Firenze', 'Napoli']
+
+['Trieste', 'Cagliari']
+['Cagliari', 'Aquila']
+
+['Aquila', 'Napoli']
+['Napoli', 'Genova']
+['Genova', 'Trieste']
+['Trieste', 'Venezia']
+['Venezia', 'Catanzaro']
+
+['Bari', 'Cagliari']
+['Cagliari', 'Napoli']
+['Napoli', 'Rome']
+['Rome', 'Genova']
+['Genova', 'Trieste']
+['Trieste', 'Venezia']
+
+['Rome', 'Firenze']
+['Firenze', 'Rome']
+['Rome', 'Milan']
+['Milan', 'Firenze']
+['Firenze', 'Bolzano']
+
+['Trento', 'Napoli']
+['Napoli', 'Genova']
+['Genova', 'Venezia']
+['Venezia', 'Rome']
+
+['Bologna', 'Perugia']
+['Perugia', 'Cagliari']
+['Cagliari', 'Verona']
+['Verona', 'Trieste']
+
+['Genova', 'Venezia']
+['Venezia', 'Palermo']
+['Palermo', 'Catanzaro']
+['Catanzaro', 'Ancona']
+['Ancona', 'Bergamo']
+['Bergamo', 'Napoli']
+['Napoli', 'Bolzano']
+
+['Catanzaro', 'Trento']
+['Trento', 'Bolzano']
+
+['Bergamo', 'Cagliari']
+['Cagliari', 'Bergamo']
+
+['Firenze', 'Genova']
+['Genova', 'Bologna']
+['Bologna', 'Rome']
+['Rome', 'Potenza']
+
+['Napoli', 'Trento']
+['Trento', 'Potenza']
+['Potenza', 'Firenze']
+['Firenze', 'Catanzaro']
+['Catanzaro', 'Napoli']
+
+['Bergamo', 'Genova']
+['Genova', 'Potenza']
+
+['Venezia', 'Bergamo']
+['Bergamo', 'Genova']
+['Genova', 'Genova']
+
+['Genova', 'Milan']
+['Milan', 'Verona']
+
+['Potenza', 'Genova']
+['Genova', 'Perugia']
+['Perugia', 'Catanzaro']
+
+['Venezia', 'Palermo']
+['Palermo', 'Catanzaro']
+['Catanzaro', 'Bergamo']
+['Bergamo', 'Napoli']
+['Napoli', 'Bolzano']
+
+['Bergamo', 'Trieste']
+['Trieste', 'Ancona']
+
+
+['Bolzano', 'Rome']
+['Rome', 'Potenza']
+['Potenza', 'Trento']
+['Trento', 'Napoli']
+['Napoli', 'Venezia']
+
+['Bergamo', 'Trieste']
+
+['Catanzaro', 'Cagliari']
+['Cagliari', 'Verona']
+['Verona', 'Bari']
+
+['Trieste', 'Cagliari']
+['Cagliari', 'Rome']
+['Rome', 'Milan']
+['Milan', 'Aquila']
+
+['Potenza', 'Verona']
+['Verona', 'Bolzano']
+['Bolzano', 'Bari']
+['Bari', 'Firenze']
+['Firenze', 'Napoli']
+
+['Bergamo', 'Perugia']
+
+['Catanzaro', 'Napoli']
+['Napoli', 'Firenze']
+['Firenze', 'Aquila']
+['Aquila', 'Napoli']
+
+['Firenze', 'Perugia']
+['Perugia', 'Palermo']
+['Palermo', 'Rome']
+
+['Napoli', 'Firenze']
+['Firenze', 'Bari']
+['Bari', 'Bolzano']
+['Bolzano', 'Bergamo']
+['Bergamo', 'Bolzano']
+['Bolzano', 'Genova']
+
+['Trieste', 'Palermo']
+['Palermo', 'Bologna']
+['Bologna', 'Cagliari']
+
+['Aquila', 'Trieste']
+['Trieste', 'Genova']
+['Genova', 'Firenze']
+['Firenze', 'Potenza']
+['Potenza', 'Palermo']
+['Palermo', 'Potenza']
+
+['Bergamo', 'Trieste']
+
+['Napoli', 'Bari']
+['Bari', 'Bari']
+['Bari', 'Genova']
+['Genova', 'Genova']
+['Genova', 'Milan']
+
+['Trento', 'Bergamo']
+
+['Verona', 'Napoli']
+['Napoli', 'Perugia']
+['Perugia', 'Verona']
+['Verona', 'Genova']
+
+['Perugia', 'Milan']
+['Milan', 'Potenza']
+['Potenza', 'Bolzano']
+['Bolzano', 'Milan']
+
+['Firenze', 'Milan']
+['Milan', 'Napoli']
+['Napoli', 'Milan']
+['Milan', 'Trieste']
+['Trieste', 'Milan']
+
+['Perugia', 'Ancona']
+
+['Bergamo', 'Trieste']
+
+['Firenze', 'Verona']
+['Verona', 'Napoli']
+['Napoli', 'Potenza']
+['Potenza', 'Cagliari']
+['Cagliari', 'Napoli']
+
+['Milan', 'Ancona']
+['Ancona', 'Firenze']
+['Firenze', 'Genova']
+
+['Perugia', 'Palermo']
+['Palermo', 'Ancona']
+['Ancona', 'Trieste']
+
+['Ancona', 'Firenze']
+['Firenze', 'Genova']
+['Genova', 'Cagliari']
+['Cagliari', 'Firenze']
+
+['Potenza', 'Cagliari']
+
+['Bergamo', 'Trieste']
+['Trieste', 'Ancona']
+
+['Trento', 'Bergamo']
+['Bergamo', 'Bologna']
+['Bologna', 'Bolzano']
+['Bolzano', 'Bolzano']
+
+['Perugia', 'Trento']
+['Trento', 'Rome']
+
+['Genova', 'Bolzano']
+['Bolzano', 'Milan']
+['Milan', 'Bergamo']
+
+['Rome', 'Firenze']
+['Firenze', 'Rome']
+['Rome', 'Milan']
+['Milan', 'Firenze']
+['Firenze', 'Bolzano']
+
+['Potenza', 'Napoli']
+['Napoli', 'Venezia']
+
+['Bergamo', 'Trieste']
+['Trieste', 'Ancona']
+['Ancona', 'Venezia']
+
+['Trento', 'Bolzano']
+
+['Perugia', 'Milan']
+['Milan', 'Potenza']
+['Potenza', 'Bolzano']
+['Bolzano', 'Milan']
+
+['Firenze', 'Milan']
+['Milan', 'Milan']
+['Milan', 'Trieste']
+['Trieste', 'Milan']
+
+['Bergamo', 'Bologna']
+['Bologna', 'Bolzano']
+['Bolzano', 'Bolzano']
+
+['Bergamo', 'Perugia']
+
+['Trieste', 'Ancona']
+['Ancona', 'Genova']
+['Genova', 'Milan']
+['Milan', 'Ancona']
+
+['Bari', 'Bergamo']
+['Bergamo', 'Bari']
+['Bari', 'Bergamo']
+['Bergamo', 'Venezia']
+
+['Venezia', 'Bergamo']
+['Bergamo', 'Cagliari']
+['Cagliari', 'Ancona']
+['Ancona', 'Bergamo']
+
+['Palermo', 'Potenza']
+['Potenza', 'Bolzano']
+['Bolzano', 'Firenze']
+['Firenze', 'Verona']
+['Verona', 'Milan']
+
+['Perugia', 'Napoli']
+['Napoli', 'Bologna']
+['Bologna', 'Napoli']
+['Napoli', 'Trieste']
+['Trieste', 'Verona']
+['Verona', 'Verona']
+
+
+['Verona', 'Napoli']
+['Napoli', 'Bergamo']
+['Bergamo', 'Bologna']
+['Bologna', 'Potenza']
+
+
+['Bergamo', 'Trieste']
+['Trieste', 'Ancona']
+
+['Catanzaro', 'Napoli']
+['Napoli', 'Firenze']
+['Firenze', 'Aquila']
+['Aquila', 'Napoli']
+
+['Bergamo', 'Cagliari']
+['Cagliari', 'Bergamo']
+
+['Palermo', 'Trento']
+['Trento', 'Firenze']
+['Firenze', 'Aquila']
+['Aquila', 'Trento']
+
+['Genova', 'Cagliari']
+['Cagliari', 'Verona']
+['Verona', 'Bari']
+

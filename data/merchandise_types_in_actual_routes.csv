@@ -1,0 +1,859 @@
+['water', 'milk', 'sugar', 'honey', 'chocolate']
+['pens', 'cheese', 'milk', 'juice', 'coca-cola', 'bread', 'eggs', 'coffee', 'salt', 'honey']
+['coffee', 'beer', 'coca-cola', 'milk']
+['sugar', 'juice', 'beer', 'coca-cola', 'tomatoes', 'water', 'cheese', 'pepper', 'eggs', 'coffee', 'chocolate', 'salt', 'honey', 'tea']
+
+[]
+
+['salt', 'pens', 'coca-cola', 'butter', 'sugar']
+
+['pepper', 'bread', 'salt', 'sugar', 'tea', 'juice', 'tomatoes', 'eggs', 'coffee', 'pens', 'chocolate', 'cheese']
+['honey', 'tomatoes', 'eggs', 'water', 'butter', 'tea', 'salt', 'beer', 'coffee', 'chocolate', 'milk', 'coca-cola', 'sugar', 'juice', 'bread', 'cheese', 'pepper']
+
+['pepper', 'tea', 'cheese', 'eggs', 'pens', 'honey', 'juice', 'sugar', 'tomatoes', 'coffee', 'milk', 'salt', 'coca-cola']
+['honey', 'juice', 'pens', 'coffee', 'tomatoes', 'tea', 'water', 'pepper', 'bread', 'beer']
+['pepper', 'bread', 'beer', 'sugar']
+['eggs', 'juice', 'coffee', 'pepper', 'chocolate', 'milk', 'sugar', 'water', 'tomatoes']
+['salt', 'juice', 'tea', 'bread', 'cheese', 'honey', 'milk', 'pens', 'coffee', 'butter', 'eggs', 'coca-cola']
+
+['chocolate', 'butter', 'coffee', 'water', 'coca-cola', 'tea', 'beer', 'milk', 'honey', 'pepper', 'sugar', 'eggs', 'pens', 'tomatoes', 'bread', 'salt', 'juice']
+['beer', 'bread', 'coca-cola', 'sugar', 'pepper', 'pens', 'water', 'eggs', 'tomatoes', 'salt', 'cheese', 'tea', 'honey', 'milk', 'chocolate', 'butter', 'juice', 'coffee']
+
+['water', 'eggs', 'coffee', 'milk', 'sugar', 'salt', 'coca-cola', 'beer', 'butter', 'pepper']
+
+['salt', 'water', 'chocolate', 'honey', 'tomatoes', 'cheese', 'tea']
+['water', 'juice', 'coca-cola', 'salt', 'sugar', 'pens']
+['juice', 'honey']
+['bread', 'beer', 'chocolate', 'pepper', 'salt', 'pens', 'tomatoes']
+['honey', 'pens', 'eggs', 'milk', 'tea', 'pepper', 'salt', 'coca-cola', 'water', 'chocolate', 'bread', 'tomatoes', 'juice', 'coffee', 'beer', 'sugar']
+
+['beer', 'coca-cola', 'water', 'honey', 'chocolate', 'tea', 'pepper', 'coffee', 'milk', 'sugar', 'cheese', 'tomatoes', 'salt', 'juice', 'butter', 'pens', 'bread', 'eggs']
+[]
+
+['milk', 'juice', 'beer', 'honey', 'cheese', 'chocolate', 'tea', 'butter']
+
+[]
+['coca-cola', 'cheese', 'pepper', 'salt']
+['bread', 'eggs', 'butter', 'tomatoes', 'juice', 'cheese', 'coffee', 'tea', 'milk', 'honey']
+['sugar', 'honey', 'salt', 'pepper', 'juice', 'eggs', 'water', 'tea', 'beer']
+['butter', 'water', 'beer', 'milk', 'bread', 'salt', 'tea', 'chocolate', 'eggs', 'coca-cola', 'juice', 'honey', 'cheese', 'coffee', 'pens', 'pepper']
+['pepper', 'honey', 'bread', 'tomatoes', 'chocolate', 'eggs', 'juice', 'coffee', 'butter', 'coca-cola', 'tea', 'pens', 'water', 'sugar']
+
+['salt', 'pens', 'coca-cola', 'butter', 'sugar', 'honey']
+
+['honey']
+['tomatoes', 'pens', 'chocolate']
+['pens', 'bread', 'chocolate', 'butter', 'cheese', 'water', 'coca-cola', 'coffee', 'milk', 'sugar', 'juice', 'pepper', 'tomatoes', 'eggs', 'salt', 'honey']
+['tomatoes', 'coffee', 'beer']
+['bread', 'beer', 'salt', 'pens', 'chocolate', 'eggs', 'juice', 'coffee', 'milk', 'tomatoes', 'honey', 'sugar']
+
+['tea', 'milk', 'beer', 'cheese', 'butter', 'salt', 'eggs', 'bread', 'water']
+['coffee', 'butter', 'bread', 'cheese', 'coca-cola', 'milk', 'eggs', 'sugar', 'pepper', 'water']
+['beer', 'tea', 'juice', 'butter', 'water', 'pens']
+['pepper', 'sugar', 'milk', 'water', 'butter', 'chocolate', 'tomatoes', 'juice', 'coffee', 'coca-cola', 'bread']
+
+['juice']
+[]
+[]
+['tomatoes', 'juice', 'salt', 'pepper', 'bread', 'sugar', 'milk', 'butter', 'pens', 'beer', 'honey', 'water']
+
+['honey', 'coca-cola', 'salt', 'juice', 'beer', 'bread', 'butter', 'water', 'tea', 'tomatoes', 'coffee', 'pens', 'pepper', 'eggs', 'cheese']
+['salt', 'pepper', 'butter']
+['pepper', 'salt', 'coca-cola', 'eggs', 'butter', 'tomatoes', 'sugar', 'milk', 'tea', 'pens', 'chocolate', 'coffee', 'juice', 'beer', 'cheese']
+
+['bread', 'cheese', 'tea']
+['coffee', 'coca-cola', 'honey', 'sugar', 'salt', 'chocolate', 'juice', 'pens', 'water', 'beer', 'pepper', 'eggs', 'tea', 'bread']
+['cheese', 'chocolate', 'bread', 'tea', 'milk', 'honey', 'pepper', 'sugar', 'pens', 'water', 'butter', 'beer', 'eggs', 'salt']
+
+['coca-cola', 'tea', 'water', 'chocolate', 'tomatoes', 'beer', 'butter', 'honey']
+['pepper', 'sugar', 'honey', 'chocolate', 'coca-cola', 'salt', 'bread', 'coffee', 'juice', 'pens', 'beer', 'butter', 'water', 'tomatoes']
+['juice', 'pens', 'sugar', 'beer', 'eggs', 'chocolate', 'tea', 'salt', 'coffee', 'tomatoes', 'bread', 'cheese']
+
+['beer', 'cheese', 'chocolate', 'sugar', 'salt', 'butter', 'tomatoes', 'milk', 'honey', 'juice', 'water']
+
+['cheese', 'eggs', 'pens', 'juice', 'honey', 'salt', 'water', 'butter', 'pepper', 'coca-cola', 'tomatoes', 'sugar']
+['chocolate', 'eggs', 'coffee', 'honey', 'pens', 'cheese']
+['eggs', 'tomatoes', 'juice', 'water', 'coca-cola', 'honey', 'tea', 'cheese']
+['coffee', 'cheese', 'milk', 'eggs', 'pens', 'coca-cola', 'salt', 'honey']
+['coffee', 'sugar', 'coca-cola', 'pens', 'cheese', 'tea']
+
+['pepper', 'tea', 'cheese', 'eggs', 'pens', 'honey', 'juice', 'sugar', 'tomatoes', 'coffee', 'milk', 'salt', 'coca-cola']
+['honey', 'juice', 'pens', 'coffee', 'tomatoes', 'tea', 'water', 'pepper', 'bread', 'beer', 'sugar']
+['pepper', 'bread', 'beer', 'sugar']
+['eggs', 'juice', 'coffee', 'pepper', 'chocolate', 'milk', 'sugar', 'water', 'tomatoes']
+['salt', 'juice', 'tea', 'bread', 'cheese', 'honey', 'milk', 'pens', 'coffee', 'butter', 'eggs', 'coca-cola']
+
+[]
+['chocolate', 'butter', 'juice', 'eggs', 'salt', 'tea', 'coffee', 'tomatoes', 'water', 'milk', 'cheese', 'beer']
+['sugar', 'bread', 'juice', 'pens', 'water', 'eggs', 'coffee', 'tea', 'coca-cola', 'cheese', 'chocolate', 'tomatoes', 'honey', 'beer', 'pepper', 'salt', 'milk', 'butter']
+['eggs', 'tomatoes', 'coffee', 'honey']
+['tomatoes', 'juice', 'eggs', 'pepper', 'salt', 'sugar', 'cheese', 'butter', 'chocolate', 'coca-cola', 'beer', 'water', 'honey', 'tea', 'bread', 'milk']
+
+[]
+['honey', 'coca-cola', 'salt', 'juice', 'beer', 'bread', 'butter', 'water', 'tea', 'tomatoes', 'coffee', 'pens', 'pepper', 'eggs', 'cheese']
+['salt', 'pepper', 'butter']
+['pepper', 'salt', 'coca-cola', 'eggs', 'butter', 'tomatoes', 'sugar', 'milk', 'tea', 'pens', 'chocolate', 'coffee', 'juice', 'beer', 'cheese']
+
+['honey', 'coca-cola', 'salt', 'juice', 'beer', 'bread', 'butter', 'water', 'tea', 'tomatoes', 'coffee', 'pens', 'pepper', 'eggs', 'cheese']
+['salt', 'pepper', 'butter', 'cheese', 'coffee']
+['pepper', 'salt', 'coca-cola', 'eggs', 'butter', 'tomatoes', 'sugar', 'milk', 'tea', 'pens', 'chocolate', 'coffee', 'juice', 'beer', 'cheese', 'water']
+
+[]
+['pepper', 'butter', 'sugar', 'honey', 'tea', 'pens', 'cheese', 'coffee', 'eggs', 'salt', 'water', 'milk', 'beer', 'tomatoes', 'bread', 'coca-cola', 'juice']
+
+['juice', 'honey', 'pens', 'coca-cola', 'eggs', 'pepper', 'coffee', 'water', 'cheese', 'sugar', 'tomatoes', 'chocolate', 'bread', 'beer']
+['chocolate', 'eggs', 'bread', 'juice', 'sugar', 'beer']
+[]
+
+['pepper', 'honey', 'butter', 'juice', 'pens', 'coffee', 'eggs', 'beer', 'salt', 'sugar']
+['chocolate']
+['tea', 'coffee', 'tomatoes', 'cheese', 'coca-cola', 'eggs', 'salt', 'milk', 'chocolate']
+[]
+['beer', 'honey', 'cheese', 'water', 'tea', 'salt', 'eggs', 'bread', 'coffee', 'sugar', 'coca-cola', 'chocolate', 'tomatoes', 'juice']
+
+[]
+['coffee', 'coca-cola', 'sugar']
+
+['pepper', 'butter', 'sugar', 'honey', 'tea', 'pens', 'cheese', 'coffee', 'eggs', 'salt', 'water', 'milk', 'beer', 'tomatoes', 'bread', 'coca-cola', 'juice']
+
+['juice', 'chocolate', 'pens', 'cheese', 'coffee', 'sugar', 'butter', 'beer', 'bread', 'salt', 'eggs', 'milk', 'tea', 'pepper']
+
+['cheese', 'sugar', 'pepper', 'tomatoes', 'coffee', 'bread', 'chocolate', 'milk', 'juice']
+['coca-cola', 'sugar', 'beer', 'coffee', 'juice', 'pens', 'water', 'salt', 'pepper', 'butter', 'milk', 'bread', 'chocolate', 'honey', 'tea', 'cheese', 'tomatoes', 'eggs']
+['water', 'bread', 'beer', 'cheese', 'sugar', 'pens', 'tea', 'butter', 'salt', 'tomatoes', 'chocolate', 'juice', 'coffee', 'eggs', 'honey', 'pepper', 'coca-cola', 'milk']
+['salt', 'juice', 'pepper', 'coca-cola', 'coffee']
+['pens', 'coca-cola', 'tea', 'milk', 'juice', 'tomatoes', 'water', 'salt', 'cheese', 'bread', 'beer', 'eggs', 'butter', 'sugar', 'honey', 'chocolate', 'coffee']
+
+['pens', 'coca-cola', 'pepper', 'chocolate']
+['salt', 'pens', 'eggs', 'tea', 'cheese', 'coca-cola', 'juice', 'tomatoes', 'beer', 'honey', 'water', 'chocolate', 'coffee', 'sugar', 'butter', 'bread', 'pepper', 'milk']
+['beer', 'milk', 'bread', 'pens', 'eggs']
+['eggs', 'beer', 'butter', 'pepper', 'coffee', 'water', 'salt']
+
+['sugar', 'chocolate', 'milk', 'tomatoes', 'water', 'bread']
+
+['sugar', 'beer', 'salt']
+['water', 'bread']
+[]
+
+['chocolate', 'butter', 'juice', 'eggs', 'salt', 'tea', 'coffee', 'tomatoes', 'water', 'milk', 'cheese']
+['sugar', 'bread', 'juice', 'pens', 'water', 'eggs', 'coffee', 'tea', 'coca-cola', 'cheese', 'chocolate', 'tomatoes', 'honey', 'beer', 'pepper', 'salt', 'milk', 'butter']
+['eggs', 'tomatoes', 'coffee', 'honey', 'bread']
+['tomatoes', 'juice', 'eggs', 'pepper', 'salt', 'sugar', 'cheese', 'butter', 'chocolate', 'coca-cola', 'beer', 'water', 'honey', 'tea', 'bread', 'milk']
+
+[]
+['tomatoes', 'eggs', 'tea', 'honey', 'pepper', 'water', 'pens', 'beer', 'butter', 'bread', 'sugar', 'milk']
+['honey', 'beer', 'tea', 'water', 'salt', 'pens', 'chocolate', 'juice', 'sugar', 'bread', 'eggs', 'coffee', 'coca-cola', 'butter', 'pepper']
+['juice', 'salt', 'milk', 'honey']
+['butter', 'eggs', 'honey', 'chocolate', 'beer', 'sugar', 'bread', 'tomatoes', 'coffee', 'juice', 'pens', 'milk', 'pepper', 'coca-cola', 'water']
+['honey', 'chocolate', 'sugar', 'tea', 'coca-cola', 'eggs', 'pepper', 'coffee', 'cheese', 'water', 'bread', 'beer', 'salt', 'butter']
+
+['juice', 'butter']
+['tomatoes', 'juice', 'salt', 'pepper', 'bread', 'sugar', 'milk', 'butter', 'pens', 'beer', 'honey', 'water']
+
+['water', 'eggs', 'coffee', 'milk', 'sugar', 'salt', 'coca-cola', 'beer', 'butter', 'honey']
+
+['cheese', 'sugar', 'pepper', 'tomatoes', 'coffee', 'bread', 'chocolate', 'milk', 'juice']
+['coca-cola', 'sugar', 'beer', 'coffee', 'juice', 'pens', 'water', 'salt', 'pepper', 'butter', 'milk', 'bread', 'chocolate', 'honey', 'tea', 'cheese', 'tomatoes', 'eggs']
+['water', 'bread', 'beer', 'cheese', 'sugar', 'pens', 'tea', 'butter', 'salt', 'tomatoes', 'chocolate', 'juice', 'coffee', 'eggs', 'honey', 'pepper', 'coca-cola', 'milk']
+['salt', 'juice', 'pepper', 'coca-cola', 'coffee']
+[]
+['pens', 'coca-cola', 'tea', 'milk', 'juice', 'tomatoes', 'water', 'salt', 'cheese', 'bread', 'beer', 'eggs', 'butter', 'sugar', 'honey', 'chocolate', 'coffee']
+
+['coca-cola', 'cheese', 'pepper', 'salt']
+['bread', 'eggs', 'butter', 'tomatoes', 'juice', 'cheese', 'coffee', 'tea', 'milk', 'honey']
+['sugar', 'honey', 'salt', 'pepper', 'juice', 'eggs', 'water', 'tea', 'beer']
+['butter', 'water', 'beer', 'milk', 'bread', 'salt', 'tea', 'chocolate', 'eggs', 'coca-cola', 'juice', 'honey', 'cheese', 'coffee', 'pens', 'pepper']
+['pepper', 'honey', 'bread', 'tomatoes', 'chocolate', 'eggs', 'juice', 'coffee', 'butter', 'coca-cola', 'tea', 'pens', 'water', 'sugar']
+
+[]
+[]
+['pepper', 'butter', 'sugar', 'honey', 'tea', 'pens', 'cheese', 'coffee', 'eggs', 'salt', 'water', 'milk', 'beer', 'tomatoes', 'bread', 'coca-cola', 'juice']
+
+['tea', 'sugar', 'salt', 'milk', 'pepper']
+['chocolate', 'sugar', 'juice', 'pepper', 'cheese']
+['tomatoes', 'coffee', 'eggs', 'chocolate', 'coca-cola', 'pens', 'water', 'beer', 'sugar', 'cheese', 'tea', 'butter']
+[]
+['pepper', 'beer', 'tomatoes', 'milk', 'pens', 'coca-cola', 'butter', 'eggs', 'honey', 'chocolate', 'tea']
+
+[]
+['juice', 'chocolate', 'milk', 'honey', 'coffee', 'sugar', 'eggs', 'tea', 'pens', 'salt', 'bread', 'cheese', 'beer', 'water']
+['coca-cola', 'pepper', 'eggs', 'chocolate', 'butter', 'coffee', 'bread', 'cheese', 'water', 'pens', 'juice', 'sugar', 'salt', 'beer', 'milk', 'honey', 'tomatoes', 'tea']
+['chocolate', 'tea', 'beer', 'juice', 'pepper', 'milk', 'eggs', 'sugar', 'coffee', 'bread', 'butter', 'tomatoes', 'honey', 'water']
+
+['juice', 'chocolate', 'pens', 'cheese', 'coffee', 'sugar', 'butter', 'beer', 'bread', 'salt', 'eggs', 'milk', 'tea', 'pepper', 'coca-cola']
+
+['coca-cola', 'juice', 'pepper', 'coffee', 'chocolate', 'beer', 'bread', 'cheese', 'pens', 'honey', 'water', 'tomatoes', 'butter', 'tea', 'salt']
+['pepper', 'honey', 'butter', 'juice', 'pens', 'coffee', 'eggs', 'beer', 'salt', 'sugar']
+['chocolate', 'beer']
+[]
+['tea', 'coffee', 'tomatoes', 'cheese', 'coca-cola', 'eggs', 'salt', 'milk', 'chocolate']
+['beer', 'honey', 'cheese', 'water', 'tea', 'salt', 'eggs', 'bread', 'coffee', 'sugar', 'coca-cola', 'chocolate', 'tomatoes', 'juice']
+
+['salt', 'honey', 'cheese', 'eggs', 'tea', 'chocolate', 'bread', 'pens', 'juice', 'butter', 'coffee']
+['salt', 'tomatoes', 'pepper', 'beer', 'chocolate', 'sugar', 'tea', 'coca-cola', 'juice']
+[]
+[]
+['cheese', 'honey', 'tea', 'coca-cola', 'juice', 'eggs', 'pens', 'milk', 'coffee', 'salt', 'bread']
+['cheese', 'water', 'coca-cola', 'sugar', 'salt', 'milk', 'juice', 'beer', 'tea', 'tomatoes', 'eggs', 'chocolate', 'pens']
+
+['chocolate', 'beer', 'sugar', 'butter', 'milk', 'tomatoes']
+['water', 'salt', 'cheese', 'bread', 'butter', 'sugar', 'tomatoes', 'milk', 'eggs', 'juice', 'coffee', 'tea', 'beer', 'honey', 'chocolate']
+['water', 'coffee', 'milk']
+['cheese', 'sugar', 'tea', 'milk', 'honey', 'bread', 'juice']
+['cheese', 'salt', 'bread', 'tea', 'milk', 'water', 'butter', 'honey', 'chocolate', 'beer', 'pepper', 'eggs', 'juice', 'sugar', 'pens', 'coca-cola', 'coffee', 'tomatoes']
+
+['coffee', 'cheese', 'sugar', 'beer', 'bread', 'tea', 'coca-cola', 'butter', 'eggs', 'water', 'chocolate', 'juice', 'pepper', 'salt', 'pens', 'honey']
+['eggs', 'milk', 'honey', 'bread', 'sugar', 'salt', 'butter', 'pepper', 'juice', 'tea', 'coca-cola', 'water', 'cheese', 'beer']
+['cheese', 'bread', 'eggs', 'pens', 'chocolate', 'water']
+['beer', 'coffee', 'sugar', 'tomatoes', 'bread', 'coca-cola', 'pens', 'juice', 'chocolate', 'salt', 'tea', 'eggs', 'milk', 'cheese', 'butter', 'pepper', 'honey', 'water']
+
+['cheese', 'sugar', 'pepper', 'tomatoes', 'coffee', 'bread', 'chocolate', 'milk', 'juice', 'beer']
+['coca-cola', 'sugar', 'beer', 'coffee', 'juice', 'pens', 'water', 'salt', 'pepper', 'butter', 'milk', 'bread', 'chocolate', 'honey', 'tea', 'cheese', 'tomatoes', 'eggs']
+['water', 'bread', 'beer', 'cheese', 'sugar', 'pens', 'tea', 'butter', 'salt', 'tomatoes', 'chocolate', 'juice', 'coffee', 'eggs', 'honey', 'pepper', 'coca-cola', 'milk']
+[]
+['salt', 'juice', 'pepper', 'coca-cola', 'coffee']
+[]
+['pens', 'coca-cola', 'tea', 'milk', 'juice', 'tomatoes', 'water', 'salt', 'cheese', 'bread', 'beer', 'eggs', 'butter', 'sugar', 'honey', 'chocolate', 'coffee']
+
+['bread', 'milk', 'pens', 'butter', 'honey', 'eggs', 'cheese', 'sugar', 'coffee', 'juice', 'coca-cola', 'pepper', 'chocolate', 'salt', 'tomatoes', 'tea']
+['beer', 'honey', 'tea', 'chocolate', 'bread', 'pens', 'water']
+['tea', 'tomatoes', 'pens', 'milk', 'water', 'honey', 'salt', 'chocolate']
+['coca-cola', 'salt', 'tea', 'water', 'pepper', 'sugar', 'butter', 'tomatoes', 'bread', 'cheese', 'milk', 'pens', 'juice', 'eggs', 'chocolate', 'coffee']
+
+[]
+['sugar', 'bread', 'honey', 'tea', 'tomatoes', 'milk', 'pens', 'coca-cola', 'beer']
+[]
+['sugar', 'tomatoes', 'bread', 'butter', 'juice', 'salt', 'beer', 'chocolate', 'coffee', 'honey', 'pens', 'eggs', 'water', 'tea', 'pepper']
+
+['salt', 'honey', 'cheese', 'eggs', 'tea', 'chocolate', 'bread', 'pens', 'juice', 'butter', 'coffee']
+['salt', 'tomatoes', 'pepper', 'beer', 'chocolate', 'sugar', 'tea', 'coca-cola', 'juice']
+['cheese', 'honey', 'tea', 'coca-cola', 'juice', 'eggs', 'pens', 'milk', 'coffee', 'salt', 'bread']
+['cheese', 'water', 'coca-cola', 'sugar', 'salt', 'milk', 'juice', 'beer', 'tea', 'tomatoes', 'eggs', 'chocolate', 'pens']
+
+['pepper', 'juice', 'coca-cola', 'sugar', 'milk']
+['honey', 'butter', 'beer', 'pepper', 'coffee', 'milk', 'water', 'bread', 'eggs', 'tomatoes', 'pens']
+['chocolate', 'water', 'coffee', 'honey', 'cheese', 'pepper', 'salt', 'juice', 'bread', 'sugar', 'butter', 'beer', 'milk']
+['bread']
+
+['pepper', 'eggs', 'sugar', 'coca-cola', 'honey', 'bread', 'tomatoes', 'pens', 'tea', 'beer', 'cheese', 'chocolate', 'water', 'juice', 'milk']
+['bread', 'honey', 'sugar', 'butter']
+
+['eggs', 'tomatoes', 'beer', 'salt', 'honey', 'coca-cola', 'chocolate', 'bread', 'pepper', 'sugar', 'cheese', 'tea', 'water', 'butter', 'milk', 'juice']
+['butter', 'bread', 'coffee', 'water', 'cheese', 'beer', 'tomatoes', 'coca-cola', 'salt', 'pepper', 'milk', 'tea', 'chocolate', 'sugar', 'honey']
+
+[]
+['milk', 'salt', 'coffee', 'eggs', 'honey', 'coca-cola', 'tomatoes', 'chocolate', 'cheese', 'tea', 'bread', 'butter', 'pens', 'sugar', 'beer']
+[]
+
+['bread', 'milk', 'pens', 'butter', 'honey', 'eggs', 'cheese', 'sugar', 'coffee', 'juice', 'coca-cola', 'pepper', 'chocolate', 'salt', 'tomatoes', 'tea']
+['beer', 'honey', 'tea', 'chocolate', 'bread', 'pens', 'water']
+['tea', 'tomatoes', 'pens', 'milk', 'water', 'honey', 'salt', 'chocolate']
+['coca-cola', 'salt', 'tea', 'water', 'pepper', 'sugar', 'butter', 'tomatoes', 'bread', 'cheese', 'milk', 'pens', 'juice', 'eggs', 'chocolate', 'coffee']
+
+['beer', 'coffee', 'honey']
+['sugar', 'water', 'salt', 'chocolate', 'tea', 'cheese', 'coffee', 'eggs', 'tomatoes', 'beer', 'honey', 'coca-cola']
+['pepper', 'tomatoes', 'beer', 'coca-cola', 'cheese', 'bread', 'butter', 'tea', 'juice', 'honey']
+
+['water', 'eggs', 'coffee', 'milk', 'sugar', 'salt', 'coca-cola', 'beer', 'butter']
+
+[]
+['salt', 'chocolate', 'beer', 'water', 'sugar', 'coca-cola', 'eggs']
+['water', 'chocolate', 'salt', 'butter', 'pens', 'beer', 'tomatoes']
+[]
+
+['salt', 'chocolate', 'beer', 'water', 'sugar', 'juice', 'eggs']
+['water', 'chocolate', 'salt', 'butter', 'pens', 'beer', 'tomatoes']
+
+[]
+[]
+['cheese', 'eggs', 'pens', 'juice', 'honey', 'salt', 'water', 'butter', 'pepper', 'coca-cola', 'tomatoes', 'sugar']
+['chocolate', 'eggs', 'coffee', 'honey', 'pens', 'cheese']
+['eggs', 'tomatoes', 'juice', 'water', 'coca-cola', 'honey', 'tea', 'cheese']
+['coffee', 'cheese', 'milk', 'eggs', 'pens', 'coca-cola', 'salt']
+['coffee', 'sugar', 'coca-cola', 'pens', 'cheese', 'tea']
+
+['bread', 'milk', 'pens', 'butter', 'honey', 'eggs', 'cheese', 'sugar', 'coffee', 'juice', 'coca-cola', 'pepper', 'chocolate', 'salt', 'tomatoes', 'tea']
+['beer', 'honey', 'tea', 'chocolate', 'bread', 'pens', 'water']
+['tea', 'tomatoes', 'pens', 'milk', 'water', 'honey', 'salt', 'chocolate']
+['coca-cola', 'salt', 'tea', 'water', 'pepper', 'sugar', 'butter', 'tomatoes', 'bread', 'cheese', 'milk', 'pens', 'juice', 'eggs', 'chocolate', 'coffee']
+
+['sugar', 'milk', 'coffee', 'water', 'pens', 'chocolate', 'honey', 'cheese', 'beer', 'tea', 'eggs', 'butter', 'juice', 'pepper', 'tomatoes']
+
+['salt', 'honey', 'pepper', 'chocolate', 'bread', 'milk', 'tea', 'cheese', 'butter']
+['tea', 'juice', 'beer', 'salt', 'pens', 'coca-cola']
+
+['sugar', 'beer', 'salt', 'tomatoes', 'coffee']
+['water', 'bread', 'tomatoes']
+
+['honey']
+['tomatoes', 'pens', 'chocolate']
+['pens', 'bread', 'chocolate', 'butter', 'cheese', 'water', 'coca-cola', 'coffee', 'milk', 'sugar', 'juice', 'pepper', 'tomatoes', 'eggs', 'salt', 'honey']
+['tomatoes', 'coffee', 'beer']
+['bread', 'beer', 'salt', 'pens', 'chocolate', 'eggs', 'juice', 'coffee', 'milk', 'tomatoes', 'honey', 'sugar']
+[]
+
+['bread', 'milk', 'pens', 'butter', 'honey', 'eggs', 'cheese', 'sugar', 'coffee', 'juice', 'coca-cola', 'pepper', 'chocolate', 'salt', 'tomatoes', 'tea']
+['beer', 'honey', 'tea', 'chocolate', 'bread', 'pens', 'water']
+['tea', 'tomatoes', 'pens', 'milk', 'water', 'honey', 'salt', 'chocolate', 'butter']
+['coca-cola', 'salt', 'tea', 'water', 'pepper', 'sugar', 'butter', 'tomatoes', 'bread', 'cheese', 'milk', 'pens', 'juice', 'eggs', 'chocolate', 'coffee']
+
+['salt', 'juice', 'coffee', 'cheese']
+
+['butter', 'coca-cola', 'beer', 'pens', 'chocolate', 'salt', 'pepper', 'eggs', 'sugar']
+['eggs', 'butter', 'tea', 'pepper', 'milk', 'sugar', 'cheese', 'pens', 'honey', 'tomatoes', 'bread']
+['pepper', 'water', 'eggs']
+
+['pens', 'pepper', 'beer', 'chocolate', 'sugar', 'coca-cola', 'eggs', 'tea']
+['sugar']
+
+['bread', 'beer', 'cheese', 'coffee', 'eggs', 'salt', 'tomatoes', 'pepper', 'sugar', 'butter', 'juice', 'honey', 'milk', 'water', 'chocolate', 'coca-cola', 'pens']
+['honey', 'tomatoes', 'eggs', 'water', 'pepper', 'tea', 'coca-cola', 'chocolate', 'cheese', 'salt', 'coffee']
+['pens', 'eggs', 'cheese', 'bread', 'juice', 'salt', 'pepper', 'sugar', 'honey']
+['cheese', 'pepper', 'bread', 'tomatoes', 'sugar', 'salt', 'tea']
+
+['bread', 'pens', 'butter', 'honey', 'milk']
+
+[]
+['tomatoes', 'beer', 'water', 'tea', 'coffee', 'pepper', 'cheese', 'honey', 'coca-cola', 'bread', 'chocolate', 'juice', 'milk', 'butter']
+['butter', 'pepper', 'tea', 'sugar', 'milk', 'pens', 'salt', 'bread', 'water', 'tomatoes', 'coffee']
+['milk', 'pepper']
+['eggs', 'honey', 'salt', 'chocolate', 'coffee', 'juice', 'pepper', 'beer', 'water', 'tea', 'butter', 'pens']
+['bread', 'sugar', 'eggs', 'tea', 'salt', 'milk', 'honey', 'beer']
+
+['water', 'tomatoes', 'eggs', 'tea', 'cheese', 'salt', 'coffee', 'bread', 'milk', 'butter', 'sugar', 'juice', 'beer', 'pepper', 'pens']
+['pepper', 'coca-cola', 'water', 'honey']
+['coca-cola', 'honey', 'pepper', 'butter', 'salt', 'sugar', 'milk', 'juice', 'water', 'beer']
+['coffee', 'milk', 'pepper', 'cheese', 'sugar', 'pens']
+
+['tomatoes', 'beer', 'water', 'tea', 'coffee', 'pepper', 'cheese', 'honey', 'coca-cola', 'bread', 'chocolate', 'juice', 'milk', 'butter']
+['butter', 'pepper', 'tea', 'sugar', 'milk', 'pens', 'salt', 'bread', 'water', 'tomatoes', 'coffee']
+['milk', 'pepper']
+['eggs', 'honey', 'salt', 'chocolate', 'coffee', 'juice', 'pepper', 'beer', 'water', 'tea', 'butter', 'pens']
+['bread', 'sugar', 'eggs', 'tea', 'salt', 'milk', 'honey']
+
+['cheese', 'tea', 'salt', 'tomatoes', 'pens', 'milk', 'beer', 'chocolate', 'bread']
+['beer', 'eggs', 'chocolate', 'water', 'coca-cola', 'milk', 'pens', 'pepper', 'salt', 'coffee', 'tea', 'tomatoes']
+['bread', 'coffee', 'sugar', 'cheese', 'coca-cola', 'chocolate', 'juice', 'pens', 'milk', 'tomatoes', 'butter', 'salt', 'honey', 'eggs']
+[]
+
+['tomatoes', 'beer', 'water', 'tea', 'coffee', 'pepper', 'cheese', 'honey', 'coca-cola', 'bread', 'chocolate', 'juice', 'milk', 'butter']
+['butter', 'pepper', 'tea', 'sugar', 'milk', 'pens', 'salt', 'bread', 'water', 'tomatoes', 'coffee']
+['milk', 'pepper', 'tea']
+['eggs', 'honey', 'salt', 'chocolate', 'coffee', 'juice', 'pepper', 'beer', 'water', 'tea', 'butter', 'pens']
+['bread', 'sugar', 'eggs', 'tea', 'salt', 'milk', 'honey']
+[]
+
+['juice', 'coffee', 'bread']
+['tomatoes', 'juice', 'salt', 'pepper', 'bread', 'sugar', 'milk', 'butter', 'pens', 'beer', 'honey', 'water']
+
+['pepper', 'sugar', 'beer', 'water', 'butter', 'salt', 'tomatoes', 'bread', 'pens', 'tea', 'coca-cola']
+['coffee', 'water', 'butter']
+['pepper', 'pens', 'honey', 'sugar', 'coca-cola', 'bread', 'butter', 'tea', 'coffee', 'salt', 'water', 'cheese', 'juice']
+
+[]
+['salt', 'juice', 'coffee', 'butter']
+
+['milk', 'juice', 'beer', 'honey', 'cheese', 'chocolate', 'tea']
+
+['tomatoes', 'honey', 'milk', 'coffee', 'salt', 'tea', 'chocolate', 'pepper', 'sugar', 'coca-cola']
+['juice']
+['milk', 'sugar', 'coffee', 'water', 'pens', 'bread', 'honey', 'salt', 'beer', 'cheese']
+
+['coca-cola', 'pepper', 'eggs', 'pens', 'coffee']
+['beer', 'milk', 'honey', 'pens', 'sugar', 'salt', 'butter', 'cheese', 'juice', 'water', 'eggs', 'coffee', 'coca-cola']
+['eggs', 'salt', 'tomatoes', 'honey']
+
+['pepper', 'bread', 'salt', 'sugar', 'tea', 'juice', 'tomatoes', 'eggs', 'coffee', 'pens', 'chocolate', 'cheese']
+['honey', 'tomatoes', 'eggs', 'water', 'butter', 'tea', 'salt', 'beer', 'coffee', 'chocolate', 'milk', 'coca-cola', 'sugar', 'juice', 'bread', 'cheese', 'pepper']
+
+['eggs', 'tomatoes', 'tea', 'beer', 'milk', 'honey']
+['pepper', 'tea', 'milk', 'chocolate', 'juice', 'salt', 'butter']
+[]
+
+['water', 'tea', 'tomatoes', 'beer', 'juice', 'salt', 'bread', 'sugar', 'coffee', 'chocolate', 'butter']
+['tomatoes', 'honey', 'milk', 'coffee', 'salt', 'tea', 'chocolate', 'pepper', 'sugar', 'coca-cola']
+[]
+['juice']
+['milk', 'sugar', 'coffee', 'water', 'pens', 'bread', 'honey', 'salt', 'beer', 'cheese']
+
+['chocolate', 'butter', 'coffee', 'water', 'coca-cola', 'tea', 'beer', 'milk', 'honey', 'pepper', 'sugar', 'eggs', 'pens', 'tomatoes', 'bread', 'salt', 'juice']
+['beer', 'bread', 'coca-cola', 'sugar', 'pepper', 'pens', 'water', 'eggs', 'tomatoes', 'salt', 'cheese', 'tea', 'honey', 'milk', 'chocolate', 'butter', 'juice', 'coffee']
+[]
+
+['coffee', 'cheese', 'sugar', 'beer', 'bread', 'tea', 'coca-cola', 'butter', 'eggs', 'water', 'chocolate', 'juice', 'pepper', 'salt', 'pens', 'honey']
+['eggs', 'milk', 'honey', 'bread', 'sugar', 'salt', 'butter', 'pepper', 'juice', 'tea', 'coca-cola', 'water', 'cheese', 'beer']
+['cheese', 'bread', 'eggs', 'pens', 'chocolate', 'water']
+[]
+['beer', 'coffee', 'sugar', 'tomatoes', 'bread', 'coca-cola', 'pens', 'juice', 'chocolate', 'salt', 'tea', 'eggs', 'milk', 'cheese', 'butter', 'pepper', 'honey', 'water']
+
+[]
+['honey', 'coca-cola', 'salt', 'juice', 'beer', 'bread', 'butter', 'water', 'tea', 'tomatoes', 'coffee', 'pens', 'pepper', 'eggs', 'cheese']
+['salt', 'pepper', 'butter', 'bread']
+['pepper', 'salt', 'coca-cola', 'eggs', 'butter', 'tomatoes', 'sugar', 'milk', 'tea', 'pens', 'chocolate', 'coffee', 'juice', 'beer', 'cheese']
+
+['tomatoes', 'bread', 'milk', 'chocolate', 'cheese', 'beer', 'sugar', 'tea', 'butter', 'coca-cola', 'pepper', 'pens']
+['pepper', 'coca-cola', 'tea', 'coffee', 'salt']
+
+['coca-cola', 'salt', 'tomatoes', 'tea', 'beer', 'coffee', 'bread']
+
+['eggs', 'tomatoes', 'tea', 'beer', 'milk', 'honey']
+['pepper', 'tea', 'milk', 'chocolate', 'juice', 'salt', 'coffee']
+
+['beer', 'honey', 'tea', 'tomatoes', 'milk', 'juice', 'butter', 'coca-cola', 'coffee', 'chocolate', 'water', 'cheese', 'salt', 'pens', 'pepper', 'sugar', 'bread', 'eggs']
+
+['salt', 'honey', 'cheese', 'eggs', 'tea', 'chocolate', 'bread', 'pens', 'juice', 'butter', 'coffee']
+['salt', 'tomatoes', 'pepper', 'beer', 'chocolate', 'sugar', 'tea', 'coca-cola', 'juice']
+[]
+[]
+['cheese', 'honey', 'tea', 'coca-cola', 'juice', 'eggs', 'pens', 'milk', 'coffee', 'salt', 'bread']
+['cheese', 'water', 'coca-cola', 'sugar', 'salt', 'milk', 'juice', 'beer', 'tea', 'tomatoes', 'eggs', 'chocolate', 'pens']
+
+['tomatoes', 'sugar', 'bread', 'pens', 'juice', 'beer', 'chocolate']
+
+[]
+['sugar', 'beer', 'salt']
+['water', 'bread', 'honey']
+
+['bread', 'coffee', 'water', 'coca-cola', 'tomatoes', 'juice', 'pens', 'salt', 'butter', 'chocolate']
+['pens', 'chocolate', 'milk', 'honey', 'beer', 'coca-cola', 'cheese', 'tomatoes', 'butter', 'bread', 'pepper', 'eggs', 'juice', 'salt', 'coffee', 'tea']
+['tea', 'pens', 'sugar', 'coca-cola', 'bread', 'beer', 'chocolate']
+['salt', 'juice', 'pens', 'water', 'honey', 'beer', 'chocolate', 'bread', 'cheese', 'sugar']
+
+['sugar', 'cheese', 'pens']
+[]
+
+['juice', 'cheese']
+['tomatoes', 'juice', 'salt', 'pepper', 'bread', 'sugar', 'milk', 'butter', 'pens', 'beer', 'honey', 'water', 'coffee']
+
+['salt', 'honey', 'pepper', 'chocolate', 'bread', 'milk', 'tea', 'cheese', 'butter']
+['tea', 'juice', 'beer', 'salt', 'pens', 'coca-cola', 'honey', 'eggs']
+
+['honey', 'coca-cola', 'salt', 'juice', 'beer', 'bread', 'butter', 'water', 'tea', 'tomatoes', 'coffee', 'pens', 'pepper', 'eggs', 'cheese']
+['salt', 'pepper', 'butter', 'sugar', 'coca-cola']
+['pepper', 'salt', 'coca-cola', 'eggs', 'butter', 'tomatoes', 'sugar', 'milk', 'tea', 'pens', 'chocolate', 'coffee', 'juice', 'beer', 'cheese', 'bread']
+
+['sugar']
+['juice', 'water', 'milk', 'eggs', 'bread', 'cheese', 'tomatoes', 'sugar', 'pens', 'tea', 'coca-cola', 'pepper', 'butter', 'honey', 'chocolate', 'coffee', 'beer', 'salt']
+['coffee', 'cheese', 'juice', 'milk', 'honey', 'pens', 'water', 'chocolate', 'sugar', 'coca-cola']
+['eggs', 'butter', 'beer', 'coffee', 'bread', 'chocolate', 'pens', 'coca-cola', 'tea', 'cheese', 'honey', 'tomatoes', 'water', 'milk', 'salt']
+
+['honey', 'salt', 'tomatoes', 'tea']
+['sugar', 'pens', 'juice', 'salt', 'tomatoes', 'cheese', 'honey', 'bread', 'coca-cola', 'water']
+['coffee', 'chocolate', 'eggs', 'sugar', 'bread', 'salt', 'tea']
+['cheese']
+[]
+
+[]
+[]
+['bread', 'pens', 'butter', 'honey', 'salt']
+
+['tea', 'milk', 'beer', 'cheese', 'butter', 'salt', 'eggs', 'bread', 'water']
+['coffee', 'butter', 'bread', 'cheese', 'coca-cola', 'milk', 'eggs', 'sugar', 'pepper', 'water']
+['beer', 'tea', 'juice', 'butter', 'water', 'pens']
+['pepper', 'sugar', 'milk', 'water', 'butter', 'chocolate', 'tomatoes', 'juice', 'coffee', 'coca-cola', 'bread']
+
+[]
+['tomatoes', 'coffee', 'honey', 'butter']
+['water', 'honey', 'tea', 'salt', 'sugar', 'milk', 'pepper', 'eggs', 'chocolate', 'pens', 'tomatoes', 'juice', 'cheese', 'bread']
+
+[]
+['milk', 'salt', 'coffee', 'eggs', 'honey', 'coca-cola', 'tomatoes', 'chocolate', 'cheese', 'tea', 'bread', 'butter', 'pens', 'sugar', 'beer', 'juice']
+[]
+
+['tomatoes', 'tea', 'coca-cola', 'cheese', 'water', 'milk', 'honey', 'coffee', 'eggs', 'pens', 'sugar', 'chocolate', 'juice']
+[]
+['pepper', 'cheese', 'tomatoes', 'chocolate', 'bread', 'beer', 'eggs', 'honey', 'butter', 'juice', 'pens', 'water']
+['juice', 'coca-cola', 'chocolate', 'pens', 'tea', 'coffee', 'honey', 'beer']
+['beer', 'pens', 'coca-cola']
+['tomatoes', 'beer']
+
+['cheese', 'sugar', 'pepper', 'tomatoes', 'coffee', 'bread', 'chocolate', 'milk', 'juice']
+['coca-cola', 'sugar', 'beer', 'coffee', 'juice', 'pens', 'water', 'salt', 'pepper', 'butter', 'milk', 'bread', 'chocolate', 'honey', 'tea', 'cheese', 'tomatoes', 'eggs']
+['water', 'bread', 'beer', 'cheese', 'sugar', 'pens', 'tea', 'butter', 'salt', 'tomatoes', 'chocolate', 'juice', 'coffee', 'eggs', 'honey', 'pepper', 'coca-cola', 'milk']
+['salt', 'juice', 'pepper', 'coca-cola', 'coffee', 'chocolate', 'tea', 'butter']
+['pens', 'coca-cola', 'tea', 'milk', 'juice', 'tomatoes', 'water', 'salt', 'cheese', 'bread', 'beer', 'eggs', 'butter', 'sugar', 'honey', 'chocolate', 'coffee']
+
+['chocolate', 'butter', 'juice', 'eggs', 'salt', 'tea', 'coffee', 'tomatoes', 'water', 'milk', 'cheese']
+['sugar', 'bread', 'juice', 'pens', 'water', 'eggs', 'coffee', 'tea', 'coca-cola', 'cheese', 'chocolate', 'tomatoes', 'honey', 'beer', 'pepper', 'salt', 'milk', 'butter']
+['eggs', 'tomatoes', 'coffee', 'honey']
+['tomatoes', 'juice', 'eggs', 'pepper', 'salt', 'sugar', 'cheese', 'butter', 'chocolate', 'coca-cola', 'beer', 'water', 'honey', 'tea', 'bread', 'milk']
+
+['tomatoes', 'tea', 'coca-cola', 'cheese', 'water', 'milk', 'honey', 'coffee', 'eggs', 'pens', 'sugar', 'chocolate']
+['pepper', 'cheese', 'tomatoes', 'chocolate', 'bread', 'beer', 'eggs', 'honey', 'butter', 'juice', 'pens', 'water']
+['juice', 'coca-cola', 'chocolate', 'pens', 'tea', 'coffee', 'honey', 'beer']
+['beer', 'pens', 'coffee']
+['tomatoes', 'beer']
+
+['salt', 'juice', 'coffee', 'cheese']
+[]
+
+['beer', 'coca-cola', 'water', 'honey', 'chocolate', 'tea', 'pepper', 'coffee', 'milk', 'sugar', 'cheese', 'tomatoes', 'salt', 'juice', 'butter', 'pens', 'bread', 'eggs']
+
+['water', 'honey', 'tomatoes', 'cheese', 'chocolate', 'juice', 'pens', 'sugar', 'coca-cola', 'tea', 'salt']
+['chocolate', 'coffee', 'juice', 'salt', 'eggs', 'butter', 'beer', 'honey', 'tomatoes']
+['honey', 'beer', 'salt']
+['beer', 'eggs', 'coca-cola', 'pepper', 'milk', 'bread', 'tomatoes', 'sugar', 'coffee', 'pens', 'honey', 'salt', 'chocolate', 'tea', 'butter', 'juice']
+
+['eggs', 'pens', 'water', 'coca-cola', 'cheese', 'coffee', 'pepper']
+['coffee', 'pepper', 'salt', 'water', 'juice', 'tomatoes', 'eggs', 'pens', 'coca-cola', 'tea', 'beer']
+
+['coca-cola', 'coffee']
+['tomatoes', 'salt', 'sugar', 'pepper', 'coffee', 'chocolate', 'eggs', 'cheese', 'water', 'milk', 'honey', 'tea', 'juice', 'pens']
+['salt', 'pepper', 'cheese', 'tea', 'coffee', 'sugar', 'honey', 'water', 'eggs', 'milk', 'butter', 'bread', 'beer']
+[]
+['salt', 'beer', 'tomatoes', 'coca-cola', 'cheese', 'bread', 'honey', 'butter']
+
+['tomatoes', 'tea', 'coca-cola', 'cheese', 'water', 'milk', 'honey', 'coffee', 'eggs', 'pens', 'sugar', 'chocolate']
+['pepper', 'cheese', 'tomatoes', 'chocolate', 'bread', 'beer', 'eggs', 'honey', 'butter', 'juice', 'pens', 'water']
+['juice', 'coca-cola', 'chocolate', 'pens', 'tea', 'coffee', 'honey', 'beer']
+['beer', 'pens']
+['tomatoes', 'beer', 'pepper', 'coca-cola']
+
+[]
+['sugar', 'eggs', 'tomatoes', 'chocolate', 'water', 'bread', 'milk', 'salt', 'honey', 'cheese', 'butter', 'pepper', 'coffee', 'pens', 'tea', 'juice']
+['tomatoes', 'pens', 'honey', 'coca-cola', 'beer', 'juice', 'water', 'coffee', 'tea', 'eggs', 'pepper', 'cheese', 'sugar', 'butter', 'salt', 'milk', 'chocolate']
+['tomatoes', 'sugar', 'eggs', 'coca-cola', 'beer', 'pepper', 'juice', 'milk', 'cheese', 'tea', 'water', 'chocolate', 'coffee', 'butter', 'honey', 'pens']
+['juice', 'bread', 'pens', 'milk', 'tomatoes', 'beer', 'coca-cola', 'chocolate', 'pepper', 'honey', 'water', 'salt', 'tea', 'cheese', 'eggs', 'sugar']
+['butter', 'beer', 'tea', 'coca-cola', 'pens', 'sugar', 'salt', 'water', 'tomatoes', 'juice', 'chocolate']
+
+['chocolate', 'butter', 'coffee', 'water', 'coca-cola', 'tea', 'beer', 'milk', 'honey', 'pepper', 'sugar', 'eggs', 'pens', 'tomatoes', 'bread', 'salt', 'juice']
+['beer', 'bread', 'coca-cola', 'sugar', 'pepper', 'pens', 'water', 'eggs', 'tomatoes', 'salt', 'cheese', 'tea', 'honey', 'milk', 'chocolate', 'butter', 'juice', 'coffee']
+[]
+
+['juice', 'honey', 'pens', 'coca-cola', 'eggs', 'pepper', 'coffee', 'water', 'cheese', 'sugar', 'tomatoes', 'chocolate', 'bread', 'beer']
+[]
+['chocolate', 'eggs', 'bread', 'juice', 'sugar', 'beer', 'honey', 'tea']
+
+
+['salt', 'chocolate', 'beer', 'water', 'sugar']
+['water', 'chocolate', 'salt', 'butter', 'pens', 'beer', 'tomatoes', 'tea']
+
+['salt', 'juice', 'coffee']
+
+['milk', 'bread', 'juice', 'coffee', 'tomatoes', 'honey', 'sugar', 'beer', 'salt', 'pens', 'butter', 'pepper', 'chocolate', 'cheese', 'coca-cola', 'eggs', 'water', 'tea']
+['water', 'eggs', 'coffee', 'pens', 'bread', 'tea', 'sugar', 'milk', 'chocolate', 'coca-cola', 'honey', 'juice']
+[]
+
+[]
+['milk', 'juice', 'beer', 'honey', 'cheese', 'chocolate', 'tea', 'pens']
+
+[]
+['salt', 'pens', 'coca-cola', 'butter', 'sugar']
+
+['juice', 'honey', 'butter', 'tomatoes', 'tea', 'chocolate', 'cheese', 'milk', 'coffee', 'bread', 'beer', 'coca-cola', 'pepper', 'water', 'eggs']
+['tomatoes', 'pens', 'juice']
+['beer', 'cheese', 'salt', 'water']
+[]
+['bread', 'honey', 'cheese', 'chocolate', 'pepper', 'milk', 'water', 'tomatoes', 'salt', 'pens', 'coffee', 'eggs', 'sugar', 'coca-cola', 'tea', 'juice', 'beer', 'butter']
+['eggs', 'coca-cola', 'milk', 'salt', 'juice', 'water', 'bread', 'tomatoes', 'tea', 'pens', 'sugar', 'cheese', 'butter', 'chocolate']
+
+['chocolate', 'butter', 'juice', 'eggs', 'salt', 'tea', 'coffee', 'tomatoes', 'water', 'milk', 'cheese']
+['sugar', 'bread', 'juice', 'pens', 'water', 'eggs', 'coffee', 'tea', 'coca-cola', 'cheese', 'chocolate', 'tomatoes', 'honey', 'beer', 'pepper', 'salt', 'milk', 'butter']
+['eggs', 'tomatoes', 'coffee', 'honey']
+['tomatoes', 'juice', 'eggs', 'pepper', 'salt', 'sugar', 'cheese', 'butter', 'chocolate', 'coca-cola', 'beer', 'water', 'honey', 'tea', 'bread', 'milk']
+
+['coca-cola', 'tea', 'water', 'chocolate', 'tomatoes', 'beer', 'butter', 'sugar']
+['pepper', 'sugar', 'honey', 'chocolate', 'coca-cola', 'salt', 'bread', 'coffee', 'juice', 'pens', 'beer', 'butter', 'water', 'tomatoes']
+['juice', 'pens', 'sugar', 'beer', 'eggs', 'chocolate', 'tea', 'salt', 'coffee', 'tomatoes', 'bread', 'cheese', 'honey']
+
+['chocolate', 'butter', 'coffee', 'water', 'coca-cola', 'tea', 'beer', 'milk', 'honey', 'pepper', 'sugar', 'eggs', 'pens', 'tomatoes', 'bread', 'salt', 'juice']
+['beer', 'bread', 'coca-cola', 'sugar', 'pepper', 'pens', 'water', 'eggs', 'tomatoes', 'salt', 'cheese', 'tea', 'honey', 'milk', 'chocolate', 'butter', 'juice', 'coffee']
+
+['tea', 'pepper', 'bread', 'cheese', 'honey', 'sugar', 'eggs', 'coca-cola', 'milk', 'juice', 'coffee', 'pens', 'beer']
+['pepper', 'coffee', 'chocolate', 'tea', 'juice', 'beer', 'milk', 'cheese', 'salt', 'honey', 'eggs', 'bread', 'pens', 'tomatoes']
+[]
+['sugar', 'coca-cola', 'bread', 'milk', 'butter', 'juice', 'coffee', 'tea', 'eggs', 'chocolate', 'cheese', 'water', 'pepper', 'beer', 'salt']
+['bread', 'butter', 'eggs', 'tomatoes', 'sugar', 'coffee', 'pens', 'water', 'honey', 'milk', 'chocolate', 'coca-cola', 'juice', 'salt']
+['coca-cola', 'pepper', 'eggs', 'milk', 'beer', 'honey', 'water']
+
+[]
+['tomatoes', 'beer', 'water', 'tea', 'coffee', 'pepper', 'cheese', 'honey', 'coca-cola', 'bread', 'chocolate', 'juice', 'milk', 'butter']
+['milk', 'pepper', 'honey']
+['eggs', 'honey', 'salt', 'chocolate', 'coffee', 'juice', 'pepper', 'beer', 'water', 'tea', 'butter', 'pens']
+['bread', 'sugar', 'eggs', 'tea', 'salt', 'milk', 'honey']
+
+['eggs', 'tea', 'juice', 'cheese', 'coffee', 'milk', 'chocolate', 'honey', 'beer', 'sugar', 'water', 'pepper', 'pens', 'tomatoes', 'salt', 'bread', 'butter']
+['chocolate', 'eggs', 'cheese', 'milk', 'bread', 'beer', 'juice', 'water', 'sugar', 'butter', 'salt', 'pens', 'tomatoes', 'pepper', 'coffee', 'coca-cola', 'tea', 'honey']
+
+[]
+['tomatoes', 'tea', 'coca-cola', 'cheese', 'water', 'milk', 'honey', 'coffee', 'eggs', 'pens', 'sugar', 'chocolate', 'bread']
+['juice', 'coca-cola', 'chocolate', 'pens', 'tea', 'coffee', 'honey', 'beer']
+['beer', 'pens']
+['tomatoes', 'beer']
+
+['juice', 'honey', 'butter', 'tomatoes', 'tea', 'chocolate', 'cheese', 'milk', 'coffee', 'bread', 'beer', 'coca-cola', 'pepper', 'water', 'eggs']
+['tomatoes', 'pens', 'juice']
+[]
+['beer', 'cheese', 'salt', 'water']
+['bread', 'honey', 'cheese', 'chocolate', 'pepper', 'milk', 'water', 'tomatoes', 'salt', 'pens', 'coffee', 'eggs', 'sugar', 'coca-cola', 'tea', 'juice', 'beer', 'butter']
+['eggs', 'coca-cola', 'milk', 'salt', 'juice', 'water', 'bread', 'tomatoes', 'tea', 'pens', 'sugar', 'cheese', 'butter', 'chocolate']
+
+['tea', 'milk', 'cheese', 'butter', 'pepper', 'beer', 'pens', 'juice', 'water', 'coca-cola', 'sugar', 'honey']
+['juice', 'tomatoes', 'pepper', 'butter', 'beer']
+['milk', 'pens', 'honey', 'coffee', 'cheese', 'butter', 'coca-cola', 'tomatoes', 'juice', 'beer', 'water', 'bread']
+['pepper', 'coffee', 'beer', 'water', 'milk', 'pens', 'juice', 'coca-cola']
+['milk', 'coca-cola', 'eggs', 'beer', 'water', 'cheese', 'butter', 'salt', 'tomatoes', 'honey']
+
+['bread', 'coffee', 'water', 'coca-cola', 'tomatoes', 'juice', 'pens', 'salt', 'butter', 'chocolate']
+['pens', 'chocolate', 'milk', 'honey', 'beer', 'coca-cola', 'cheese', 'tomatoes', 'butter', 'bread', 'pepper', 'eggs', 'juice', 'salt', 'coffee', 'tea']
+['tea', 'pens', 'sugar', 'coca-cola', 'bread', 'beer', 'chocolate']
+['salt', 'juice', 'pens', 'water', 'honey', 'beer', 'chocolate', 'bread', 'cheese', 'sugar']
+
+['pens', 'coca-cola', 'salt', 'chocolate', 'tea', 'water', 'juice', 'honey', 'tomatoes', 'butter']
+['coffee', 'chocolate', 'cheese', 'juice', 'sugar', 'honey', 'butter', 'pepper', 'milk', 'coca-cola', 'water', 'eggs', 'beer', 'bread', 'tea', 'pens', 'salt', 'tomatoes']
+['pepper', 'beer', 'chocolate', 'coffee', 'tea', 'cheese', 'honey', 'tomatoes', 'salt', 'juice']
+[]
+
+[]
+['honey']
+['tomatoes', 'pens', 'chocolate', 'milk']
+[]
+['pens', 'bread', 'chocolate', 'butter', 'cheese', 'water', 'coca-cola', 'coffee', 'milk', 'sugar', 'juice', 'pepper', 'tomatoes', 'eggs', 'salt', 'honey']
+['tomatoes', 'coffee', 'beer']
+['bread', 'beer', 'salt', 'pens', 'chocolate', 'eggs', 'juice', 'coffee', 'milk', 'tomatoes', 'honey', 'sugar']
+
+[]
+['beer', 'coca-cola', 'water', 'honey', 'chocolate', 'tea', 'pepper', 'coffee', 'milk', 'sugar', 'cheese', 'tomatoes', 'salt', 'juice', 'butter', 'pens', 'bread', 'eggs']
+
+['pepper', 'bread', 'salt', 'sugar', 'tea', 'juice', 'tomatoes', 'eggs', 'coffee', 'pens', 'chocolate', 'cheese']
+['honey', 'tomatoes', 'eggs', 'water', 'butter', 'tea', 'salt', 'beer', 'coffee', 'chocolate', 'milk', 'coca-cola', 'sugar', 'juice', 'bread', 'cheese', 'pepper']
+
+['honey', 'salt', 'tomatoes', 'tea']
+['sugar', 'pens', 'juice', 'salt', 'tomatoes', 'cheese', 'honey', 'bread', 'coca-cola', 'water']
+['coffee', 'chocolate', 'eggs', 'sugar', 'bread', 'salt', 'tea']
+['cheese']
+
+['coca-cola', 'cheese', 'pepper', 'salt']
+['bread', 'eggs', 'butter', 'tomatoes', 'juice', 'cheese', 'coffee', 'tea', 'milk', 'honey']
+['sugar', 'honey', 'salt', 'pepper', 'juice', 'eggs', 'water', 'tea', 'beer']
+['butter', 'water', 'beer', 'milk', 'bread', 'salt', 'tea', 'chocolate', 'eggs', 'coca-cola', 'juice', 'honey', 'cheese', 'coffee', 'pens', 'pepper']
+['pepper', 'honey', 'bread', 'tomatoes', 'chocolate', 'eggs', 'juice', 'coffee', 'butter', 'coca-cola', 'tea', 'pens', 'water', 'sugar']
+
+[]
+['sugar', 'milk', 'coffee', 'water', 'pens', 'chocolate', 'honey', 'cheese', 'beer', 'tea', 'eggs', 'butter', 'juice', 'pepper', 'tomatoes']
+
+['pepper', 'cheese', 'coca-cola', 'milk', 'juice', 'beer', 'pens', 'water', 'coffee', 'eggs', 'butter', 'bread']
+['coffee', 'honey', 'eggs', 'coca-cola', 'tomatoes', 'pepper', 'cheese', 'bread', 'salt', 'sugar', 'tea', 'beer', 'pens', 'milk', 'chocolate']
+['tomatoes', 'milk', 'coffee', 'coca-cola', 'salt', 'beer', 'eggs', 'water']
+
+['pens', 'pepper', 'beer', 'chocolate', 'sugar', 'coca-cola', 'eggs', 'tea', 'bread']
+['sugar', 'juice', 'eggs']
+
+[]
+['tomatoes', 'coffee', 'honey']
+['water', 'honey', 'tea', 'salt', 'sugar', 'milk', 'pepper', 'eggs', 'chocolate', 'pens', 'tomatoes', 'juice', 'cheese', 'bread']
+
+['honey']
+['tomatoes', 'pens', 'chocolate']
+['pens', 'bread', 'chocolate', 'butter', 'cheese', 'water', 'coca-cola', 'coffee', 'milk', 'sugar', 'juice', 'pepper', 'tomatoes', 'eggs', 'salt', 'honey']
+['tomatoes', 'coffee', 'beer']
+['bread', 'beer', 'salt', 'pens', 'chocolate', 'eggs', 'juice', 'coffee', 'milk', 'tomatoes', 'honey', 'sugar']
+
+['eggs', 'tomatoes', 'beer', 'salt', 'honey', 'coca-cola', 'chocolate', 'bread', 'pepper', 'sugar', 'cheese', 'tea', 'water', 'butter', 'milk', 'juice']
+['butter', 'bread', 'coffee', 'water', 'cheese', 'beer', 'tomatoes', 'coca-cola', 'salt', 'pepper', 'milk', 'tea', 'chocolate', 'sugar', 'honey']
+
+
+['juice', 'honey', 'tea', 'beer', 'pens', 'pepper', 'bread', 'coca-cola', 'butter', 'milk']
+['honey']
+['coffee', 'pens', 'pepper', 'beer', 'honey', 'salt', 'juice', 'tomatoes', 'coca-cola', 'cheese', 'bread', 'eggs']
+['milk', 'water', 'tea']
+['water', 'pens', 'tea']
+
+['beer', 'cheese', 'chocolate', 'sugar', 'salt', 'butter', 'tomatoes', 'milk', 'honey', 'juice', 'water']
+
+['juice', 'chocolate', 'milk', 'honey', 'coffee', 'sugar', 'eggs', 'tea', 'pens', 'salt', 'bread', 'cheese', 'beer', 'water', 'coca-cola']
+['coca-cola', 'pepper', 'eggs', 'chocolate', 'butter', 'coffee', 'bread', 'cheese', 'water', 'pens', 'juice', 'sugar', 'salt', 'beer', 'milk', 'honey', 'tomatoes', 'tea']
+['chocolate', 'tea', 'beer', 'juice', 'pepper', 'milk', 'eggs', 'sugar', 'coffee', 'bread', 'butter', 'tomatoes', 'honey', 'water']
+
+['eggs', 'tea', 'juice', 'cheese', 'coffee', 'milk', 'chocolate', 'honey', 'beer', 'sugar', 'water', 'pepper', 'pens', 'tomatoes', 'salt', 'bread', 'butter']
+['beer', 'pepper', 'coca-cola', 'milk', 'salt', 'eggs', 'coffee', 'chocolate', 'water', 'tea', 'pens', 'cheese', 'sugar', 'tomatoes', 'bread', 'butter', 'juice', 'honey']
+[]
+['chocolate', 'eggs', 'cheese', 'milk', 'bread', 'beer', 'juice', 'water', 'sugar', 'butter', 'salt', 'pens', 'tomatoes', 'pepper', 'coffee', 'coca-cola', 'tea', 'honey']
+
+['tomatoes', 'beer', 'water', 'tea', 'coffee', 'pepper', 'cheese', 'honey', 'coca-cola', 'bread', 'chocolate', 'juice', 'milk', 'butter']
+['butter', 'pepper', 'tea', 'sugar', 'milk', 'pens', 'salt', 'bread', 'water', 'tomatoes', 'coffee']
+['milk', 'pepper']
+['eggs', 'honey', 'salt', 'chocolate', 'coffee', 'juice', 'pepper', 'beer', 'water', 'tea', 'butter', 'pens']
+['bread', 'sugar', 'eggs', 'tea', 'salt', 'milk', 'honey', 'water']
+
+['juice', 'chocolate', 'pens', 'cheese', 'coffee', 'sugar', 'butter', 'beer', 'bread', 'salt', 'eggs', 'milk', 'tea', 'pepper']
+
+['pepper', 'juice', 'coca-cola', 'sugar', 'milk']
+['honey', 'butter', 'beer', 'pepper', 'coffee', 'milk', 'water', 'bread', 'eggs', 'tomatoes']
+['chocolate', 'water', 'coffee', 'honey', 'cheese', 'pepper', 'salt', 'juice', 'bread', 'sugar', 'butter', 'beer', 'milk', 'tomatoes']
+['bread']
+
+['tomatoes', 'sugar', 'water', 'honey', 'salt', 'juice', 'beer', 'pepper', 'pens']
+['chocolate', 'cheese', 'bread']
+['juice', 'tea', 'salt']
+
+['tea', 'pepper', 'bread', 'cheese', 'honey', 'sugar', 'eggs', 'coca-cola', 'milk', 'juice', 'coffee', 'pens', 'beer', 'salt']
+['pepper', 'coffee', 'chocolate', 'tea', 'juice', 'beer', 'milk', 'cheese', 'salt', 'honey', 'eggs', 'bread', 'pens', 'tomatoes']
+['sugar', 'coca-cola', 'bread', 'milk', 'butter', 'juice', 'coffee', 'tea', 'eggs', 'chocolate', 'cheese', 'water', 'pepper', 'beer', 'salt']
+[]
+['bread', 'butter', 'eggs', 'tomatoes', 'sugar', 'coffee', 'pens', 'water', 'honey', 'milk', 'chocolate', 'coca-cola', 'juice', 'salt', 'beer']
+['coca-cola', 'pepper', 'eggs', 'milk', 'beer', 'honey', 'water']
+
+[]
+['cheese', 'pens', 'tomatoes', 'honey', 'sugar', 'eggs', 'pepper', 'water', 'milk', 'beer', 'salt', 'juice', 'tea']
+[]
+
+[]
+[]
+['sugar']
+['juice', 'water', 'milk', 'eggs', 'bread', 'cheese', 'tomatoes', 'sugar', 'pens', 'tea', 'coca-cola', 'pepper', 'butter', 'honey', 'chocolate', 'coffee', 'beer', 'salt']
+['coffee', 'cheese', 'juice', 'milk', 'honey', 'pens', 'water', 'chocolate', 'sugar', 'coca-cola']
+['eggs', 'butter', 'beer', 'coffee', 'bread', 'chocolate', 'pens', 'coca-cola', 'tea', 'cheese', 'honey', 'tomatoes', 'water', 'milk', 'salt']
+
+['beer', 'cheese', 'chocolate', 'sugar', 'salt', 'butter', 'tomatoes', 'milk', 'honey', 'juice', 'water']
+
+['tea', 'sugar', 'salt', 'milk', 'pepper']
+['coffee', 'butter', 'juice', 'bread', 'salt']
+['chocolate', 'sugar', 'juice', 'pepper', 'cheese']
+['tomatoes', 'coffee', 'eggs', 'chocolate', 'coca-cola', 'pens', 'water', 'beer', 'sugar', 'cheese', 'tea', 'butter']
+['pepper', 'beer', 'tomatoes', 'milk', 'pens', 'coca-cola', 'butter', 'eggs', 'honey', 'chocolate', 'tea']
+
+['coffee', 'coca-cola', 'butter', 'pens']
+
+['bread', 'cheese', 'beer']
+['coffee', 'coca-cola', 'honey', 'sugar', 'salt', 'chocolate', 'juice', 'pens', 'water', 'beer', 'pepper', 'eggs', 'tea', 'bread']
+['cheese', 'chocolate', 'bread', 'tea', 'milk', 'honey', 'pepper', 'sugar', 'pens', 'water', 'butter', 'beer', 'eggs', 'salt']
+[]
+
+['water', 'milk', 'sugar', 'honey', 'chocolate']
+['pens', 'cheese', 'milk', 'juice', 'coca-cola', 'bread', 'eggs', 'coffee', 'salt', 'honey']
+['coffee', 'beer', 'coca-cola', 'milk']
+['sugar', 'juice', 'beer', 'coca-cola', 'tomatoes', 'water', 'cheese', 'pepper', 'eggs', 'coffee', 'chocolate', 'salt', 'honey', 'tea']
+
+['bread', 'beer', 'cheese', 'coffee', 'eggs', 'salt', 'tomatoes', 'pepper', 'sugar', 'butter', 'juice', 'honey', 'milk', 'water', 'chocolate', 'coca-cola', 'pens']
+[]
+['honey', 'tomatoes', 'eggs', 'water', 'pepper', 'tea', 'coca-cola', 'chocolate', 'cheese', 'salt', 'coffee']
+['pens', 'eggs', 'cheese', 'bread', 'juice', 'salt', 'pepper', 'sugar', 'honey']
+['cheese', 'pepper', 'bread', 'tomatoes', 'sugar', 'salt', 'tea']
+
+['chocolate', 'butter', 'coffee', 'water', 'coca-cola', 'tea', 'beer', 'milk', 'honey', 'pepper', 'sugar', 'eggs', 'pens', 'tomatoes', 'bread', 'salt', 'juice']
+
+['beer', 'cheese', 'chocolate', 'sugar', 'salt', 'butter', 'tomatoes', 'milk', 'honey', 'juice', 'water', 'coffee']
+
+['salt', 'water', 'chocolate', 'honey', 'tomatoes', 'cheese', 'tea', 'butter']
+['water', 'juice', 'coca-cola', 'salt', 'sugar', 'pens']
+['juice', 'honey']
+['bread', 'beer', 'chocolate', 'pepper', 'salt', 'pens', 'tomatoes']
+['honey', 'pens', 'eggs', 'milk', 'tea', 'pepper', 'salt', 'coca-cola', 'water', 'chocolate', 'bread', 'tomatoes', 'juice', 'coffee', 'beer', 'sugar']
+
+['beer', 'honey', 'tea', 'chocolate', 'bread', 'pens', 'water', 'pepper', 'tomatoes']
+['tea', 'tomatoes', 'pens', 'milk', 'water', 'honey', 'salt', 'chocolate']
+['coca-cola', 'salt', 'tea', 'water', 'pepper', 'sugar', 'butter', 'tomatoes', 'bread', 'cheese', 'milk', 'pens', 'juice', 'eggs', 'chocolate', 'coffee']
+
+[]
+['chocolate', 'butter', 'coffee', 'water', 'coca-cola', 'tea', 'beer', 'milk', 'honey', 'pepper', 'sugar', 'eggs', 'pens', 'tomatoes', 'bread', 'salt', 'juice']
+['beer', 'bread', 'coca-cola', 'sugar', 'pepper', 'pens', 'water', 'eggs', 'tomatoes', 'salt', 'cheese', 'tea', 'honey', 'milk', 'chocolate', 'butter', 'juice', 'coffee']
+
+['water', 'tomatoes', 'eggs', 'tea', 'cheese', 'salt', 'coffee', 'bread', 'milk', 'butter', 'sugar', 'juice', 'beer', 'pepper', 'pens']
+['pepper', 'coca-cola', 'water', 'honey']
+['coca-cola', 'honey', 'pepper', 'butter', 'salt', 'sugar', 'milk', 'juice', 'water', 'beer']
+['coffee', 'milk', 'pepper', 'cheese', 'sugar', 'pens']
+
+['coca-cola', 'salt', 'tomatoes', 'tea', 'beer', 'coffee']
+
+['eggs', 'tomatoes', 'beer', 'salt', 'honey', 'coca-cola', 'chocolate', 'bread', 'pepper', 'sugar', 'cheese', 'tea', 'water', 'butter', 'milk', 'juice']
+['butter', 'bread', 'coffee', 'water', 'cheese', 'beer', 'tomatoes', 'coca-cola', 'salt', 'pepper', 'milk', 'tea', 'chocolate', 'sugar', 'honey']
+
+[]
+['coffee', 'water', 'tomatoes', 'beer', 'coca-cola', 'pens', 'tea', 'milk', 'cheese', 'salt', 'sugar', 'butter', 'pepper']
+['honey', 'chocolate', 'tomatoes', 'eggs', 'sugar', 'coffee', 'beer', 'cheese', 'milk', 'juice', 'pens']
+['bread', 'coca-cola', 'tea', 'water', 'juice', 'honey', 'sugar', 'pepper', 'eggs', 'tomatoes', 'salt', 'pens', 'beer', 'butter', 'milk']
+
+['salt', 'chocolate', 'beer', 'water', 'sugar']
+['water', 'chocolate', 'salt', 'butter', 'pens', 'beer', 'tomatoes', 'eggs']
+
+['cheese', 'tea', 'salt', 'tomatoes', 'pens', 'milk', 'beer', 'chocolate', 'bread']
+['beer', 'eggs', 'chocolate', 'water', 'coca-cola', 'milk', 'pens', 'pepper', 'salt', 'coffee', 'tea', 'tomatoes']
+['bread', 'coffee', 'sugar', 'cheese', 'coca-cola', 'chocolate', 'juice', 'pens', 'milk', 'tomatoes', 'butter', 'salt', 'honey', 'eggs']
+
+['tea', 'milk', 'cheese', 'butter', 'pepper', 'beer', 'pens', 'juice', 'water', 'coca-cola', 'sugar', 'honey']
+['juice', 'tomatoes', 'pepper', 'butter', 'beer']
+['milk', 'pens', 'honey', 'coffee', 'cheese', 'butter', 'coca-cola', 'tomatoes', 'juice', 'beer', 'water', 'bread']
+['pepper', 'coffee', 'beer', 'water', 'milk', 'pens', 'juice', 'coca-cola']
+['milk', 'coca-cola', 'eggs', 'beer', 'water', 'cheese', 'butter', 'salt', 'tomatoes', 'honey']
+
+['milk', 'bread', 'juice', 'coffee', 'tomatoes', 'honey', 'sugar', 'beer', 'salt', 'pens', 'butter', 'pepper', 'chocolate', 'cheese', 'coca-cola', 'eggs', 'water', 'tea']
+['water', 'eggs', 'coffee', 'pens', 'bread', 'tea', 'sugar', 'milk', 'chocolate', 'coca-cola', 'honey']
+
+['eggs', 'tomatoes', 'beer', 'salt', 'honey', 'coca-cola', 'chocolate', 'bread', 'pepper', 'sugar', 'cheese', 'tea', 'water', 'butter', 'milk', 'juice']
+['butter', 'bread', 'coffee', 'water', 'cheese', 'beer', 'tomatoes', 'coca-cola', 'salt', 'pepper', 'milk', 'tea', 'chocolate', 'sugar', 'honey']
+[]
+
+['beer', 'coca-cola', 'water', 'honey', 'chocolate', 'tea', 'pepper', 'coffee', 'milk', 'sugar', 'cheese', 'tomatoes', 'salt', 'juice', 'butter', 'pens', 'bread', 'eggs']
+
+['water', 'milk', 'sugar', 'honey', 'chocolate']
+['pens', 'cheese', 'milk', 'juice', 'coca-cola', 'bread', 'eggs', 'coffee', 'salt', 'honey']
+['coffee', 'beer', 'coca-cola', 'milk']
+['sugar', 'juice', 'beer', 'coca-cola', 'tomatoes', 'water', 'cheese', 'pepper', 'eggs', 'coffee', 'chocolate', 'salt', 'honey', 'tea']
+
+['bread', 'beer', 'cheese', 'coffee', 'eggs', 'salt', 'tomatoes', 'pepper', 'sugar', 'butter', 'juice', 'honey', 'milk', 'water', 'chocolate', 'coca-cola', 'pens']
+['honey', 'tomatoes', 'eggs', 'water', 'pepper', 'tea', 'coca-cola', 'chocolate', 'cheese', 'salt', 'coffee']
+['pens', 'eggs', 'cheese', 'bread', 'juice', 'salt', 'pepper', 'sugar', 'honey', 'tea']
+['cheese', 'pepper', 'bread', 'tomatoes', 'sugar', 'salt', 'tea']
+
+['coffee', 'water', 'tomatoes', 'beer', 'coca-cola', 'pens', 'tea', 'milk', 'cheese', 'salt', 'sugar', 'butter']
+['honey', 'chocolate', 'tomatoes', 'eggs', 'sugar', 'coffee', 'beer', 'cheese', 'milk', 'juice', 'pens']
+['bread', 'coca-cola', 'tea', 'water', 'juice', 'honey', 'sugar', 'pepper', 'eggs', 'tomatoes', 'salt', 'pens', 'beer', 'butter', 'milk']
+
+['juice', 'chocolate', 'pens', 'cheese', 'coffee', 'sugar', 'butter', 'beer', 'bread', 'salt', 'eggs', 'milk', 'tea', 'pepper']
+
+['juice', 'honey', 'pens', 'coca-cola', 'eggs', 'pepper', 'coffee', 'water', 'cheese', 'sugar', 'tomatoes', 'chocolate', 'bread', 'beer']
+[]
+[]
+['chocolate', 'eggs', 'bread', 'juice', 'sugar', 'beer']
+
+['juice', 'honey', 'eggs', 'coffee', 'sugar', 'butter', 'bread', 'pepper', 'water', 'salt', 'chocolate', 'tomatoes', 'milk']
+['pens', 'coffee', 'juice', 'sugar', 'salt', 'cheese', 'bread', 'eggs', 'chocolate', 'butter', 'tomatoes']
+['water', 'coffee', 'chocolate']
+['eggs', 'butter', 'salt', 'honey', 'beer', 'juice', 'chocolate', 'pepper', 'tea', 'coca-cola', 'tomatoes', 'water', 'cheese', 'milk']
+
+[]
+['pepper', 'bread', 'salt', 'sugar', 'tea', 'juice', 'tomatoes', 'eggs', 'coffee', 'pens', 'chocolate', 'cheese']
+[]
+['honey', 'tomatoes', 'eggs', 'water', 'butter', 'tea', 'salt', 'beer', 'coffee', 'chocolate', 'milk', 'coca-cola', 'sugar', 'juice', 'bread', 'cheese', 'pepper']
+
+['coca-cola', 'coffee', 'salt']
+[]
+['tomatoes', 'salt', 'sugar', 'pepper', 'coffee', 'chocolate', 'eggs', 'cheese', 'water', 'milk', 'honey', 'tea', 'juice', 'beer']
+['salt', 'pepper', 'cheese', 'tea', 'coffee', 'sugar', 'honey', 'water', 'eggs', 'milk', 'butter', 'bread']
+['salt', 'beer', 'tomatoes', 'coca-cola', 'cheese', 'bread', 'honey', 'butter', 'water']
+
+['coca-cola', 'juice', 'pepper', 'coffee', 'chocolate', 'beer', 'bread', 'cheese', 'pens', 'honey', 'water', 'tomatoes', 'butter', 'tea', 'salt']
+[]
+['pepper', 'honey', 'butter', 'juice', 'pens', 'coffee', 'eggs', 'beer', 'salt', 'sugar']
+['chocolate']
+['tea', 'coffee', 'tomatoes', 'cheese', 'coca-cola', 'eggs', 'salt', 'milk', 'chocolate']
+['beer', 'honey', 'cheese', 'water', 'tea', 'salt', 'eggs', 'bread', 'coffee', 'sugar', 'coca-cola', 'chocolate', 'tomatoes', 'juice']
+
+
+['coffee', 'cheese', 'sugar', 'beer', 'bread', 'tea', 'coca-cola', 'butter', 'eggs', 'water', 'chocolate', 'juice', 'pepper', 'salt', 'pens', 'honey']
+['eggs', 'milk', 'honey', 'bread', 'sugar', 'salt', 'butter', 'pepper', 'juice', 'tea', 'coca-cola', 'water', 'cheese', 'beer']
+['cheese', 'bread', 'eggs', 'pens', 'chocolate', 'water']
+['beer', 'coffee', 'sugar', 'tomatoes', 'bread', 'coca-cola', 'pens', 'juice', 'chocolate', 'salt', 'tea', 'eggs', 'milk', 'cheese', 'butter', 'pepper', 'honey', 'water']
+
+
+['eggs', 'tomatoes', 'beer', 'salt', 'honey', 'coca-cola', 'chocolate', 'bread', 'pepper', 'sugar', 'cheese', 'tea', 'water', 'butter', 'milk', 'juice']
+['butter', 'bread', 'coffee', 'water', 'cheese', 'beer', 'tomatoes', 'coca-cola', 'salt', 'pepper', 'milk', 'tea', 'chocolate', 'sugar', 'honey']
+
+['pepper', 'juice', 'coca-cola', 'sugar', 'milk', 'salt']
+['honey', 'butter', 'beer', 'pepper', 'coffee', 'milk', 'water', 'bread', 'eggs', 'tomatoes']
+['chocolate', 'water', 'coffee', 'honey', 'cheese', 'pepper', 'salt', 'juice', 'bread', 'sugar', 'butter', 'beer', 'milk']
+['bread']
+
+['pepper', 'bread', 'salt', 'sugar', 'tea', 'juice', 'tomatoes', 'eggs', 'coffee', 'pens', 'chocolate', 'cheese']
+['honey', 'tomatoes', 'eggs', 'water', 'butter', 'tea', 'salt', 'beer', 'coffee', 'chocolate', 'milk', 'coca-cola', 'sugar', 'juice', 'bread', 'cheese', 'pepper']
+
+['coca-cola', 'tea', 'water', 'chocolate', 'tomatoes', 'beer', 'butter']
+[]
+['pepper', 'sugar', 'honey', 'chocolate', 'coca-cola', 'salt', 'bread', 'coffee', 'juice', 'pens', 'beer', 'butter', 'water', 'tomatoes']
+['juice', 'pens', 'sugar', 'beer', 'eggs', 'chocolate', 'tea', 'salt', 'coffee', 'tomatoes', 'bread', 'cheese']
+
+['juice', 'chocolate', 'milk', 'honey', 'coffee', 'sugar', 'eggs', 'tea', 'pens', 'salt', 'bread', 'cheese', 'beer', 'water']
+['coca-cola', 'pepper', 'eggs', 'chocolate', 'butter', 'coffee', 'bread', 'cheese', 'water', 'pens', 'juice', 'sugar', 'salt', 'beer', 'milk', 'honey', 'tomatoes', 'tea']
+['chocolate', 'tea', 'beer', 'juice', 'pepper', 'milk', 'eggs', 'sugar', 'coffee', 'bread', 'butter', 'tomatoes', 'honey', 'water']
+
