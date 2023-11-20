@@ -1,3 +1,0 @@
-,antecedents,consequents,antecedent support,consequent support,support,confidence,lift,leverage,conviction,zhangs_metric
-0,frozenset({'sugar'}),frozenset({'milk'}),0.8,1.0,0.8,1.0,1.0,0.0,inf,0.0
-1,frozenset({'milk'}),frozenset({'sugar'}),1.0,0.8,0.8,0.8,1.0,0.0,1.0,0.0
