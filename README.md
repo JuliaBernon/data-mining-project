@@ -92,7 +92,7 @@ pip install -r requirements.txt
 pip install -U pytest
 
 # executing tests
-pytest --verbose
+pytest --verbose # or pytest -v
 ```
 
 **Step3 - Generate the data**
