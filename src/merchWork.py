@@ -1,18 +1,16 @@
 import json
+import pandas as pd
+import matplotlib.pyplot as plt
 
 from mlxtend.frequent_patterns import apriori
 from mlxtend.frequent_patterns import association_rules
 from mlxtend.preprocessing import TransactionEncoder
 from mlxtend.frequent_patterns import fpgrowth
-import pandas as pd
-
-import matplotlib.pyplot as plt
 
 with open("./data/actual.json") as actual_file:
     actual_routes = json.load(actual_file)
 
-
-# function to transform a route into a list of merchandises for each step
+# Two functions to transform a route into a list of merchandises for each step
 def route_to_merchandises(route):
     '''
     Returns a list of merchandises for each step in a route.
@@ -22,6 +20,9 @@ def route_to_merchandises(route):
     for i in range(len(route)):
         merchandises.append(route[i]["merchandise"])
     return merchandises
+
+# print(route_to_merchandises(actual_routes[0]["route"]))
+# [{'water': 3, 'milk': 41, 'sugar': 6, 'honey': 17, 'chocolate': 26},...]
 
 def route_to_list_merch(route):
     '''
@@ -33,30 +34,134 @@ def route_to_list_merch(route):
         merchandise_types = list(dictionary.keys())
 
         route_merchandise_types.append(merchandise_types)
+        route_merchandise_types[i].append(route[i]["from"])
+        route_merchandise_types[i].append(route[i]["to"])
     return route_merchandise_types
 
-# select one route from actual.json
-route = actual_routes[0]["route"]
-print(route_to_list_merch(route))
+# print(route_to_list_merch(actual_routes[0]["route"]))
+# [['water', 'milk', 'sugar', 'honey', 'chocolate', 'Perugia', 'Milan'],...]
+
+
+# Transform all the routes of actual.json into a list of lists
+all_routes = []
+for i in range(len(actual_routes)):
+    all_routes.append(route_to_list_merch(actual_routes[i]["route"]))
+
+for route in all_routes:
+    if route ==  []:
+        all_routes.remove(route)
+
+# print(all_routes)
+
+# Flatten the list of lists if necessary
+all_routes = [[item for sublist in route for item in sublist] if isinstance(route[0], list) else route for route in all_routes]
 
 te = TransactionEncoder()
-te_ary = te.fit(route_to_list_merch(route)).transform(route_to_list_merch(route))
+te_ary = te.fit(all_routes).transform(all_routes)
 df = pd.DataFrame(te_ary, columns=te.columns_)
+print(df)
 
-freq_items_for1 = apriori(df, min_support=0.3, use_colnames=True)
-# element must appear at least 75% of the time to be considered frequent
-print(freq_items_for1)
+freq_items = apriori(df, min_support=0.725, use_colnames=True) # don't go below 0.7 !
+asso_rules = association_rules(freq_items, metric="confidence", min_threshold=0.3)
 
-association_rules_for1 = association_rules(freq_items_for1, metric="confidence", min_threshold=0.3)
-print(association_rules_for1)
+print(freq_items)
+print("\n")
+print(asso_rules)
 
-# save data into csv files to make it easier to read
-# freq_items_for1.to_csv("./data/freq_items_for1.csv")
-# association_rules_for1.to_csv("./data/association_rules_for1.csv")
+# save into csv files
+freq_items.to_csv("./data/freq_items.csv")
+asso_rules.to_csv("./data/asso_rules.csv")
 
-# plot support vs confidence
-plt.scatter(association_rules_for1["support"], association_rules_for1["confidence"], alpha=0.5)
-plt.xlabel("support")
-plt.ylabel("confidence")
-plt.title("Support vs Confidence")
+# Plot support vs confidence and support vs lift
+fig, ax = plt.subplots(1, 2, figsize=(10, 5))
+ax[0].scatter(asso_rules["support"], asso_rules["confidence"], alpha=0.5)
+ax[0].set_xlabel("support")
+ax[0].set_ylabel("confidence")
+ax[0].set_title("Support vs Confidence")
+ax[1].scatter(asso_rules["support"], asso_rules["lift"], alpha=0.5)
+ax[1].set_xlabel("support")
+ax[1].set_ylabel("lift")
+ax[1].set_title("Support vs Lift")
+plt.tight_layout()
 plt.show()
+
+
+### Generating combination of merchandise types for each association rule and pair of cities ###
+from itertools import combinations
+
+def combination_generation(association_rules, city_pairs, merchandise_types):
+    """
+    Generate combinations of merchandise types for each association rule and pair of cities.
+
+    Parameters:
+    - association_rules: List of association rules (DataFrame)
+    - city_pairs: List of pairs of cities
+    - merchandise_types: List of merchandise types
+
+    Returns:
+    - List of dictionaries, each containing a pair of cities, associated merchandise types, and rule details.
+    """
+    combinations_list = []
+
+    for rule_index, rule in association_rules.iterrows():
+        for city_pair in city_pairs:
+            # Generate combinations of merchandise types for each rule and city pair
+            merchandise_combinations = list(combinations(merchandise_types, rule['antecedent_len']))
+
+            # Create a dictionary to store the information
+            combination_info = {
+                'city_pair': city_pair,
+                'rule': {
+                    'antecedent': rule['antecedents'],
+                    'consequent': rule['consequents'],
+                    'confidence': rule['confidence']
+                },
+                'merchandise_combinations': merchandise_combinations
+            }
+
+            combinations_list.append(combination_info)
+
+    return combinations_list
+
+def create_route(merchandise_combination, city_pair):
+    """
+    Create a route based on a combination of merchandise types and a pair of cities.
+
+    Parameters:
+    - merchandise_combination: List of merchandise types
+    - city_pair: Tuple representing a pair of cities
+
+    Returns:
+    - Dictionary representing the created route
+    """
+    route = []
+
+    # Create a route entry for each merchandise type in the combination
+    for merchandise_type in merchandise_combination:
+        route_entry = {
+            'from': city_pair[0],
+            'to': city_pair[1],
+            'merchandise': {merchandise_type: 1}  # You may modify the quantity as needed
+        }
+        route.append(route_entry)
+
+    return route
+
+def create_new_routes(selected_rules, common_pairs, merchandise_types):
+    new_routes = []
+
+    for rule in selected_rules.itertuples(index=False):
+        for pair in common_pairs:
+            merchandise_combinations = combination_generation(rule, pair, merchandise_types)
+
+            for combination in merchandise_combinations:
+                new_route = create_route(pair, combination)
+                new_routes.append(new_route)
+
+    return new_routes
+
+
+### Selecting interesting rules ###
+selected_rules = asso_rules[asso_rules["confidence"] > 0.95]
+selected_rules_list = selected_rules.values.tolist()
+print("Selected rules : ", selected_rules_list)
