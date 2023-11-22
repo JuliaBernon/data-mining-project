@@ -1,4 +1,4 @@
-### Merchandise types analysis ###
+### Frequent itemsets and association rules ###
 ### This file contains functions and scripts in order to determine the association rules between merchandise types. ###
 
 import json
@@ -57,8 +57,6 @@ for i in range(len(actual_routes)):
 for route in all_routes:
     if route ==  []:
         all_routes.remove(route)
-
-# print(all_routes)
 
 # Flatten the list of lists if necessary
 all_routes = [[item for sublist in route for item in sublist] if isinstance(route[0], list) else route for route in all_routes]
