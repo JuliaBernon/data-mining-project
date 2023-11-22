@@ -2,7 +2,7 @@ import json
 import math
 '''
 Deux scénars :
--les drivers ont déja fait toutes les routes standards un nombre de fois élevé -> pour chaque route satandard on regarde la diqtance moyenne avec les routes actuelles basées dessus
+-les drivers ont déja fait toutes les routes standards un nombre de fois élevé -> pour chaque route satandard on regarde la distance moyenne avec les routes actuelles basées dessus
 -les drivers ont jamais vu les routes standards et elles sont assez différentes des routes standards utilisées pour fabriquer les actuelles
 Parce que :
 Si ont prend la route standard la plus proche en moyenne des routes actuelles ça va juste être celle qu'il a le plus fait.
@@ -23,7 +23,7 @@ dict_standard_routes = {}
 for standard in standards :
     dict_standard_routes[standard["id"]] = standard["route"]
 
-def question_2(dict_actuals,dict_standard_routes):
+def get_classements(dict_actuals,dict_standard_routes):
     '''
     Input :
     -list of actual routes
@@ -39,10 +39,10 @@ def question_2(dict_actuals,dict_standard_routes):
         else :
             actuals_per_driver[actual["driver"]].append(actual["id"])
     
-    best_5_routes_per_driver = {}
+    best_routes_per_driver = {}
     for driver in actuals_per_driver.keys():
-        best_5_routes_per_driver[driver] = best_per_driver(actuals_per_driver[driver],dict_actuals,dict_standard_routes)
-    return best_5_routes_per_driver
+        best_routes_per_driver[driver] = best_per_driver(actuals_per_driver[driver],dict_actuals,dict_standard_routes)
+    return best_routes_per_driver
 
 def best_per_driver(actuals_driver, dict_actuals, dict_standard_routes):
     '''
@@ -61,7 +61,8 @@ def best_per_driver(actuals_driver, dict_actuals, dict_standard_routes):
         list_dist_moy.append([sroute,dist_moy])
     list_dist_moy.sort(key=lambda tup: tup[1])
     if len(list_dist_moy) >= 5 :
-        return list_dist_moy[:5]
+        #return list_dist_moy[:5]
+        return list_dist_moy
     else :
         return list_dist_moy
 
@@ -82,5 +83,19 @@ from random import*
 def dist_between_two_routes(route1,route2):
     return randint(1,10)
 
-print(question_2(dict_actuals,dict_standard_routes))
+def question2(rankings,new_standards):
+    dict_drivers = {}
+    for driver in rankings.keys():
+        list_driver = []
+        for route in new_standards :
+            list_dist = []
+            for duo in rankings["driver"]:
+                list_dist.append(duo[0],dist_between_two_routes(dict_standard_routes(duo[0]),route["route"]),duo[1])
+            list_dist.sort(key=lambda tup: tup[1])
+            list_driver.append([route["id"],list_dist[0]])
+        list_driver.sort(key=lambda tup: tup[1][2])
+        dict_drivers[driver]=list_driver
+    return dict_drivers
+
+print(get_classements(dict_actuals,dict_standard_routes))
 
