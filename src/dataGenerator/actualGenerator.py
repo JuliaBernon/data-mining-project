@@ -44,6 +44,8 @@ def generate_actual_route(standard_route, cities, merchandise_types, driver):
         merch = r.choice(list(actual_route[step]["merchandise"].keys()))
         more_or_less = r.choice([-1,1])
         actual_route[step]["merchandise"][merch] += r.randint(1,merch_modif_qty_max)*more_or_less
+        if actual_route[step]["merchandise"][merch] <= 0:
+            actual_route[step]["merchandise"][merch] = 0
     #adding or suppressing cities
     city_add_or_del_number = r.randint(city_add_or_del_min,city_add_or_del_max)
     for i in range(city_add_or_del_number) :
