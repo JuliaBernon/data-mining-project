@@ -1,4 +1,5 @@
 ### Cities analysis ###
+### This file contains functions and scripts to obtain the most frequent pairs of cities in the actual routes. ###
 
 import json
 
