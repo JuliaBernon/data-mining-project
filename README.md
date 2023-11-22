@@ -97,25 +97,34 @@ pytest --verbose # or pytest -v
 
 **Step3 - Generate the data**
 
-- Create actual.json and standard.json into *data* directory
+All the JSON files will appear into *data* directory
 
 ```sh
 # on Linux or WSL
-python3 ./src/dataGeneration.py
+
+python3 ./src/driverGeneration.py 
+# create 10 (default number) drivers
+
+python3 ./src/stdGeneration.py
+# create 500 (default number) standard routes
+
+python3 ./src/actualGeneration.py
+# create 1000 (default number) actual routes
 
 # on PowerShell
 ```
+If you want to specify the number of each, add the number as argument
+```bash
+python3 ./src/<filename>Generation.py <number>
+```
 
-*Display the data in shell*
-
-This command displays, for each standard route, the associated actual routes, the concerned driver, and the different divergence computations.
-
+**By default**
 ```sh
-# on Linux or WSL
-python3 ./tests/dataParsing.py
-
-# on PowerShell
+python3 ./src/exe_script.py
 ```
+
+This command will execute driverGeneration.py, stdGeneration.py, actualGeneration.py, and will create 100 drivers, 1000 standard routes, and 5000 actual routes, by default.
+
 
 # Step 1 : Recommended standard routes
 
