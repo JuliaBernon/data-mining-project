@@ -21,7 +21,7 @@ with open("./data/drivers.json", "r") as drivers_file:
     drivers = json.load(drivers_file)
 
 ## generate actual.json
-nb_act_routes = 1 # define the number of actual routes 
+nb_act_routes = 5000 # define the number of actual routes 
 actual_routes = []
 for i in range(nb_act_routes):
     std_route_number = random.randint(0, nb_std_routes-1)
