@@ -66,7 +66,7 @@ te_ary = te.fit(all_routes).transform(all_routes)
 df = pd.DataFrame(te_ary, columns=te.columns_)
 # print(df)
 
-freq_items = apriori(df, min_support=0.6, use_colnames=True, max_len = 3) # don't go below 0.6 !
+freq_items = apriori(df, min_support=0.75, use_colnames=True, max_len = 3)
 asso_rules = association_rules(freq_items, metric="confidence", min_threshold=0.3)
 
 print(freq_items)
@@ -77,8 +77,11 @@ print(asso_rules)
 freq_items.to_csv("./data/freq_items.csv")
 asso_rules.to_csv("./data/asso_rules.csv")
 
+# save into json files
+freq_items.to_json("./data/freq_items.json")
+
 # Keeping only the rules with a confidence above 0.925 and a lift above 1.17
-selected_rules = asso_rules[(asso_rules['confidence'] > 0.6) & (asso_rules['lift'] > 1.01)]
+selected_rules = asso_rules[(asso_rules['confidence'] > 0.8) & (asso_rules['lift'] > 1.05)]
 # print(selected_rules)
 
 # sublots support vs confidence, support vs lift, and lift vs confidence

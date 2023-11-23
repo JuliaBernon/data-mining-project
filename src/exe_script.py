@@ -9,9 +9,10 @@ def run_script(script,arg):
 
 # Generate drivers, standard routes, and actual routes
 scripts = [
-    ("./src/driverGeneration.py", 100),
-    ("./src/stdGeneration.py", 1000),
-    ("./src/actualGeneration.py", 5000)
+    ("./src/driverGeneration.py", 100), # see number by default in each script
+    ("./src/stdGeneration.py", 500),
+    ("./src/actualGeneration.py", 1000),
+    ("./src/recStandard.py", 500),
 ]
 
 for script, arg in scripts:
