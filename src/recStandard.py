@@ -4,11 +4,6 @@ import dataGenerator.newStdGenerator
 import sys
 
 from freqCities import *
-
-# from mlxtend.frequent_patterns import apriori
-# from mlxtend.frequent_patterns import association_rules
-# from mlxtend.preprocessing import TransactionEncoder
-# from mlxtend.frequent_patterns import fpgrowth
 import re
 
 ### Read and parse data ###
