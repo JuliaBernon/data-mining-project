@@ -46,15 +46,19 @@ def generate_actual_routes(number_of_routes, std_routes_file):
 
 # print(generate_actual_routes(100, open("./data/standard.json", "r")))
 
-if len(sys.argv) >= 3:
+if len(sys.argv) >= 4:
     nb_act_routes = int(sys.argv[1])
     std_routes_file = open(sys.argv[2], "r")
+    filename_to_save = sys.argv[3]
     actual_routes = generate_actual_routes(nb_act_routes, std_routes_file)
 else:
     actual_routes = generate_actual_routes(1000, "./data/standard.json")
+    filename_to_save = "./data/actual.json"
 
 
 # save data into actual.json
 if __name__ == "__main__":
-    with open("./data/actual.json", "w") as actual_file:
+    with open(filename_to_save, "w") as actual_file:
         json.dump(actual_routes, actual_file, indent=4)
+
+
