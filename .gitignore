@@ -5,3 +5,6 @@ test.py
 data/*
 !data/results/
 !*.csv
+!data/cities.json
+!data/merchTypes.json
+
