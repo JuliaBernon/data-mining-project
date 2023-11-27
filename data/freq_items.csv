@@ -1,0 +1,313 @@
+,support,itemsets
+0,0.802020202020202,frozenset({'aquarium supplies'})
+1,0.802020202020202,frozenset({'art supplies'})
+2,0.8373737373737373,frozenset({'backpacks'})
+3,0.8090909090909091,frozenset({'bedsheets'})
+4,0.7808080808080808,frozenset({'beer'})
+5,0.798989898989899,frozenset({'bicycles'})
+6,0.8111111111111111,frozenset({'bird feed'})
+7,0.7858585858585858,frozenset({'blankets'})
+8,0.804040404040404,frozenset({'board games'})
+9,0.7787878787878788,frozenset({'books'})
+10,0.7747474747474747,frozenset({'bread'})
+11,0.8242424242424242,frozenset({'brushes'})
+12,0.807070707070707,frozenset({'butter'})
+13,0.8171717171717172,frozenset({'cakes'})
+14,0.8343434343434344,frozenset({'camping equipment'})
+15,0.802020202020202,frozenset({'candy'})
+16,0.8080808080808081,frozenset({'canvases'})
+17,0.796969696969697,frozenset({'cases'})
+18,0.803030303030303,frozenset({'chargers'})
+19,0.8141414141414142,frozenset({'cheese'})
+20,0.8292929292929293,frozenset({'chocolate'})
+21,0.8383838383838383,frozenset({'cleaning supplies'})
+22,0.7909090909090909,frozenset({'coca-cola'})
+23,0.8121212121212121,frozenset({'coffee'})
+24,0.7686868686868686,frozenset({'cookies'})
+25,0.8333333333333334,frozenset({'cookware'})
+26,0.8101010101010101,frozenset({'craft supplies'})
+27,0.8343434343434344,frozenset({'cutlery'})
+28,0.807070707070707,frozenset({'drawing paper'})
+29,0.805050505050505,frozenset({'easels'})
+30,0.7929292929292929,frozenset({'eggs'})
+31,0.797979797979798,frozenset({'exercise equipment'})
+32,0.798989898989899,frozenset({'fishing gear'})
+33,0.8202020202020202,frozenset({'flowers'})
+34,0.8191919191919191,frozenset({'games'})
+35,0.7929292929292929,frozenset({'gardening tools'})
+36,0.7808080808080808,frozenset({'gloves'})
+37,0.8444444444444444,frozenset({'hats'})
+38,0.8101010101010101,frozenset({'headphones'})
+39,0.7707070707070707,frozenset({'hiking boots'})
+40,0.8232323232323232,frozenset({'honey'})
+41,0.8131313131313131,frozenset({'ice cream'})
+42,0.7818181818181819,frozenset({'juice'})
+43,0.8101010101010101,frozenset({'kitchen appliances'})
+44,0.797979797979798,frozenset({'laptops'})
+45,0.8,frozenset({'laundry detergent'})
+46,0.8323232323232324,frozenset({'magazines'})
+47,0.7696969696969697,frozenset({'milk'})
+48,0.8080808080808081,frozenset({'nuts'})
+49,0.8202020202020202,frozenset({'paint'})
+50,0.8303030303030303,frozenset({'pens'})
+51,0.797979797979798,frozenset({'pepper'})
+52,0.8151515151515152,frozenset({'pet food'})
+53,0.7686868686868686,frozenset({'pet grooming supplies'})
+54,0.805050505050505,frozenset({'pet toys'})
+55,0.8080808080808081,frozenset({'phones'})
+56,0.803030303030303,frozenset({'pillows'})
+57,0.798989898989899,frozenset({'plants'})
+58,0.8191919191919191,frozenset({'playing cards'})
+59,0.8222222222222222,frozenset({'potting soil'})
+60,0.9111111111111111,frozenset({'puzzles'})
+61,0.8222222222222222,frozenset({'reptile habitats'})
+62,0.803030303030303,frozenset({'running shoes'})
+63,0.807070707070707,frozenset({'salt'})
+64,0.8202020202020202,frozenset({'scarves'})
+65,0.8151515151515152,frozenset({'seeds'})
+66,0.8111111111111111,frozenset({'shampoo'})
+67,0.8262626262626263,frozenset({'shoes'})
+68,0.7929292929292929,frozenset({'sleeping bags'})
+69,0.7838383838383839,frozenset({'snacks'})
+70,0.8111111111111111,frozenset({'soap'})
+71,0.8262626262626263,frozenset({'socks'})
+72,0.8080808080808081,frozenset({'sportswear'})
+73,0.804040404040404,frozenset({'sugar'})
+74,0.7838383838383839,frozenset({'tablets'})
+75,0.8131313131313131,frozenset({'tea'})
+76,0.8252525252525252,frozenset({'tents'})
+77,0.8191919191919191,frozenset({'toilet paper'})
+78,0.8151515151515152,frozenset({'tomatoes'})
+79,0.8202020202020202,frozenset({'toothbrushes'})
+80,0.7777777777777778,frozenset({'toothpaste'})
+81,0.896969696969697,frozenset({'towels'})
+82,0.8292929292929293,frozenset({'toys'})
+83,0.8090909090909091,frozenset({'umbrellas'})
+84,0.8080808080808081,frozenset({'vases'})
+85,0.8010101010101011,frozenset({'vodka'})
+86,0.804040404040404,frozenset({'water'})
+87,0.8010101010101011,frozenset({'weights'})
+88,0.7818181818181819,frozenset({'wine'})
+89,0.8141414141414142,frozenset({'yoga mats'})
+90,0.7595959595959596,"frozenset({'puzzles', 'aquarium supplies'})"
+91,0.7686868686868686,"frozenset({'towels', 'aquarium supplies'})"
+92,0.7666666666666667,"frozenset({'art supplies', 'puzzles'})"
+93,0.7555555555555555,"frozenset({'art supplies', 'towels'})"
+94,0.7515151515151515,"frozenset({'cleaning supplies', 'backpacks'})"
+95,0.7575757575757576,"frozenset({'backpacks', 'cookware'})"
+96,0.7535353535353535,"frozenset({'backpacks', 'flowers'})"
+97,0.7525252525252525,"frozenset({'hats', 'backpacks'})"
+98,0.7575757575757576,"frozenset({'backpacks', 'magazines'})"
+99,0.7585858585858586,"frozenset({'backpacks', 'pens'})"
+100,0.8101010101010101,"frozenset({'puzzles', 'backpacks'})"
+101,0.7575757575757576,"frozenset({'socks', 'backpacks'})"
+102,0.802020202020202,"frozenset({'backpacks', 'towels'})"
+103,0.7818181818181819,"frozenset({'puzzles', 'bedsheets'})"
+104,0.7676767676767676,"frozenset({'towels', 'bedsheets'})"
+105,0.7525252525252525,"frozenset({'puzzles', 'beer'})"
+106,0.7686868686868686,"frozenset({'puzzles', 'bicycles'})"
+107,0.7737373737373737,"frozenset({'bicycles', 'towels'})"
+108,0.7777777777777778,"frozenset({'puzzles', 'bird feed'})"
+109,0.7797979797979798,"frozenset({'bird feed', 'towels'})"
+110,0.7525252525252525,"frozenset({'puzzles', 'blankets'})"
+111,0.7555555555555555,"frozenset({'towels', 'blankets'})"
+112,0.7747474747474747,"frozenset({'puzzles', 'board games'})"
+113,0.7606060606060606,"frozenset({'board games', 'towels'})"
+114,0.7535353535353535,"frozenset({'hats', 'brushes'})"
+115,0.7545454545454545,"frozenset({'brushes', 'pens'})"
+116,0.7787878787878788,"frozenset({'puzzles', 'brushes'})"
+117,0.7919191919191919,"frozenset({'towels', 'brushes'})"
+118,0.7686868686868686,"frozenset({'puzzles', 'butter'})"
+119,0.7737373737373737,"frozenset({'butter', 'towels'})"
+120,0.7868686868686868,"frozenset({'puzzles', 'cakes'})"
+121,0.7747474747474747,"frozenset({'towels', 'cakes'})"
+122,0.7515151515151515,"frozenset({'cleaning supplies', 'camping equipment'})"
+123,0.7525252525252525,"frozenset({'hats', 'camping equipment'})"
+124,0.7545454545454545,"frozenset({'honey', 'camping equipment'})"
+125,0.7515151515151515,"frozenset({'camping equipment', 'potting soil'})"
+126,0.7878787878787878,"frozenset({'puzzles', 'camping equipment'})"
+127,0.7555555555555555,"frozenset({'camping equipment', 'seeds'})"
+128,0.7555555555555555,"frozenset({'camping equipment', 'tomatoes'})"
+129,0.7909090909090909,"frozenset({'camping equipment', 'towels'})"
+130,0.7646464646464647,"frozenset({'puzzles', 'candy'})"
+131,0.7686868686868686,"frozenset({'candy', 'towels'})"
+132,0.7656565656565657,"frozenset({'puzzles', 'canvases'})"
+133,0.7646464646464647,"frozenset({'canvases', 'towels'})"
+134,0.7636363636363637,"frozenset({'puzzles', 'cases'})"
+135,0.7535353535353535,"frozenset({'towels', 'cases'})"
+136,0.7767676767676768,"frozenset({'puzzles', 'chargers'})"
+137,0.7666666666666667,"frozenset({'chargers', 'towels'})"
+138,0.7535353535353535,"frozenset({'cheese', 'cookware'})"
+139,0.7777777777777778,"frozenset({'puzzles', 'cheese'})"
+140,0.7767676767676768,"frozenset({'cheese', 'towels'})"
+141,0.7575757575757576,"frozenset({'cleaning supplies', 'chocolate'})"
+142,0.7545454545454545,"frozenset({'magazines', 'chocolate'})"
+143,0.7535353535353535,"frozenset({'chocolate', 'pens'})"
+144,0.7919191919191919,"frozenset({'puzzles', 'chocolate'})"
+145,0.7838383838383839,"frozenset({'towels', 'chocolate'})"
+146,0.7565656565656566,"frozenset({'hats', 'cleaning supplies'})"
+147,0.7545454545454545,"frozenset({'cleaning supplies', 'pens'})"
+148,0.7555555555555555,"frozenset({'cleaning supplies', 'playing cards'})"
+149,0.796969696969697,"frozenset({'puzzles', 'cleaning supplies'})"
+150,0.7525252525252525,"frozenset({'cleaning supplies', 'shoes'})"
+151,0.8080808080808081,"frozenset({'cleaning supplies', 'towels'})"
+152,0.7686868686868686,"frozenset({'puzzles', 'coca-cola'})"
+153,0.7555555555555555,"frozenset({'coca-cola', 'towels'})"
+154,0.7737373737373737,"frozenset({'puzzles', 'coffee'})"
+155,0.7717171717171717,"frozenset({'coffee', 'towels'})"
+156,0.7505050505050505,"frozenset({'puzzles', 'cookies'})"
+157,0.7545454545454545,"frozenset({'hats', 'cookware'})"
+158,0.7535353535353535,"frozenset({'cookware', 'magazines'})"
+159,0.7505050505050505,"frozenset({'cookware', 'pens'})"
+160,0.8,"frozenset({'puzzles', 'cookware'})"
+161,0.7505050505050505,"frozenset({'socks', 'cookware'})"
+162,0.7929292929292929,"frozenset({'towels', 'cookware'})"
+163,0.7868686868686868,"frozenset({'puzzles', 'craft supplies'})"
+164,0.7747474747474747,"frozenset({'towels', 'craft supplies'})"
+165,0.7555555555555555,"frozenset({'hats', 'cutlery'})"
+166,0.794949494949495,"frozenset({'puzzles', 'cutlery'})"
+167,0.7838383838383839,"frozenset({'towels', 'cutlery'})"
+168,0.7737373737373737,"frozenset({'puzzles', 'drawing paper'})"
+169,0.7646464646464647,"frozenset({'towels', 'drawing paper'})"
+170,0.7656565656565657,"frozenset({'puzzles', 'easels'})"
+171,0.7626262626262627,"frozenset({'towels', 'easels'})"
+172,0.7565656565656566,"frozenset({'puzzles', 'eggs'})"
+173,0.7565656565656566,"frozenset({'towels', 'eggs'})"
+174,0.7676767676767676,"frozenset({'puzzles', 'exercise equipment'})"
+175,0.7707070707070707,"frozenset({'exercise equipment', 'towels'})"
+176,0.7656565656565657,"frozenset({'puzzles', 'fishing gear'})"
+177,0.7646464646464647,"frozenset({'fishing gear', 'towels'})"
+178,0.7888888888888889,"frozenset({'puzzles', 'flowers'})"
+179,0.7858585858585858,"frozenset({'towels', 'flowers'})"
+180,0.7676767676767676,"frozenset({'games', 'puzzles'})"
+181,0.7808080808080808,"frozenset({'games', 'towels'})"
+182,0.7707070707070707,"frozenset({'puzzles', 'gardening tools'})"
+183,0.7515151515151515,"frozenset({'towels', 'gardening tools'})"
+184,0.7505050505050505,"frozenset({'puzzles', 'gloves'})"
+185,0.7595959595959596,"frozenset({'gloves', 'towels'})"
+186,0.7515151515151515,"frozenset({'hats', 'pens'})"
+187,0.795959595959596,"frozenset({'puzzles', 'hats'})"
+188,0.7919191919191919,"frozenset({'hats', 'towels'})"
+189,0.7707070707070707,"frozenset({'puzzles', 'headphones'})"
+190,0.7616161616161616,"frozenset({'headphones', 'towels'})"
+191,0.7515151515151515,"frozenset({'honey', 'pens'})"
+192,0.7858585858585858,"frozenset({'honey', 'puzzles'})"
+193,0.7787878787878788,"frozenset({'honey', 'towels'})"
+194,0.7808080808080808,"frozenset({'puzzles', 'ice cream'})"
+195,0.7747474747474747,"frozenset({'ice cream', 'towels'})"
+196,0.7515151515151515,"frozenset({'puzzles', 'juice'})"
+197,0.7555555555555555,"frozenset({'towels', 'juice'})"
+198,0.7727272727272727,"frozenset({'puzzles', 'kitchen appliances'})"
+199,0.7646464646464647,"frozenset({'towels', 'kitchen appliances'})"
+200,0.7636363636363637,"frozenset({'puzzles', 'laptops'})"
+201,0.7565656565656566,"frozenset({'laptops', 'towels'})"
+202,0.7646464646464647,"frozenset({'puzzles', 'laundry detergent'})"
+203,0.7606060606060606,"frozenset({'towels', 'laundry detergent'})"
+204,0.7525252525252525,"frozenset({'magazines', 'pens'})"
+205,0.797979797979798,"frozenset({'puzzles', 'magazines'})"
+206,0.7858585858585858,"frozenset({'towels', 'magazines'})"
+207,0.7707070707070707,"frozenset({'puzzles', 'nuts'})"
+208,0.7737373737373737,"frozenset({'nuts', 'towels'})"
+209,0.7808080808080808,"frozenset({'puzzles', 'paint'})"
+210,0.7818181818181819,"frozenset({'towels', 'paint'})"
+211,0.8010101010101011,"frozenset({'puzzles', 'pens'})"
+212,0.7525252525252525,"frozenset({'scarves', 'pens'})"
+213,0.7515151515151515,"frozenset({'socks', 'pens'})"
+214,0.7909090909090909,"frozenset({'towels', 'pens'})"
+215,0.7717171717171717,"frozenset({'pepper', 'puzzles'})"
+216,0.7606060606060606,"frozenset({'pepper', 'towels'})"
+217,0.7757575757575758,"frozenset({'puzzles', 'pet food'})"
+218,0.7747474747474747,"frozenset({'pet food', 'towels'})"
+219,0.7686868686868686,"frozenset({'puzzles', 'pet toys'})"
+220,0.7646464646464647,"frozenset({'pet toys', 'towels'})"
+221,0.7878787878787878,"frozenset({'puzzles', 'phones'})"
+222,0.7797979797979798,"frozenset({'towels', 'phones'})"
+223,0.7707070707070707,"frozenset({'puzzles', 'pillows'})"
+224,0.7676767676767676,"frozenset({'towels', 'pillows'})"
+225,0.7686868686868686,"frozenset({'puzzles', 'plants'})"
+226,0.7636363636363637,"frozenset({'towels', 'plants'})"
+227,0.7767676767676768,"frozenset({'puzzles', 'playing cards'})"
+228,0.7838383838383839,"frozenset({'playing cards', 'towels'})"
+229,0.795959595959596,"frozenset({'puzzles', 'potting soil'})"
+230,0.7818181818181819,"frozenset({'potting soil', 'towels'})"
+231,0.793939393939394,"frozenset({'puzzles', 'reptile habitats'})"
+232,0.7545454545454545,"frozenset({'puzzles', 'running shoes'})"
+233,0.7575757575757576,"frozenset({'puzzles', 'salt'})"
+234,0.7878787878787878,"frozenset({'puzzles', 'scarves'})"
+235,0.7747474747474747,"frozenset({'puzzles', 'seeds'})"
+236,0.7696969696969697,"frozenset({'puzzles', 'shampoo'})"
+237,0.793939393939394,"frozenset({'puzzles', 'shoes'})"
+238,0.7606060606060606,"frozenset({'puzzles', 'sleeping bags'})"
+239,0.7646464646464647,"frozenset({'puzzles', 'soap'})"
+240,0.7757575757575758,"frozenset({'puzzles', 'socks'})"
+241,0.7585858585858586,"frozenset({'puzzles', 'sportswear'})"
+242,0.7636363636363637,"frozenset({'sugar', 'puzzles'})"
+243,0.7545454545454545,"frozenset({'puzzles', 'tablets'})"
+244,0.7707070707070707,"frozenset({'puzzles', 'tea'})"
+245,0.7777777777777778,"frozenset({'puzzles', 'tents'})"
+246,0.7808080808080808,"frozenset({'puzzles', 'toilet paper'})"
+247,0.7707070707070707,"frozenset({'puzzles', 'tomatoes'})"
+248,0.7898989898989899,"frozenset({'puzzles', 'toothbrushes'})"
+249,0.8454545454545455,"frozenset({'puzzles', 'towels'})"
+250,0.7787878787878788,"frozenset({'puzzles', 'toys'})"
+251,0.7787878787878788,"frozenset({'puzzles', 'umbrellas'})"
+252,0.7787878787878788,"frozenset({'puzzles', 'vases'})"
+253,0.7696969696969697,"frozenset({'puzzles', 'vodka'})"
+254,0.7696969696969697,"frozenset({'puzzles', 'water'})"
+255,0.7606060606060606,"frozenset({'puzzles', 'weights'})"
+256,0.7525252525252525,"frozenset({'puzzles', 'wine'})"
+257,0.7767676767676768,"frozenset({'puzzles', 'yoga mats'})"
+258,0.7878787878787878,"frozenset({'reptile habitats', 'towels'})"
+259,0.7696969696969697,"frozenset({'running shoes', 'towels'})"
+260,0.7585858585858586,"frozenset({'salt', 'towels'})"
+261,0.7919191919191919,"frozenset({'scarves', 'towels'})"
+262,0.7757575757575758,"frozenset({'towels', 'seeds'})"
+263,0.7737373737373737,"frozenset({'shampoo', 'towels'})"
+264,0.7858585858585858,"frozenset({'towels', 'shoes'})"
+265,0.7646464646464647,"frozenset({'sleeping bags', 'towels'})"
+266,0.7525252525252525,"frozenset({'snacks', 'towels'})"
+267,0.7696969696969697,"frozenset({'towels', 'soap'})"
+268,0.7828282828282829,"frozenset({'socks', 'towels'})"
+269,0.7707070707070707,"frozenset({'sportswear', 'towels'})"
+270,0.7585858585858586,"frozenset({'sugar', 'towels'})"
+271,0.7565656565656566,"frozenset({'towels', 'tablets'})"
+272,0.7686868686868686,"frozenset({'towels', 'tea'})"
+273,0.7848484848484848,"frozenset({'tents', 'towels'})"
+274,0.7808080808080808,"frozenset({'towels', 'toilet paper'})"
+275,0.7808080808080808,"frozenset({'towels', 'tomatoes'})"
+276,0.7787878787878788,"frozenset({'toothbrushes', 'towels'})"
+277,0.7808080808080808,"frozenset({'towels', 'toys'})"
+278,0.7676767676767676,"frozenset({'umbrellas', 'towels'})"
+279,0.7686868686868686,"frozenset({'vases', 'towels'})"
+280,0.7515151515151515,"frozenset({'vodka', 'towels'})"
+281,0.7757575757575758,"frozenset({'water', 'towels'})"
+282,0.7595959595959596,"frozenset({'towels', 'weights'})"
+283,0.7808080808080808,"frozenset({'towels', 'yoga mats'})"
+284,0.7747474747474747,"frozenset({'puzzles', 'backpacks', 'towels'})"
+285,0.7505050505050505,"frozenset({'puzzles', 'bicycles', 'towels'})"
+286,0.7545454545454545,"frozenset({'puzzles', 'bird feed', 'towels'})"
+287,0.7555555555555555,"frozenset({'puzzles', 'towels', 'brushes'})"
+288,0.7505050505050505,"frozenset({'puzzles', 'towels', 'cakes'})"
+289,0.7555555555555555,"frozenset({'puzzles', 'camping equipment', 'towels'})"
+290,0.7535353535353535,"frozenset({'puzzles', 'towels', 'chocolate'})"
+291,0.7727272727272727,"frozenset({'puzzles', 'cleaning supplies', 'towels'})"
+292,0.7616161616161616,"frozenset({'puzzles', 'towels', 'cookware'})"
+293,0.7565656565656566,"frozenset({'puzzles', 'towels', 'craft supplies'})"
+294,0.7525252525252525,"frozenset({'puzzles', 'towels', 'cutlery'})"
+295,0.7585858585858586,"frozenset({'puzzles', 'towels', 'flowers'})"
+296,0.7585858585858586,"frozenset({'puzzles', 'hats', 'towels'})"
+297,0.7545454545454545,"frozenset({'honey', 'puzzles', 'towels'})"
+298,0.7545454545454545,"frozenset({'ice cream', 'puzzles', 'towels'})"
+299,0.7595959595959596,"frozenset({'puzzles', 'towels', 'magazines'})"
+300,0.7555555555555555,"frozenset({'puzzles', 'towels', 'paint'})"
+301,0.7696969696969697,"frozenset({'puzzles', 'towels', 'pens'})"
+302,0.7656565656565657,"frozenset({'puzzles', 'towels', 'phones'})"
+303,0.7525252525252525,"frozenset({'puzzles', 'playing cards', 'towels'})"
+304,0.7646464646464647,"frozenset({'puzzles', 'potting soil', 'towels'})"
+305,0.7666666666666667,"frozenset({'puzzles', 'towels', 'reptile habitats'})"
+306,0.7696969696969697,"frozenset({'puzzles', 'scarves', 'towels'})"
+307,0.7656565656565657,"frozenset({'puzzles', 'towels', 'shoes'})"
+308,0.7525252525252525,"frozenset({'puzzles', 'towels', 'toilet paper'})"
+309,0.7575757575757576,"frozenset({'puzzles', 'toothbrushes', 'towels'})"
+310,0.7525252525252525,"frozenset({'puzzles', 'towels', 'toys'})"
+311,0.7525252525252525,"frozenset({'puzzles', 'towels', 'yoga mats'})"

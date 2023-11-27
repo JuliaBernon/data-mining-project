@@ -3,3 +3,5 @@ test.py
 
 # files in data directory
 data/*
+!data/results/
+!*.csv
