@@ -85,6 +85,16 @@ def generate_actual_route(standard_route, cities, merchandise_types, driver):
                 if number > driver["agenda"]["pref_cities"][actual_route[step]["to"]] :
                     actual_route[step+1]["from"] = actual_route[step]["from"]
                     actual_route.pop(step)
+    #checking the association rules on merch
+    for step in range(len(actual_route)) :
+        for rule in driver["agenda"]["assoc_rules"]:
+            merch_present = actual_route[step]["merchandise"].keys()
+            if rule[0] in merch_present :
+                if actual_route[step]["merchandise"][rule[0]] != 0 :
+                    if rule[1] not in merch_present :
+                        actual_route[step]["merchandise"][rule[1]] = r.randint(1,merch_add_max)
+                    elif actual_route[step]["merchandise"][rule[1]] == 0 :
+                        actual_route[step]["merchandise"][rule[1]] = r.randint(1,merch_add_max)
     return actual_route
 
 #test

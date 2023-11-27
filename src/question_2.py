@@ -23,7 +23,11 @@ dict_standard_routes = {}
 for standard in standards :
     dict_standard_routes[standard["id"]] = standard["route"]
 
-def get_classements(dict_actuals,dict_standard_routes):
+#get the new standard routes
+with open("./data/standard.json", "r") as new_standard_file:
+    new_standards = json.load(new_standard_file)
+
+def get_rankings(dict_actuals,dict_standard_routes):
     '''
     Input :
     -list of actual routes
@@ -83,19 +87,23 @@ from random import*
 def dist_between_two_routes(route1,route2):
     return randint(1,10)
 
-def question2(rankings,new_standards):
+def question2(rankings,new_standards,dict_standard_routes):
     dict_drivers = {}
     for driver in rankings.keys():
         list_driver = []
         for route in new_standards :
             list_dist = []
-            for duo in rankings["driver"]:
-                list_dist.append(duo[0],dist_between_two_routes(dict_standard_routes(duo[0]),route["route"]),duo[1])
+            for duo in rankings[driver]:
+                list_dist.append([duo[0],dist_between_two_routes(dict_standard_routes[duo[0]],route["route"]),duo[1]])
             list_dist.sort(key=lambda tup: tup[1])
             list_driver.append([route["id"],list_dist[0]])
         list_driver.sort(key=lambda tup: tup[1][2])
+        if len(list_driver) >= 5 :
+            list_driver = list_driver[:5]
+            #return list_dist_moy
         dict_drivers[driver]=list_driver
     return dict_drivers
 
-print(get_classements(dict_actuals,dict_standard_routes))
+rankings = get_rankings(dict_actuals,dict_standard_routes)
+print(question2(rankings,new_standards,dict_standard_routes))
 

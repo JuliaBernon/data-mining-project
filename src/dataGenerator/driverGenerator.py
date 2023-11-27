@@ -36,6 +36,8 @@ def generate_driver(cities, merchandise_types):
     driver = {}
     driver["pref_cities"] = {city: random.random() for city in cities}
     driver["pref_merch"] = {item: random.random() for item in merchandise_types}
-    driver["tendancy"] = set_tendancy(driver["pref_merch"])
-    driver["amp_tendancy"] = random.randint(1, 10)
+    #driver["tendancy"] = set_tendancy(driver["pref_merch"])
+    #driver["amp_tendancy"] = random.randint(1, 10)
+    driver["assoc_rules"] = [random.sample(merchandise_types,2) for i in range(2)]
+    
     return driver
