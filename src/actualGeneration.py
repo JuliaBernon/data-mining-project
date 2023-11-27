@@ -15,22 +15,24 @@ with open("./data/cities.json", "r") as cities_file:
 with open("./data/merchTypes.json", "r") as merchTypes_file:
     merchandise_types = json.load(merchTypes_file)
 
-#get the standard routes
-with open("./data/standard.json", "r") as standard_file:
-    standard_routes = json.load(standard_file)
-    nb_std_routes = len(standard_routes)
+# #get the standard routes
+# with open("./data/standard.json", "r") as standard_file:
+#     standard_routes = json.load(standard_file)
+#     nb_std_routes = len(standard_routes)
 
 # read and parse drivers.json
 with open("./data/drivers.json", "r") as drivers_file:
     drivers = json.load(drivers_file)
 
 ## generate actual.json
-def generate_actual_routes(number_of_routes):
+def generate_actual_routes(number_of_routes, std_routes_file):
     '''
     Returns a list of actual routes.
     number_of_routes : int
     '''
     actual_routes = []
+    standard_routes = json.load(std_routes_file)
+    nb_std_routes = len(standard_routes)
     for i in range(number_of_routes):
         std_route_number = random.randint(0, nb_std_routes-1)
         driver = random.choice(drivers)
@@ -42,11 +44,14 @@ def generate_actual_routes(number_of_routes):
         })
     return actual_routes
 
-if len(sys.argv) > 1:
+# print(generate_actual_routes(100, open("./data/standard.json", "r")))
+
+if len(sys.argv) >= 3:
     nb_act_routes = int(sys.argv[1])
-    actual_routes = generate_actual_routes(nb_act_routes)
+    std_routes_file = open(sys.argv[2], "r")
+    actual_routes = generate_actual_routes(nb_act_routes, std_routes_file)
 else:
-    actual_routes = generate_actual_routes(1000)
+    actual_routes = generate_actual_routes(1000, "./data/standard.json")
 
 
 # save data into actual.json
