@@ -15,7 +15,7 @@ with open("./data/cities.json", "r") as cities_file:
 with open("./data/merchTypes.json", "r") as merchTypes_file:
     merchandise_types = json.load(merchTypes_file)
 
-# #get the standard routes
+# # get the standard routes
 # with open("./data/standard.json", "r") as standard_file:
 #     standard_routes = json.load(standard_file)
 #     nb_std_routes = len(standard_routes)

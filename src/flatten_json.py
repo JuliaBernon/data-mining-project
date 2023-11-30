@@ -6,7 +6,7 @@ def flatten_json(json_obj, separator='_'):
             for key, value in obj.items():
                 new_path = f"{path}{separator}{key}" if path else key
                 if key == 'merchandise' and isinstance(value, dict):
-                    for merch_key, merch_value in value.items():
+                    for merch_key, merch_value in sorted(value.items()):
                         merchandise_key = str(merch_key)
                         merchandise_value = str(merch_value)
                         result.append(merchandise_key)
@@ -22,4 +22,11 @@ def flatten_json(json_obj, separator='_'):
 
     flatten_helper(json_obj)
     return result
+
+# # test
+# import json
+# with open("./data/actual.json") as actual_file:
+#     actual_routes = json.load(actual_file)
+
+# print(flatten_json(actual_routes[0]))
 

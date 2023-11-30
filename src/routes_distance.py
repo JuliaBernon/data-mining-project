@@ -26,4 +26,4 @@ def compute_distance(actual_route, recstd_route):
     return distance
 
 # test
-print(compute_distance(actual_routes[0], recstd_routes[0]))
+# print(compute_distance(actual_routes[0], recstd_routes[0]))
