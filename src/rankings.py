@@ -1,5 +1,6 @@
 import json
 import math
+from routes_distance import compute_distance
 '''
 Deux scénars :
 -les drivers ont déja fait toutes les routes standards un nombre de fois élevé -> pour chaque route satandard on regarde la distance moyenne avec les routes actuelles basées dessus
@@ -79,15 +80,11 @@ def dist_moy_to_a_standard_route(standard_route,actuals,dict_actuals,dict_standa
     '''
     tot_dist = 0
     for actual in actuals :
-        tot_dist += dist_between_two_routes(dict_standard_routes[standard_route], dict_actuals[actual]["route"])
+        tot_dist += compute_distance(dict_standard_routes[standard_route], dict_actuals[actual]["route"])
     if len(actuals) > 0 :
         return tot_dist/len(actuals)
     else :
         return math.inf
-
-from random import*
-def dist_between_two_routes(route1,route2):
-    return randint(1,10)
 
 rankings = get_rankings(dict_actuals,dict_standard_routes)
 

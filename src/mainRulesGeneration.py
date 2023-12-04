@@ -32,7 +32,7 @@ def generate_main_rules(nb_best_cities,nb_worst_cities,nb_best_roads,nb_worst_ro
     merch_left = []
     for merch in merchandise_types :
         if merch not in main_rules["best_merchs"]:
-            merch_left.append(city)
+            merch_left.append(merch)
     main_rules["worst_merchs"] = random.sample(merch_left,min(nb_worst_merch,len(merch_left)))
     main_rules["assoc_rules"] = [random.sample(merchandise_types,2) for i in range(nb_assoc_rules)]
     return main_rules

@@ -16,6 +16,8 @@ scripts = [
     # ("./src/merchFIAndAssoRules.py", ""), fichier à modifier en faveur du script
     ("./src/recStandard.py", 500),
     ("./src/actualGeneration.py", 1000, "./results/recStandard.json", "./data/newActual.json")
+    #("./src/rankings.py", ""),# takes a bit of time (~1min)
+    #("./src/question_2.py", ""),# takes a lot of time (at least 10 secs per driver)
 ]
 for script_args in scripts:
     run_script(*script_args)
