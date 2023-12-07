@@ -2,9 +2,12 @@
 test.py
 
 # files in data directory
-data/*
-!data/results/
-!*.csv
+data/csv/*.csv
+data/*.json
+results/*.json
+
+!results/recStandard.json
 !data/cities.json
 !data/merchTypes.json
+
 
