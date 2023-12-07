@@ -68,10 +68,10 @@ def compute_pair_frequency(pair, pairs):
 
 def most_frequent_pairs(threshold):
     # compute the frequency of each pair of cities of actual routes
-    most_frequent_pairs = []
+    most_freq_pairs = []
     for pair in sorted(pair_number, key=pair_number.get, reverse=True):
         frequency = compute_pair_frequency(pair, pairs_in_actual_routes)
         # print(pair, " : ", frequency)
         if frequency >= threshold:
-            most_frequent_pairs.append(pair)
-    return most_frequent_pairs
+            most_freq_pairs.append(pair)
+    return most_freq_pairs
