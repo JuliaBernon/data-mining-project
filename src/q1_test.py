@@ -7,12 +7,12 @@ from routes_distance import compute_distance
 with open("./data/standard.json", "r") as standard_file:
     standard_routes = json.load(standard_file)
 
-with open("./results/recStandard21.json", "r") as recstd_file:
+with open("./results/recStandard.json", "r") as recstd_file:
     recstd_routes = json.load(recstd_file)
 # Read and parse actual routes
-with open("./data/actual21.json", "r") as actual_file:
+with open("./data/actual.json", "r") as actual_file:
     actual_routes = json.load(actual_file)
-with open("./data/newActual21.json", "r") as new_actual_file:
+with open("./data/newActual.json", "r") as new_actual_file:
     new_actual_routes = json.load(new_actual_file)
 
 # Read and parse drivers
