@@ -1,5 +1,5 @@
 import json
-import math
+import time as t
 from dataGenerator.actualGenerator import generate_actual_route
 from routes_distance import compute_distance
 
@@ -8,7 +8,7 @@ with open("./data/drivers.json", "r") as drivers_file:
     drivers = json.load(drivers_file)
 
 #get the new standard routes
-with open("./data/recStandard.json", "r") as new_standard_file:
+with open("./results/recStandard.json", "r") as new_standard_file:
     new_standards = json.load(new_standard_file)
 
 #get the q2 results
@@ -24,6 +24,7 @@ with open("./data/merchTypes.json", "r") as merchTypes_file:
     merchandise_types = json.load(merchTypes_file)
 
 def test_q2(drivers,new_standards,q2_res):
+    debut = t.time()
     dict_test = {}
     for driver in drivers :
         true_ranking = []
@@ -41,7 +42,17 @@ def test_q2(drivers,new_standards,q2_res):
         for std in res_q2 :
             true_res.append(true_ranking.index(std))
         dict_test[driver["id"]] = true_res
+        print(driver["id"])
+        print(t.time()-debut)
+        for driver in dict_test.keys():
+            #todo 
+            a = 0
     return dict_test
 
-print(test_q2(drivers,new_standards,q2_res))
+q2_test = test_q2(drivers,new_standards,q2_res)
+
+# save data into q2.json
+if __name__ == "__main__":
+    with open("./data/q2_test.json", "w") as q2_test_file:
+        json.dump(q2_test, q2_test_file, indent=4)
     

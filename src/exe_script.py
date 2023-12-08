@@ -9,15 +9,16 @@ def run_script(script, *args):
 
 # Generate drivers, standard routes, and actual routes
 scripts = [
-    # ("./src/mainRulesGeneration.py",""),
-    # ("./src/driverGeneration.py", 100), # see number by default in each script
-    # ("./src/stdGeneration.py", 500),
+    ("./src/mainRulesGeneration.py",""),
+    ("./src/driverGeneration.py", 100), # see number by default in each script
+    ("./src/stdGeneration.py", 500),
     ("./src/actualGeneration.py", 11000, "./data/standard.json", "./data/actual21.json"),
     ("./src/merchFIAndAssoRules.py", 0.3, 0.75, "./data/actual21.json", "./data/csv/freq_items21.csv", "./data/csv/asso_rules21.csv", "./data/freq_items21.json"),
     ("./src/recStandard.py", 500, "./data/csv/freq_items21.csv", "./results/recStandard21.json"),
-    ("./src/actualGeneration.py", 11000, "./results/recStandard21.json", "./data/newActual21.json")
-    # ("./src/rankings.py", ""),# takes a bit of time (~1min)
-    # ("./src/question_2.py", ""),# takes a lot of time (at least 10 secs per driver)
+    #("./src/actualGeneration.py", 11000, "./results/recStandard21.json", "./data/newActual21.json")
+    ("./src/rankings.py", ""),# takes a bit of time (~1min)
+    ("./src/question_2.py", ""),# takes a lot of time (at least 10 secs per driver)
+    ("./src/q2_test.py", ""),# takes a lot of time (at least 10 secs per driver)
 ]
 for script_args in scripts:
     run_script(*script_args)

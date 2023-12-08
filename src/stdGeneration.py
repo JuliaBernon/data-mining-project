@@ -41,3 +41,4 @@ if __name__ == "__main__":
     with open("./data/standard.json", "w") as standard_file:
         json.dump(standard_routes, standard_file, indent=4)
 
+print("stdGeneration done")

@@ -46,3 +46,5 @@ else:
 if __name__ == "__main__":
     with open("./data/mainRules.json", "w") as main_rules_file:
         json.dump(main_rules, main_rules_file, indent=4)
+
+print("mainRulesGeneration done")

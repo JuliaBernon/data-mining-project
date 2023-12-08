@@ -92,3 +92,5 @@ rankings = get_rankings(dict_actuals,dict_standard_routes)
 if __name__ == "__main__":
     with open("./data/std_rankings.json", "w") as rankings_file:
         json.dump(rankings, rankings_file, indent=4)
+
+print("rankings done")

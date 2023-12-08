@@ -61,3 +61,5 @@ else:
 if __name__ == "__main__":
     with open("./data/drivers.json", "w") as drivers_file:
         json.dump(drivers, drivers_file, indent=4)
+
+print("driversGeneration done")

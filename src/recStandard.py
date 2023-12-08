@@ -55,3 +55,5 @@ else:
 if __name__ == "__main__":
     with open(filename_to_save, "w") as recstd_file:
         json.dump(recstd_routes, recstd_file, indent=4)
+
+print("recStandard done")

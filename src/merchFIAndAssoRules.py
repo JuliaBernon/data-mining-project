@@ -90,6 +90,8 @@ if __name__ == "__main__":
     asso_rules.to_csv(ARname_to_save, index=False)
     freq_items.to_json(FIname_to_save_json, orient="records", indent=4, lines=True)
 
+print("FI done")
+
 # # sublots support vs confidence, support vs lift, and lift vs confidence
 # fig, ax = plt.subplots(2, 3, figsize=(15, 10))
 # ax[0, 0].scatter(asso_rules['support'], asso_rules['confidence'], alpha=0.5)
