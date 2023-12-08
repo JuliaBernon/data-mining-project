@@ -1,7 +1,7 @@
 ### This file is used to print all the data in a readable format ###
 
 import json
-from src.divergences import euclidean_dist, cosine_dist, jaccard_dist
+# from src.divergences import euclidean_dist, cosine_dist, jaccard_dist
 
 # Read and parse standard routes
 with open("./data/standard.json", "r") as standard_file:
@@ -60,24 +60,39 @@ with open("./data/merchTypes.json", "r") as merchTypes_file:
 #             print(f"\t{route['id']} : {[actual_route['id'] for actual_route in actual_routes if actual_route['sroute'] == route['id'] and actual_route['driver'] == driver]}")
 #     print("\n")
 
-# Print, for each standard route, the associated actual routes and the divergences between them
-for standard_route in standard_routes:
-    print(f"Standard route {standard_route['id']} :")
-    standard_route_set = set()
-    for step in standard_route["route"]:
-        standard_route_set.update(step["from"], step["to"])
+# # Print, for each standard route, the associated actual routes and the divergences between them
+# for standard_route in standard_routes:
+#     print(f"Standard route {standard_route['id']} :")
+#     standard_route_set = set()
+#     for step in standard_route["route"]:
+#         standard_route_set.update(step["from"], step["to"])
     
-    for actual_route in actual_routes:
-        if actual_route["sroute"] == standard_route["id"]:
-            actual_route_set = set()
-            for step in actual_route["route"]:
-                actual_route_set.update(step["from"], step["to"])
+#     for actual_route in actual_routes:
+#         if actual_route["sroute"] == standard_route["id"]:
+#             actual_route_set = set()
+#             for step in actual_route["route"]:
+#                 actual_route_set.update(step["from"], step["to"])
             
-            euclidean_distance = euclidean_dist(standard_route_set, actual_route_set, cities)
-            jaccard_distance = jaccard_dist(standard_route_set, actual_route_set)
-            cosine_distance = cosine_dist(standard_route_set, actual_route_set, cities)
-            print(f"\tActual route {actual_route['id']} (driver {actual_route['driver']})")
-            print(f"\t\tDivergences: e_dist = {euclidean_distance}, j_dist = {jaccard_distance}, c_dist = {cosine_distance}")
+#             euclidean_distance = euclidean_dist(standard_route_set, actual_route_set, cities)
+#             jaccard_distance = jaccard_dist(standard_route_set, actual_route_set)
+#             cosine_distance = cosine_dist(standard_route_set, actual_route_set, cities)
+#             print(f"\tActual route {actual_route['id']} (driver {actual_route['driver']})")
+#             print(f"\t\tDivergences: e_dist = {euclidean_distance}, j_dist = {jaccard_distance}, c_dist = {cosine_distance}")
+#     print("\n")
+
+# # For standard_route in standard_routes, print the id of the driver who did it
+# for standard_route in standard_routes:
+#     for actual_route in actual_routes:
+#         if actual_route["sroute"] == standard_route["id"]:
+#             print(f"Standard route {standard_route['id']} done by driver {actual_route['driver']}")
+#     print("\n")
+
+# Then, for each driver, print the id of the standard and actual routes he did
+for driver in drivers:
+    print(f"Driver {driver['id']} :")
+    for actual_route in actual_routes:
+        if actual_route["driver"] == driver["id"]:
+            print(f"\tActual route {actual_route['id']} (standard route {actual_route['sroute']})")
     print("\n")
 
 
