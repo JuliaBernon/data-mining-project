@@ -28,7 +28,14 @@ def generate_new_route(pairs_of_cities, merchandise_types):
         }
         route.append(trip)
         # generate a new pair of cities
-        from_city, to_city = random.choice(pairs_of_cities)
+        # from_city, to_city = random.choice(pairs_of_cities)
+        city_list = [city for city in pairs_of_cities if city[0] == to_city]
+        if city_list:
+
+            from_city, to_city = random.choice(city_list)
+        else:
+            # in that case, we have reached the end of the route
+            break
     return route
 
 # # test
