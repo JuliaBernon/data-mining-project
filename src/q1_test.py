@@ -1,19 +1,28 @@
 ### This file is used to print all the data in a readable format ###
 import json
+import time
 # import matplotlib.pyplot as plt
 from routes_distance import compute_distance
+
+start_time = time.time()
 
 # Read and parse standard routes
 with open("./data/standard.json", "r") as standard_file:
     standard_routes = json.load(standard_file)
+nb_std_routes = len(standard_routes)
 
-with open("./results/recStandard.json", "r") as recstd_file:
+with open("./results/recStandard3_16000.json", "r") as recstd_file:
     recstd_routes = json.load(recstd_file)
+nb_recstd_routes = len(recstd_routes)
+
 # Read and parse actual routes
-with open("./data/actual.json", "r") as actual_file:
+with open("./data/actual3_16000.json", "r") as actual_file:
     actual_routes = json.load(actual_file)
-with open("./data/newActual.json", "r") as new_actual_file:
+nb_act_routes = len(actual_routes)
+
+with open("./data/newActual3_16000.json", "r") as new_actual_file:
     new_actual_routes = json.load(new_actual_file)
+nb_new_act_routes = len(new_actual_routes)
 
 # Read and parse drivers
 with open("./data/drivers.json", "r") as drivers_file:
@@ -55,6 +64,31 @@ print(f"Minimum distance between new actual routes and new standard routes: {min
 print("\n")
 print(f"Maximum distance between actual routes and standard routes: {max_dist}")
 print(f"Maximum distance between new actual routes and new standard routes: {max_dist_bis}")
+print("\n")
+
+end_time = time.time()
+execution_time = end_time - start_time
+print(f"Execution time: {execution_time} seconds")
+
+# write data in txt file
+# name of the file is date and time of execution
+file_name = time.strftime("%Y%m%d-%H%M%S")
+with open(f"./results/tests/distances/{file_name}.txt", "w") as distances_file:
+    distances_file.write("Threshold : 0.8, Support : 0.3, Max_len : 3\n")
+    distances_file.write(f"{nb_std_routes} standard routes, {nb_act_routes} actual routes, {nb_new_act_routes} new actual routes, {nb_recstd_routes} rec standard routes\n\n")
+    distances_file.write(f"Mean distance between actual routes and standard routes: {mean}\n")
+    distances_file.write(f"Mean distance between new actual routes and new standard routes: {mean_bis}\n")
+    distances_file.write("\n")
+    distances_file.write(f"Standard deviation of distances between actual routes and standard routes: {std}\n")
+    distances_file.write(f"Standard deviation of distances between new actual routes and new standard routes: {std_bis}\n")
+    distances_file.write("\n")
+    distances_file.write(f"Minimum distance between actual routes and standard routes: {min_dist}\n")
+    distances_file.write(f"Minimum distance between new actual routes and new standard routes: {min_dist_bis}\n")
+    distances_file.write("\n")
+    distances_file.write(f"Maximum distance between actual routes and standard routes: {max_dist}\n")
+    distances_file.write(f"Maximum distance between new actual routes and new standard routes: {max_dist_bis}\n")
+    distances_file.write("\n")
+    distances_file.write(f"Execution time: {execution_time} seconds\n")
 
 
 # # subplot distances and distances_bis
