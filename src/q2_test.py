@@ -44,9 +44,17 @@ def test_q2(drivers,new_standards,q2_res):
         dict_test[driver["id"]] = true_res
         print(driver["id"])
         print(t.time()-debut)
-        for driver in dict_test.keys():
-            #todo 
-            a = 0
+    avg = 0
+    nb_driver = 0
+    for driver in dict_test.keys():
+        avg_driver = 0
+        for i in range(5):
+            avg_driver += dict_test[driver][i]-(i+1)
+        avg_driver = avg_driver/5
+        avg += avg_driver
+        nb_driver += 1
+    avg = avg/nb_driver
+    dict_test["average error"] = avg
     return dict_test
 
 q2_test = test_q2(drivers,new_standards,q2_res)

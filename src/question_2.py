@@ -12,6 +12,9 @@ for standard in standards :
 #get the new standard routes
 with open("./results/recStandard.json", "r") as new_standard_file:
     new_standards = json.load(new_standard_file)
+dict_new_standard_routes = {} 
+for new_standard in new_standards :
+    dict_new_standard_routes[new_standard["id"]] = new_standard["route"]
 
 #get the rankings
 with open("./data/std_rankings.json", "r") as rankings_file:
@@ -28,6 +31,7 @@ def question2(rankings,new_standards,dict_standard_routes):
         dicts_dists[route["id"]] = dict_dists_routes
         print(route["id"])
         print(t.time()-start) """
+    tot = 0
     for driver in rankings.keys():
         list_driver = []
         for route in new_standards :
@@ -38,7 +42,6 @@ def question2(rankings,new_standards,dict_standard_routes):
             #print(route["id"])
             #print(list_dist)
             list_dist.sort(key=lambda tup: tup[1])
-            #print(list_dist)
             list_driver.append([route["id"],list_dist[0][0],list_dist[0][1]])
             #print(route["id"])
             #print(t.time()-start)
@@ -47,10 +50,13 @@ def question2(rankings,new_standards,dict_standard_routes):
         if len(list_driver) >= 5 :
             list_driver = list_driver[:5]
             #return list_dist_moy
+        print(list_driver)
         for i in range(len(list_driver)) :
             list_driver[i] = list_driver[i][0]
         dict_drivers[driver]=list_driver
         print(driver)
+        print(tot)
+        tot+=1
         print(t.time()-start)
     return dict_drivers
 
