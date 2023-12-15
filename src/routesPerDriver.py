@@ -9,6 +9,9 @@ from mlxtend.frequent_patterns import association_rules
 from mlxtend.preprocessing import TransactionEncoder
 # from mlxtend.frequent_patterns import fpgrowth
 from merchFIAndAssoRules import route_to_list_merch
+from freqCities import most_frequent_pairs
+import re
+import dataGenerator.newStdGenerator
 
 # Read and parse standard routes
 with open("./data/standard.json", "r") as standard_file:
@@ -47,7 +50,7 @@ def get_routes_per_driver(actual_routes, driver):
 #     print(get_routes_per_driver(actual_routes, driver))
 
 # create a function to get the FIs and ARs for a given driver
-def FIandAssoRulesForOneDriver(support, threshold, maxLen, actualRoutesDriver, driver):
+def FIandAssoRulesForOneDriver(support, threshold, actualRoutesDriver, driver):
     
     all_routes = []
     for i in range(len(actualRoutesDriver)):
@@ -63,10 +66,33 @@ def FIandAssoRulesForOneDriver(support, threshold, maxLen, actualRoutesDriver, d
     te_ary = te.fit(all_routes).transform(all_routes)
     df = pd.DataFrame(te_ary, columns=te.columns_)
 
-    frequent_itemsets = apriori(df, min_support=support, use_colnames=True, max_len=maxLen)
+    frequent_itemsets = apriori(df, min_support=support, use_colnames=True, max_len=3)
     rules = association_rules(frequent_itemsets, metric="confidence", min_threshold=threshold)
 
     return frequent_itemsets, rules
+
+def genetate_recStandardForOneDriver(nb_routes, FI_file, driver):
+    '''
+    Generate a new standard route, given a set of pairs of cities and merchandise types
+
+    pairs_of_cities : List[(str, str)]
+    merchandise_types : List[List[str]]
+
+    generate_new_route(pairs_of_cities, merchandise_types) -> List[Dict[str, Any]]
+    '''
+    # analyse the most frequent merchandise types and itemsets based on freq_items.csv
+    freq_items = pd.read_csv(FI_file)
+    freq_items["itemsets"] = freq_items["itemsets"].apply(lambda x: re.findall(r'{.*?}', str(x))[0])
+    cleaned_freq_items = [item.replace("'", "").replace("{","[").replace("}","]") for item in freq_items["itemsets"].values.tolist()]
+
+    # find the most frequent pairs of cities in actual_routes based on freqCities.py
+    most_freq_pairs = most_frequent_pairs(0.005)
+    recstd_routes = []
+    for i in range(nb_routes):
+        recstd_routes.append({
+            "route": dataGenerator.newStdGenerator.generate_new_route(most_freq_pairs, cleaned_freq_items)
+        })
+    return recstd_routes
 
 drivers = get_drivers(actual_routes)
 # print(drivers)
@@ -74,13 +100,17 @@ actual_routes_driver = get_routes_per_driver(actual_routes, drivers[0])
 with open("./data/actual_driver1.json", "w") as actual_driver_file:
     json.dump(actual_routes_driver, actual_driver_file)
 # print(actual_routes_driver)
-frequent_itemsets, rules = FIandAssoRulesForOneDriver(0.8, 0.5, 3, actual_routes_driver, drivers[0])
+frequent_itemsets, rules = FIandAssoRulesForOneDriver(0.8, 0.5, actual_routes_driver, drivers[0])
 print(frequent_itemsets, rules)
+recstd_routes = genetate_recStandardForOneDriver(1, "./data/csv/freq_items_driver1.csv", drivers[0])
 
 # save data
 frequent_itemsets.to_csv("./data/csv/freq_items_driver1.csv", index=False)
 rules.to_csv("./data/csv/asso_rules_driver1.csv", index=False)
 frequent_itemsets.to_json("./data/freq_items_driver1.json", orient="records")
+with open("./data/recstd_driver1.json", "w") as recstd_driver_file:
+    json.dump(recstd_routes, recstd_driver_file)
+
 
 # # subplots support vs confidence, support vs lift, confidence vs lift
 # plt.subplot(1, 3, 1)

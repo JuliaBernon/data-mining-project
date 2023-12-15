@@ -79,7 +79,7 @@ if len(sys.argv) > 1:
     FIname_to_save_json = sys.argv[6]
     freq_items, asso_rules = FIandAssoRules(support, threshold, actualFile)
 else:
-    freq_items, asso_rules = FIandAssoRules(0.75, 0.3, 3, "./data/actual.json")
+    freq_items, asso_rules = FIandAssoRules(0.75, 0.3, "./data/actual.json")
     FIname_to_save = "./data/csv/freq_items.csv"
     ARname_to_save = "./data/csv/asso_rules.csv"
     FIname_to_save_json = "./data/freq_items.json"
