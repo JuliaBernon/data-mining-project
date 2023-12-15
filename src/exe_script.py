@@ -27,7 +27,3 @@ for script_args in scripts:
 
 
 ## for all the tests : threshold = 0.8, support = 0.3, max_len = 3
-## for 100 standard routes : 
-    # xxx100 : 100 actual, 100 new actual, 100 rec standard
-## for 500 standard routes : 
-    # xxx500 : 500 actual, 500 new actual, 500 rec standard

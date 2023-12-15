@@ -1,0 +1,3 @@
+merchTypes : 92
+cities : 20
+drivers : 100
