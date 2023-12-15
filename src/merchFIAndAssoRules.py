@@ -39,7 +39,7 @@ def route_to_list_merch(route):
         # route_merchandise_types[i].append(route[i]["to"])
     return route_merchandise_types
 
-def FIandAssoRules(support, threshold, maxLen, actualFile):
+def FIandAssoRules(support, threshold, actualFile):
     '''
     Returns the frequent itemsets and association rules for a given threshold and a given actualFile.
     support : float
@@ -65,7 +65,7 @@ def FIandAssoRules(support, threshold, maxLen, actualFile):
     te_ary = te.fit(all_routes).transform(all_routes)
     df = pd.DataFrame(te_ary, columns=te.columns_)
 
-    freq_items = apriori(df, min_support=support, use_colnames=True, max_len = maxLen)
+    freq_items = apriori(df, min_support=support, use_colnames=True, max_len = 3)
     asso_rules = association_rules(freq_items, metric="confidence", min_threshold=threshold)
 
     return freq_items, asso_rules
@@ -73,14 +73,13 @@ def FIandAssoRules(support, threshold, maxLen, actualFile):
 if len(sys.argv) > 1:
     support = float(sys.argv[1])
     threshold = float(sys.argv[2])
-    maxLen = float(sys.argv[3])
-    actualFile = sys.argv[4]
-    FIname_to_save = sys.argv[5]
-    ARname_to_save = sys.argv[6]
-    FIname_to_save_json = sys.argv[7]
-    freq_items, asso_rules = FIandAssoRules(support, threshold, maxLen, actualFile)
+    actualFile = sys.argv[3]
+    FIname_to_save = sys.argv[4]
+    ARname_to_save = sys.argv[5]
+    FIname_to_save_json = sys.argv[6]
+    freq_items, asso_rules = FIandAssoRules(support, threshold, actualFile)
 else:
-    freq_items, asso_rules = FIandAssoRules(0.75, 0.3, 3, "./data/actual.json")
+    freq_items, asso_rules = FIandAssoRules(0.75, 0.3, "./data/actual.json")
     FIname_to_save = "./data/csv/freq_items.csv"
     ARname_to_save = "./data/csv/asso_rules.csv"
     FIname_to_save_json = "./data/freq_items.json"
