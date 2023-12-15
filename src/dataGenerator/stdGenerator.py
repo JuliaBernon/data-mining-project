@@ -24,7 +24,7 @@ def generate_route(cities, merchandise_types):
     for _ in range(num_trips):
         # random number of merchandise types with maximum 50 items of each type
         #merchandise = {item: random.randint(1, 50) for item in random.sample(merchandise_types, random.randint(1, len(merchandise_types)))}
-        merchandise = {item: random.randint(1, 50) for item in random.sample(merchandise_types, random.randint(1, 10))}
+        merchandise = {item: random.randint(1, 50) for item in random.sample(merchandise_types, random.randint(1, min(10,len(merchandise_types))))}
         route.append({"from": from_city, "to": to_city, "merchandise": merchandise})
         from_city = to_city
         to_city = random.choice(cities)

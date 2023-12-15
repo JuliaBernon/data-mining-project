@@ -53,10 +53,12 @@ def FIandAssoRules(support, threshold, actualFile):
     all_routes = []
     for i in range(len(actual_routes)):
         all_routes.append(route_to_list_merch(actual_routes[i]["route"]))
-
-    for route in all_routes:
-        if route ==  []:
-            all_routes.remove(route)
+    
+    new_all_routes = []
+    for route in all_routes :
+        if route !=  []:
+            new_all_routes.append(route)
+    all_routes = new_all_routes
 
     # Flatten the list of lists if necessary
     all_routes = [[item for sublist in route for item in sublist] if isinstance(route[0], list) else route for route in all_routes]
