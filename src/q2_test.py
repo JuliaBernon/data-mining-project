@@ -28,6 +28,7 @@ with open("./data/merchTypes.json", "r") as merchTypes_file:
     merchandise_types = json.load(merchTypes_file)
 
 def test_q2(drivers,new_standards,q2_res):
+    tps_ex = q2_res.pop("tps_ex")
     debut = t.time()
     dict_test = {}
     for driver in drivers :
@@ -42,13 +43,13 @@ def test_q2(drivers,new_standards,q2_res):
         for i in range(len(true_ranking)):
             true_ranking[i] = true_ranking[i][0]
         true_res = []
-        res_q2 = q2_res[driver["id"]]
-        for std in res_q2 :
-            true_res.append(true_ranking.index(std))
-        dict_test[driver["id"]] = true_res
-        print(driver["id"])
-        print(t.time()-debut)
-    tps_ex = t.time()-debut
+        if driver["id"] in q2_res.keys():
+            res_q2 = q2_res[driver["id"]]
+            for std in res_q2 :
+                true_res.append(true_ranking.index(std))
+            dict_test[driver["id"]] = true_res
+            print(driver["id"])
+            print(t.time()-debut)
     avg = 0
     nb_driver = 0
     for driver in dict_test.keys():

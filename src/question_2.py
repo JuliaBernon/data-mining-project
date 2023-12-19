@@ -58,6 +58,7 @@ def question2(rankings,new_standards,dict_standard_routes):
         print(tot)
         tot+=1
         print(t.time()-start)
+    dict_drivers["tps_ex"] = t.time()-start
     return dict_drivers
 
 q2 = question2(rankings,new_standards,dict_standard_routes)
