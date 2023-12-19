@@ -13,10 +13,10 @@ scripts = [
     ("./src/driverGeneration.py", 100), # see number by default in each script
     ("./src/stdGeneration.py", 500),
 
-    ("./src/actualGeneration.py", 1000, "./data/standard.json", "./data/actual.json"),
-    ("./src/merchFIAndAssoRules.py", 0.3, 0.8, "./data/actual.json", "./data/csv/freq_items.csv", "./data/csv/asso_rules.csv", "./data/freq_items.json"),
-    ("./src/recStandard.py", 500, "./data/csv/freq_items.csv", "./results/recStandard.json"),
-    ("./src/actualGeneration.py", 1000, "./results/recStandard.json", "./data/newActual.json")
+    ("./src/actualGeneration.py", 10000, "./data/standard.json", "./data/actual.json"),
+    #("./src/merchFIAndAssoRules.py", 0.3, 0.8, "./data/actual.json", "./data/csv/freq_items.csv", "./data/csv/asso_rules.csv", "./data/freq_items.json"),
+    #("./src/recStandard.py", 500, "./data/csv/freq_items.csv", "./results/recStandard.json"),
+    #("./src/actualGeneration.py", 1000, "./results/recStandard.json", "./data/newActual.json")
     
     #("./src/rankings.py", ""),# takes a bit of time (~1min)
     #("./src/question_2.py", ""),# takes a lot of time (at least 10 secs per driver)
