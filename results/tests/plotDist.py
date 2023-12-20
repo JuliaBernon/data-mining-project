@@ -3,86 +3,46 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-# Read and parse distances
-means = []
-means_bis = []
-stds = []
-stds_bis = []
-min_dists = []
-min_dists_bis = []
-max_dists = []
-max_dists_bis = []
-execution_times = []
-
-acts = []
-
-acts100 = []
-acts500 = []
-means500 = []
-means_bis500 = []
-means100 = []
-means_bis100 = []
-stds100 = []
-stds_bis100 = []
-stds500 = []
-stds_bis500 = []
-
 # for all .txt files in results/tests/distances, parse mean data
-for file in os.listdir("./results/tests/distances/std1000"):
-    if file.endswith(".txt"):
-        acts.append(parseActualLength("./results/tests/distances/std1000/" + file))
-        means.append(parseMean("./results/tests/distances/std1000/" + file))
-        means_bis.append(parseMeanBis("./results/tests/distances/std1000/" + file))
-        stds.append(parseStd("./results/tests/distances/std1000/" + file))
-        stds_bis.append(parseStdBis("./results/tests/distances/std1000/" + file))
-        min_dists.append(parseMin("./results/tests/distances/std1000/" + file))
-        min_dists_bis.append(parseMinBis("./results/tests/distances/std1000/" + file))
-        max_dists.append(parseMax("./results/tests/distances/std1000/" + file))
-        max_dists_bis.append(parseMaxBis("./results/tests/distances/std1000/" + file))
-        execution_times.append(parseTime("./results/tests/distances/std1000/" + file))
 
-for file in os.listdir("./results/tests/distances/std100bis"):
-    if file.endswith(".txt"):
-        means100.append(parseMean("./results/tests/distances/std100bis/" + file))
-        means_bis100.append(parseMeanBis("./results/tests/distances/std100bis/" + file))
-        acts100.append(parseActualLength("./results/tests/distances/std100bis/" + file))
-        stds100.append(parseStd("./results/tests/distances/std100bis/" + file))
-        stds_bis100.append(parseStdBis("./results/tests/distances/std100bis/" + file))
+def parseFile(apfp, directory):
+    acts, means, means_bis, stds, stds_bis, min_dists, min_dists_bis, max_dists, max_dists_bis = [], [], [], [], [], [], [], [], []
+    for file in os.listdir(f"{apfp}/{directory}"):
+        if file.endswith(".txt"):
+            acts.append(parseActualLength(f"{apfp}/{directory}/" + file))
 
-for file in os.listdir("./results/tests/distances/std500bis"):
-    if file.endswith(".txt"):
-        means500.append(parseMean("./results/tests/distances/std500bis/" + file))
-        means_bis500.append(parseMeanBis("./results/tests/distances/std500bis/" + file))
-        acts500.append(parseActualLength("./results/tests/distances/std500bis/" + file))
-        stds500.append(parseStd("./results/tests/distances/std500bis/" + file))
-        stds_bis500.append(parseStdBis("./results/tests/distances/std500bis/" + file))
+            means.append(parseMean(f"{apfp}/{directory}/" + file))
+            means_bis.append(parseMeanBis(f"{apfp}/{directory}/" + file))
 
-# convert lists of strings to lists of floats
-stds = [float(std) for std in stds]
-acts = sorted([float(act) for act in acts])
-means = [float(mean) for mean in means]
-means_bis = [float(mean_bis) for mean_bis in means_bis]
-stds = [float(std) for std in stds]
-stds_bis = [float(std_bis) for std_bis in stds_bis]
-min_dists = [float(min_dist) for min_dist in min_dists]
-min_dists_bis = [float(min_dist_bis) for min_dist_bis in min_dists_bis]
-max_dists = [float(max_dist) for max_dist in max_dists]
-max_dists_bis = [float(max_dist_bis) for max_dist_bis in max_dists_bis]
-execution_times = [float(time) for time in execution_times]
-
-means100 = [float(mean) for mean in means100]
-means_bis100 = [float(mean_bis) for mean_bis in means_bis100]
-means500 = [float(mean) for mean in means500]
-means_bis500 = [float(mean_bis) for mean_bis in means_bis500]
-acts100 = sorted([float(act) for act in acts100])
-acts500 = sorted([float(act) for act in acts500])
-stds100 = [float(std) for std in stds100]
-stds_bis100 = [float(std_bis) for std_bis in stds_bis100]
-stds500 = [float(std) for std in stds500]
-stds_bis500 = [float(std_bis) for std_bis in stds_bis500]
+            stds.append(parseStd(f"{apfp}/{directory}/" + file))
+            stds_bis.append(parseStdBis(f"{apfp}/{directory}/" + file))
+            
+            min_dists.append(parseMin(f"{apfp}/{directory}/" + file))
+            min_dists_bis.append(parseMinBis(f"{apfp}/{directory}/" + file))
+            
+            max_dists.append(parseMax(f"{apfp}/{directory}/" + file))
+            max_dists_bis.append(parseMaxBis(f"{apfp}/{directory}/" + file))
+    return sorted(acts), sorted(means), sorted(means_bis), sorted(stds), sorted(stds_bis), sorted(min_dists), sorted(min_dists_bis), sorted(max_dists), sorted(max_dists_bis)
 
 
-# plot on the same graph the mean distances between actual routes and standard routes and the mean distances between new actual routes and new standard routes
+ap = "./results/tests/distances/apriori"
+fp = "./results/tests/distances/fpgrowth"
+directory1000 = "std1000"
+directory500 = "std500"
+directory100 = "std100"
+# Read and parse distances
+
+## apriori algorithm
+acts100, means100, means_bis100, stds100, stds_bis100, min_dists100, min_dists_bis100, max_dists100, max_dists_bis100 = parseFile(ap, directory100)
+acts500, means500, means_bis500, stds500, stds_bis500, min_dists500, min_dists_bis500, max_dists500, max_dists_bis500 = parseFile(ap, directory500)
+acts1000, means1000, means_bis1000, stds1000, stds_bis1000, min_dists1000, min_dists_bis1000, max_dists1000, max_dists_bis1000 = parseFile(ap, directory1000)
+
+# ## fpgrowth algorithm 
+# acts100, means100, means_bis100, stds100, stds_bis100, min_dists100, min_dists_bis100, max_dists100, max_dists_bis100 = parseFile(fp, directory100)
+# acts500, means500, means_bis500, stds500, stds_bis500, min_dists500, min_dists_bis500, max_dists500, max_dists_bis500 = parseFile(fp, directory500)
+# acts1000, means1000, means_bis1000, stds1000, stds_bis1000, min_dists1000, min_dists_bis1000, max_dists1000, max_dists_bis1000 = parseFile(fp, directory1000)
+
+# # plot on the same graph the mean distances between actual routes and standard routes and the mean distances between new actual routes and new standard routes
 fig, axs = plt.subplots(2, 1, figsize=(8, 10))
 
 # Plot for 100 standard routes
@@ -98,10 +58,10 @@ axs[0].scatter(acts500, means_bis500, label="mean newstd/newact 500", color="dar
 axs[0].plot(acts500, means_bis500, color="green", linewidth=0.8)
 
 # Plot for 1000 standard routes
-axs[0].scatter(acts, means, label="mean std/act 1000", color="blue")
-axs[0].plot(acts, means, color="blue", linewidth=0.8)
-axs[0].scatter(acts, means_bis, label="mean newstd/newact 1000", color="cyan")
-axs[0].plot(acts, means_bis, color="cyan", linewidth=0.8)
+axs[0].scatter(acts1000, means1000, label="mean std/act 1000", color="blue")
+axs[0].plot(acts1000, means1000, color="blue", linewidth=0.8)
+axs[0].scatter(acts1000, means_bis1000, label="mean newstd/newact 1000", color="cyan")
+axs[0].plot(acts1000, means_bis1000, color="cyan", linewidth=0.8)
 
 axs[0].set_title("Mean distances between actual routes and standard routes and between new actual routes and new standard routes")
 axs[0].legend()
@@ -119,10 +79,10 @@ axs[1].scatter(acts500, stds_bis500, label="std newstd/newact 500", color="darkg
 axs[1].plot(acts500, stds_bis500, color="green", linewidth=0.8)
 
 # Plot for 1000 standard routes
-axs[1].scatter(acts, stds, label="std std/act 1000", color="blue")
-axs[1].plot(acts, stds, color="blue", linewidth=0.8)
-axs[1].scatter(acts, stds_bis, label="std newstd/newact 1000", color="cyan")
-axs[1].plot(acts, stds_bis, color="cyan", linewidth=0.8)
+axs[1].scatter(acts1000, stds1000, label="std std/act 1000", color="blue")
+axs[1].plot(acts1000, stds1000, color="blue", linewidth=0.8)
+axs[1].scatter(acts1000, stds_bis1000, label="std newstd/newact 1000", color="cyan")
+axs[1].plot(acts1000, stds_bis1000, color="cyan", linewidth=0.8)
 
 axs[1].set_title("Standard deviations of distances between actual routes and standard routes and between new actual routes and new standard routes")
 axs[1].legend()
