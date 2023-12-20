@@ -67,7 +67,8 @@ def FIandAssoRules(support, threshold, actualFile):
     te_ary = te.fit(all_routes).transform(all_routes)
     df = pd.DataFrame(te_ary, columns=te.columns_)
 
-    freq_items = apriori(df, min_support=support, use_colnames=True, max_len = 3)
+    # freq_items = apriori(df, min_support=support, use_colnames=True, max_len = 3)
+    freq_items = fpgrowth(df, min_support=support, use_colnames=True, max_len = 3)
     asso_rules = association_rules(freq_items, metric="confidence", min_threshold=threshold)
 
     return freq_items, asso_rules
