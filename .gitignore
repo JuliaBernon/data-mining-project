@@ -5,10 +5,13 @@ test.py
 data/csv/*.csv
 data/*.json
 results/*.json
+results/tests/*
 
 !results/recStandard.json
 !results/recStandard_driver1.json
 !data/cities.json
 !data/merchTypes.json
+
+
 
 
