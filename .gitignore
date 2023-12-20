@@ -4,8 +4,13 @@ test.py
 # files in data directory
 data/csv/*.csv
 data/*.json
+data/apriori/*
+data/fpgrowth/*
 results/*.json
 results/tests/*
+results/apriori/*
+results/fpgrowth/*
+results/tests/distances/*
 
 !results/recStandard.json
 !results/recStandard_driver1.json
