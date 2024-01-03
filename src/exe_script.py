@@ -9,16 +9,17 @@ def run_script(script, *args):
 
 # Generate drivers, standard routes, and actual routes
 
-stdid = 1000
-nbactual = 8000
+stdid = 500
+nbactual = 5000
 fileid = f"{stdid}_{nbactual}"
+fileid = ""
 
 
 scripts = [
-    # ("./src/mainRulesGeneration.py",""),
-    # ("./src/driverGeneration.py", 100), # see number by default in each script
+    ("./src/mainRulesGeneration.py",""),
+    ("./src/driverGeneration.py", 100), # see number by default in each script
     
-    # ("./src/stdGeneration.py", 500),
+    ("./src/stdGeneration.py", stdid),
 
     ("./src/actualGeneration.py", nbactual, f"./data/standard{stdid}.json", f"./data/actual{fileid}.json"),
     ("./src/merchFIAndAssoRules.py", 0.3, 0.8, f"./data/actual{fileid}.json", f"./data/csv/freq_items{fileid}.csv", f"./data/csv/asso_rules{fileid}.csv", f"./data/freq_items{fileid}.json"),

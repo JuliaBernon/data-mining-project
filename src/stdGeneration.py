@@ -34,11 +34,12 @@ if len(sys.argv) > 1:
     nb_std_routes = int(sys.argv[1])
     standard_routes = generate_standard_routes(nb_std_routes)
 else:
+    nb_std_routes = 500
     standard_routes = generate_standard_routes(500)
 
 # save data into standard.json
 if __name__ == "__main__":
-    with open("./data/standard.json", "w") as standard_file:
+    with open(f"./data/standard{nb_std_routes}.json", "w") as standard_file:
         json.dump(standard_routes, standard_file, indent=4)
 
 print("stdGeneration done")
