@@ -1,7 +1,7 @@
 ### Compute a distance for trip List[Dict] ###
 
 def simple_distance(r1, r2):
-    if len(r2) > len(r1) :
+    if len(r2) < len(r1) :
         r3 = r2
         r2 = r1
         r1 = r3
@@ -47,7 +47,7 @@ def merch_distance(m1,m2):
             tot += 1
     return 10 * (tot/(2*len(present_merch)))
 
-""" a =[
+a =[
             {
                 "from": "Bologna",
                 "to": "Genova",
@@ -99,4 +99,4 @@ b =[
                 }
             }
         ] 
-print(simple_distance(a,b))"""
+print(simple_distance(a,b))
