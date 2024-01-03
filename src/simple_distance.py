@@ -2,9 +2,7 @@
 
 def simple_distance(r1, r2):
     if len(r2) < len(r1) :
-        r3 = r2
-        r2 = r1
-        r1 = r3
+        simple_distance(r2, r1)
     if len(r1) == len(r2):
         dist = 0
         for i in range(len(r1)):
