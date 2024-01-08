@@ -52,8 +52,9 @@ if len(sys.argv) >= 4:
     filename_to_save = sys.argv[3]
     actual_routes = generate_actual_routes(nb_act_routes, std_routes_file)
 else:
-    actual_routes = generate_actual_routes(1000, "./data/standard.json")
     filename_to_save = "./data/actual.json"
+    actual_routes = generate_actual_routes(1000, "./data/standard500.json")
+    
 
 
 # save data into actual.json
