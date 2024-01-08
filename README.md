@@ -79,37 +79,33 @@ PS C:\> .\env\Scripts\activate
 ## How2 - Project recovery on Google Drive
 
 
-## How2 - Prepare the datasets
+## How2 - Prepare the synthetic datasets
 
 **Step 1 - Install the requirements**
 ```sh
 pip install -r requirements.txt
 ```
 
-**Step2 (optionnal) - Execute unit tests**
-```sh
-# installing pytest library
-pip install -U pytest
+**Step2 - Generate the data**
 
-# executing tests
-pytest --verbose # or pytest -v
-```
-
-**Step3 - Generate the data**
-
-All the JSON files will appear into *data* directory
+All the following mentionned JSON files should appear into *data* directory
 
 ```sh
 # on Linux or WSL
+python3 ./src/mainRulesGeneration.py
+# establish the main rules that will affect drivers' agenda
 
-python3 ./src/driverGeneration.py 
-# create 10 (default number) drivers
+python3 ./src/driverGeneration.py <nb_drivers>
+# create <nb_drivers> drivers (if none, create 10)
 
-python3 ./src/stdGeneration.py
-# create 500 (default number) standard routes
+python3 ./src/stdGeneration.py <nb_std_routes>
+# create <nb_std_routes> standard routes into  (if none, create 500)
+# save file into standard<nb_std_routes>.json file
 
-python3 ./src/actualGeneration.py
-# create 1000 (default number) actual routes
+python3 ./src/actualGeneration.py <nb_act_routes> <std_routes_file> <actual_file_to_save>  
+# create <nb_act_routes> actual routes (if none, create 1000) based on <std_routes_file> file
+# save data into <actual_file_to_save> file
+# warning : all arguments must be filled !
 
 # on PowerShell
 ```
@@ -126,7 +122,21 @@ python3 ./src/exe_script.py
 This command will execute driverGeneration.py, stdGeneration.py, actualGeneration.py, and will create 100 drivers, 1000 standard routes, and 5000 actual routes, by default.
 
 
-# Step 1 : Recommended standard routes
+# Step 1 : Recommanded standard routes
+
+**Identifying frequent itemsets and association rules**
+
+```sh
+python3 ./src/merchFIAndAssoRules.py <support> <threshold> <actual_routes_file> <FI_to_save_csv> <assoRules_to_save_csv> <FI_to_save_json>
+```
+Based on the <actual_routes_file> provided, extract the frequent itemsets and association rules with 'support' support and 'threshold' threshold.
+It will save the frequent itemsets and association rules into *./data/csv/* directory in CSV files. A JSON file with the found frequent itemsets will also be created in *./data/* directory.
+
+**Recommanding standard routes**
+```sh
+python3 ./src/recStandard.py <nb_recStd_routes> <FI_file_csv> <recStandard_file_to_save>
+```
+
 
 # Step 2 : List of 5 standard routes for each driver to minimize diversions
 
