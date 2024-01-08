@@ -13,8 +13,7 @@ This project falls within the *Data Mining Course, University of Trento*, 2023-2
 Instructor : Prof. Yannis Valagrakis
 
 
-## How2 - Step1 : Clone the project from GitHub
-*See Step3 for Google Drive instructions*
+## How2 - Clone the project from GitHub
 
 **Clone the project**
 
@@ -32,7 +31,7 @@ git clone https://github.com/JuliaBernon/data-mining-project.git
 cd data-mining-project
 ```
 
-## How2 - Step2 : Set up a virtual environment
+## How2 - Set up a virtual environment
 ```bash
 # create a virtual environment
 python3 -m venv env
@@ -109,10 +108,7 @@ python3 ./src/actualGeneration.py <nb_act_routes> <std_routes_file> <actual_file
 
 # on PowerShell
 ```
-If you want to specify the number of each, add the number as argument
-```bash
-python3 ./src/<filename>Generation.py <number>
-```
+
 
 **By default**
 ```sh
