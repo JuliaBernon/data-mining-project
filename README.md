@@ -115,7 +115,7 @@ python3 ./src/actualGeneration.py <nb_act_routes> <std_routes_file> <actual_file
 python3 ./src/exe_script.py
 ```
 
-This command will execute driverGeneration.py, stdGeneration.py, actualGeneration.py, and will create 100 drivers, 1000 standard routes, and 5000 actual routes, by default.
+This command will execute driverGeneration.py, stdGeneration.py, actualGeneration.py, and will create 10 drivers, 500 standard routes, 1000 actual routes, 500 recommended standard routes, and 1000 new actual routes, by default.
 
 
 # Step 1 : Recommanded standard routes
