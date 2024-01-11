@@ -1,11 +1,9 @@
 ### This file is used to generate the actual.json file. ###
-# run : python3 src/actualGeneration.py <number_of_routes>
 
 import random
 import json
 import sys
 from dataGenerator.actualGenerator import generate_actual_route
-
 
 # read and parse cities.json
 with open("./data/cities.json", "r") as cities_file:
@@ -15,11 +13,6 @@ with open("./data/cities.json", "r") as cities_file:
 with open("./data/merchTypes.json", "r") as merchTypes_file:
     merchandise_types = json.load(merchTypes_file)
 
-# # get the standard routes
-# with open("./data/standard.json", "r") as standard_file:
-#     standard_routes = json.load(standard_file)
-#     nb_std_routes = len(standard_routes)
-
 # read and parse drivers.json
 with open("./data/drivers.json", "r") as drivers_file:
     drivers = json.load(drivers_file)
@@ -28,7 +21,13 @@ with open("./data/drivers.json", "r") as drivers_file:
 def generate_actual_routes(number_of_routes, std_routes_file):
     '''
     Returns a list of actual routes.
-    number_of_routes : int
+
+    Parameters:
+    number_of_routes (int): The number of actual routes to generate.
+    std_routes_file (file): The file containing the standard routes.
+
+    Returns:
+    list: A list of dictionaries representing the actual routes.
     '''
     actual_routes = []
     standard_routes = json.load(std_routes_file)
@@ -51,15 +50,15 @@ if len(sys.argv) >= 4:
     std_routes_file = open(sys.argv[2], "r")
     filename_to_save = sys.argv[3]
     actual_routes = generate_actual_routes(nb_act_routes, std_routes_file)
-else:
+else: # default values if none given
     filename_to_save = "./data/actual.json"
     actual_routes = generate_actual_routes(1000, "./data/standard500.json")
-    
 
+# run with default values : python3 actualGeneration.py 1000 ./data/standard500.json ./data/actual.json
 
 # save data into actual.json
 if __name__ == "__main__":
     with open(filename_to_save, "w") as actual_file:
         json.dump(actual_routes, actual_file, indent=4)
 
-print("actualGeneration done")
+print(f"actualGeneration.py executed successfully : {len(actual_routes)} actual routes generated in {filename_to_save}")
