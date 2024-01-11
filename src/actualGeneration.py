@@ -54,7 +54,7 @@ else: # default values if none given
     filename_to_save = "./data/actual.json"
     actual_routes = generate_actual_routes(1000, "./data/standard500.json")
 
-# run with default values : python3 actualGeneration.py 1000 ./data/standard500.json ./data/actual.json
+# run with default values : python3 ./src/actualGeneration.py 1000 ./data/standard500.json ./data/actual.json
 
 # save data into actual.json
 if __name__ == "__main__":
