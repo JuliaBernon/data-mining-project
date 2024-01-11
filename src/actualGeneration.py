@@ -30,16 +30,16 @@ def generate_actual_routes(number_of_routes, std_routes_file):
     list: A list of dictionaries representing the actual routes.
     '''
     actual_routes = []
-    standard_routes = json.load(std_routes_file)
+    standard_routes = json.load(std_routes_file) # load standard routes to be used
     nb_std_routes = len(standard_routes)
     for i in range(number_of_routes):
         std_route_number = random.randint(0, nb_std_routes-1)
         driver = random.choice(drivers)
         actual_routes.append({
-            "id": f"a{i + 1}",
-            "driver": driver["id"],
-            "sroute": f"{standard_routes[std_route_number]['id']}",
-            "route": generate_actual_route(standard_routes[std_route_number]["route"], cities, merchandise_types, driver)
+            "id": f"a{i + 1}", # actual route id
+            "driver": driver["id"], # corresponding driver id
+            "sroute": f"{standard_routes[std_route_number]['id']}", # corresponding standard route id
+            "route": generate_actual_route(standard_routes[std_route_number]["route"], cities, merchandise_types, driver) # actual route
         })
     return actual_routes
 

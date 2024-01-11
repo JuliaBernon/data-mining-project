@@ -29,3 +29,8 @@ def levenshtein_distance_list(l1, l2):
                           d[i - 1][j - 1] + cost) # substitution
     
     return d[len(l1)][len(l2)]
+
+## test
+# l1 = ["a", "b", "c"]
+# l2 = ["a", "b", "c", "d"]
+# print(levenshtein_distance_list(l1, l2))

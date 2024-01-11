@@ -29,22 +29,22 @@ def adapt_driver(driver, main_rules):
     Returns:
         None
     """
-    proba_main_rules = main_rules["proba_main_rules"]
+    proba_main_rules = main_rules["proba_main_rules"] # probability to apply the main rules
     for city in main_rules["best_cities"]:
         if random.random() < proba_main_rules:
-            driver["pref_cities"][city] = 0.9
+            driver["pref_cities"][city] = 0.9 # if best city, set the probability to 0.9
     for city in main_rules["worst_cities"]:
         if random.random() < proba_main_rules:
-            driver["pref_cities"][city] = 0.1
+            driver["pref_cities"][city] = 0.1 # if worst city, set the probability to 0.1
     for merch in main_rules["best_merchs"]:
         if random.random() < proba_main_rules:
-            driver["pref_merch"][merch] = 0.9
+            driver["pref_merch"][merch] = 0.9 # if pref merch, set the probability to 0.9
     for merch in main_rules["worst_merchs"]:
         if random.random() < proba_main_rules:
-            driver["pref_merch"][merch] = 0.1
+            driver["pref_merch"][merch] = 0.1 # if worst merch, set the probability to 0.1
     for assoc_rule in main_rules["assoc_rules"]:
         if random.random() < proba_main_rules:
-            driver["assoc_rules"].append(assoc_rule)
+            driver["assoc_rules"].append(assoc_rule) # add the association rule
 
 # generate drivers.json
 def generate_drivers(nb_drivers, main_rules):
@@ -60,9 +60,9 @@ def generate_drivers(nb_drivers, main_rules):
     '''
     drivers = []
     for i in range(nb_drivers):
-        driver_agenda = generate_driver(cities, merchandise_types)
+        driver_agenda = generate_driver(cities, merchandise_types) # generate a driver's agenda
         if main_rules != {}:
-            adapt_driver(driver_agenda, main_rules)
+            adapt_driver(driver_agenda, main_rules) # adapt the driver's preferences based on the main rules
         drivers.append({"id": f"d{i + 1}", "agenda": driver_agenda})
     return drivers
 

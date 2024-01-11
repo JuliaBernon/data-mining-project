@@ -3,7 +3,6 @@
 
 import json
 import pandas as pd
-import matplotlib.pyplot as plt
 import sys
 
 from mlxtend.frequent_patterns import apriori
@@ -15,7 +14,12 @@ from mlxtend.frequent_patterns import fpgrowth
 def route_to_merchandises(route):
     '''
     Returns a list of merchandises for each step in a route.
-    route : list(dict(str, str))
+
+    Parameters:
+    route (list[dict[str, str]]): A list of dictionaries representing each step in a route. Each dictionary contains a "merchandise" key.
+
+    Returns:
+    list[str]: A list of merchandises for each step in the route.
     '''
     merchandises = []
     for i in range(len(route)):
@@ -28,7 +32,12 @@ def route_to_merchandises(route):
 def route_to_list_merch(route):
     '''
     Returns a list of dictionaries with the merchandise types for each step in a route.
-    route : list(dict(str, str))
+    
+    Parameters:
+    route (list(dict(str, str))): A list of dictionaries representing the route.
+    
+    Returns:
+    list: A list of merchandise types for each step in the route.
     '''
     route_merchandise_types = []
     for i, dictionary in enumerate(route_to_merchandises(route)):
@@ -42,9 +51,15 @@ def route_to_list_merch(route):
 def FIandAssoRules(support, threshold, actualFile):
     '''
     Returns the frequent itemsets and association rules for a given threshold and a given actualFile.
-    support : float
-    threshold : float
-    actualFile : str
+
+    Parameters:
+    support (float): The minimum support threshold for frequent itemsets.
+    threshold (float): The minimum confidence threshold for association rules.
+    actualFile (str): The path to the actual file containing the routes.
+
+    Returns:
+    freq_items (DataFrame): The frequent itemsets.
+    asso_rules (DataFrame): The association rules.
     '''
     with open(actualFile) as actual_file:
         actual_routes = json.load(actual_file)
@@ -63,13 +78,13 @@ def FIandAssoRules(support, threshold, actualFile):
     # Flatten the list of lists if necessary
     all_routes = [[item for sublist in route for item in sublist] if isinstance(route[0], list) else route for route in all_routes]
 
-    te = TransactionEncoder()
-    te_ary = te.fit(all_routes).transform(all_routes)
-    df = pd.DataFrame(te_ary, columns=te.columns_)
+    te = TransactionEncoder() # create a transaction encoder
+    te_ary = te.fit(all_routes).transform(all_routes) # transform the list of lists into a dataframe
+    df = pd.DataFrame(te_ary, columns=te.columns_) # create a dataframe from the dataframe
 
-    # freq_items = apriori(df, min_support=support, use_colnames=True, max_len = 3)
-    freq_items = fpgrowth(df, min_support=support, use_colnames=True, max_len = 3)
-    asso_rules = association_rules(freq_items, metric="confidence", min_threshold=threshold)
+    # freq_items = apriori(df, min_support=support, use_colnames=True, max_len = 3) # get the frequent itemsets using apriori algorithm
+    freq_items = fpgrowth(df, min_support=support, use_colnames=True, max_len = 3) # get the frequent itemsets using fpgrowth algorithm
+    asso_rules = association_rules(freq_items, metric="confidence", min_threshold=threshold) # get the association rules
 
     return freq_items, asso_rules
 
@@ -82,22 +97,23 @@ if __name__ == "__main__":
         ARname_to_save = sys.argv[5]
         FIname_to_save_json = sys.argv[6]
         freq_items, asso_rules = FIandAssoRules(support, threshold, actualFile)
-    else:
+    else: # default values if none given
         freq_items, asso_rules = FIandAssoRules(0.75, 0.3, "./data/actual.json")
         FIname_to_save = "./data/csv/freq_items.csv"
         ARname_to_save = "./data/csv/asso_rules.csv"
         FIname_to_save_json = "./data/freq_items.json"
 
     # Save data into csv and json files
-
     freq_items.to_csv(FIname_to_save, index=False)
     asso_rules.to_csv(ARname_to_save, index=False)
     freq_items.to_json(FIname_to_save_json, orient="records", indent=4, lines=True)
 
-    print("FI done")
+    print("merchFIAndAssoRules.py executed successfully: frequent itemsets and association rules generated in ./data/csv/freq_items.csv and ./data/csv/asso_rules.csv and ./data/freq_items.json")
 
+## test
 # freq_items, asso_rules = FIandAssoRules(0.75, 0.3, 3, "./data/actual.json")
 
+# import matplotlib.pyplot as plt
 # # subplots support vs confidence, support vs lift, confidence vs lift
 # fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(15, 5))
 # fig.suptitle('Association Rules')

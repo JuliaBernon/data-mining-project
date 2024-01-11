@@ -8,12 +8,30 @@ with open("./data/actual.json") as actual_file:
     actual_routes = json.load(actual_file)
 
 def route_to_merchandises(route):
+    """
+    Extracts the merchandise from each step in the given route.
+
+    Args:
+        route (list): A list of dictionaries representing the route.
+
+    Returns:
+        list: A list of merchandise extracted from each step in the route.
+    """
     merchandises = []
     for step in route:
         merchandises.append(step["merchandise"])
     return merchandises
 
 def route_to_list_merch(route):
+    """
+    Converts a route to a list of merchandise types.
+
+    Parameters:
+    route (list): A list of dictionaries representing the route.
+
+    Returns:
+    list: A list of merchandise types extracted from the route.
+    """
     route_merchandise_types = []
     for dictionary in route_to_merchandises(route):
         merchandise_types = list(dictionary.keys())
@@ -24,6 +42,15 @@ all_merchandise_types = [merch for route in actual_routes for merch in route_to_
 flat_merchandise_types = [merch_type for sublist in all_merchandise_types for merch_type in sublist]
 
 def merch_frequency(merchandises):
+    """
+    Calculates the frequency of each merchandise in the given list.
+
+    Parameters:
+    merchandises (list): A list of merchandises.
+
+    Returns:
+    dict: A dictionary containing the frequency of each merchandise.
+    """
     merchandises_number = {}
     n = len(merchandises)
     for merch in merchandises:

@@ -51,7 +51,16 @@ def get_rankings(dict_actuals,dict_standard_routes):
 
 def best_per_driver(actuals_driver, dict_actuals, dict_standard_routes):
     '''
-    - actuals_driver : list of route ids
+    Returns a list of the best standard routes based on the given actual routes per driver.
+
+    Parameters:
+    - actuals_driver (list): List of route ids for a driver.
+    - dict_actuals (dict): Dictionary containing information about actual routes.
+    - dict_standard_routes (dict): Dictionary containing information about standard routes.
+
+    Returns:
+    - list: List of the best standard routes.
+
     '''
     #getting a dict of actual routes ids per standard route
     actuals_per_standard = {}
@@ -73,10 +82,18 @@ def best_per_driver(actuals_driver, dict_actuals, dict_standard_routes):
     else :
         return list_dist_moy
 
-def dist_moy_to_a_standard_route(standard_route,actuals,dict_actuals,dict_standard_routes,):
+def dist_moy_to_a_standard_route(standard_route, actuals, dict_actuals, dict_standard_routes):
     '''
-    - standard_route : route id
-    - actuals : list of route ids
+    Calculate the average distance between a standard route and a list of actual routes.
+
+    Parameters:
+    - standard_route (int): The ID of the standard route.
+    - actuals (list): A list of route IDs.
+    - dict_actuals (dict): A dictionary mapping route IDs to route information.
+    - dict_standard_routes (dict): A dictionary mapping standard route IDs to route information.
+
+    Returns:
+    - float: The average distance between the standard route and the actual routes. If the list of actual routes is empty, returns math.inf.
     '''
     tot_dist = 0
     for actual in actuals :
@@ -93,4 +110,4 @@ if __name__ == "__main__":
     with open("./data/std_rankings.json", "w") as rankings_file:
         json.dump(rankings, rankings_file, indent=4)
 
-print("rankings done")
+print(f"question_2 done : {len(rankings)} drivers ranked in ./data/std_rankings.json")

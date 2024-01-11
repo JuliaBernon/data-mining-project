@@ -1,4 +1,18 @@
+### Flatten JSON ###
+
+# This function takes a JSON object and flattens it into a list of strings.
 def flatten_json(json_obj, separator='_'):
+    """
+    Flattens a JSON object by converting nested keys into a flat structure.
+
+    Args:
+        json_obj (dict or list): The JSON object to be flattened.
+        separator (str, optional): The separator to be used between keys in the flattened structure. 
+            Defaults to '_'.
+
+    Returns:
+        list: A list containing the flattened keys and values from the JSON object.
+    """
     result = []
 
     def flatten_helper(obj, path=''):
@@ -27,6 +41,5 @@ def flatten_json(json_obj, separator='_'):
 # import json
 # with open("./data/actual.json") as actual_file:
 #     actual_routes = json.load(actual_file)
-
 # print(flatten_json(actual_routes[0]))
 

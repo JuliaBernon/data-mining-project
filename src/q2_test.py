@@ -1,3 +1,5 @@
+### Test the q2 function by calculating the average error for each driver.
+
 import json
 import time as t
 from dataGenerator.actualGenerator import generate_actual_route
@@ -16,7 +18,7 @@ with open("./data/actual.json", "r") as actual_file:
     actuals = json.load(actual_file)
 
 #get the q2 results
-with open("./data/q2.json", "r") as q2_file:
+with open("./results/driver.json", "r") as q2_file:
     q2_res = json.load(q2_file)
 
 # read and parse cities.json
@@ -28,6 +30,17 @@ with open("./data/merchTypes.json", "r") as merchTypes_file:
     merchandise_types = json.load(merchTypes_file)
 
 def test_q2(drivers,new_standards,q2_res):
+    """
+    Test the q2 function by calculating the average error for each driver.
+
+    Parameters:
+    drivers (list): A list of driver objects.
+    new_standards (list): A list of new standards.
+    q2_res (dict): A dictionary containing the q2 results.
+
+    Returns:
+    dict: A dictionary containing the average error for each driver and the tps_ex value.
+    """
     tps_ex = q2_res.pop("tps_ex")
     debut = t.time()
     dict_test = {}
@@ -83,6 +96,10 @@ with open(f"./results/tests/q2/{file_name}.txt", "w") as fi:
     fi.write(f"nb_merchtypes :\n{str(len(merchandise_types))}\n")
     fi.write(f"average error :\n{str(q2_test['average error'])}\n")
     fi.write(f"execution time :\n{str(tps_ex)}\n")
+
+print(f"q2_test done : {len(q2_test)} drivers tested in ./data/q2_test.json")
+
+# run with python3 ./src/q2_test.py
 
 
     

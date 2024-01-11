@@ -1,3 +1,5 @@
+### Generate a new standard route, given a set of pairs of cities and merchandise types ###
+
 import json
 import pandas as pd
 import dataGenerator.newStdGenerator
@@ -18,10 +20,15 @@ def generate_recStandard(nb_routes, FI_file):
     '''
     Generate a new standard route, given a set of pairs of cities and merchandise types
 
-    pairs_of_cities : List[(str, str)]
-    merchandise_types : List[List[str]]
+    Args:
+        nb_routes (int): The number of routes to generate
+        FI_file (str): The file path of the frequency items file
 
-    generate_new_route(pairs_of_cities, merchandise_types) -> List[Dict[str, Any]]
+    Returns:
+        List[Dict[str, Any]]: A list of dictionaries representing the generated routes, each containing an "id" and "route" key
+
+    Example:
+        generate_recStandard(5, "/path/to/freq_items.csv")
     '''
     # pairs_of_cities = [(city1, city2), (city3, city4), ...]
     # merchandise_types = ['[item1]', '[item3, item4, ...]', ...]
@@ -47,7 +54,7 @@ if len(sys.argv) > 1:
     FI_file = sys.argv[2]
     filename_to_save = sys.argv[3]
     recstd_routes = generate_recStandard(nb_routes, FI_file)
-else:
+else: # default values if none given
     recstd_routes = generate_recStandard(500, "./data/csv/freq_items.csv")
     filename_to_save = "./results/recStandard.json"
 
@@ -56,4 +63,5 @@ if __name__ == "__main__":
     with open(filename_to_save, "w") as recstd_file:
         json.dump(recstd_routes, recstd_file, indent=4)
 
-print("recStandard done")
+# run with default values : python3 ./src/recStandard.py 500 ./data/csv/freq_items.csv ./results/recStandard.json
+print(f"recStandard.py executed successfully : {len(recstd_routes)} routes generated in {filename_to_save}")
