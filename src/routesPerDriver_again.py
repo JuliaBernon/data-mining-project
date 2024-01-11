@@ -17,7 +17,12 @@ import time as t
 def get_drivers(actual_routes):
     '''
     Returns a list of all the drivers in actual_routes.
-    actual_routes : list(dict(str, str))
+
+    Parameters:
+    actual_routes (list[dict[str, str]]): A list of dictionaries representing actual routes.
+
+    Returns:
+    list[str]: A list of all the drivers in actual_routes.
     '''
     drivers = []
     for route in actual_routes:
@@ -28,8 +33,13 @@ def get_drivers(actual_routes):
 def get_routes_per_driver(actual_routes, driver):
     '''
     Returns a list of all the routes done by a given driver.
-    actual_routes : list(dict(str, str))
-    driver : str
+
+    Parameters:
+    actual_routes (list[dict[str, str]]): A list of dictionaries representing the actual routes.
+    driver (str): The name of the driver.
+
+    Returns:
+    list[dict[str, str]]: A list of dictionaries representing the routes done by the given driver.
     '''
     routes_per_driver = []
     for route in actual_routes:
@@ -39,6 +49,19 @@ def get_routes_per_driver(actual_routes, driver):
 
 # create a function to get the FIs and ARs for a given driver
 def FIandAssoRulesForOneDriver(support, threshold, actualRoutesDriver, driver):
+    """
+    Calculates frequent itemsets and association rules for a given driver's routes.
+
+    Parameters:
+    support (float): Minimum support threshold for frequent itemsets.
+    threshold (float): Minimum confidence threshold for association rules.
+    actualRoutesDriver (list): List of dictionaries containing the actual routes for the driver.
+    driver (str): Name of the driver.
+
+    Returns:
+    frequent_itemsets (DataFrame): DataFrame containing the frequent itemsets.
+    rules (DataFrame): DataFrame containing the association rules.
+    """
     all_routes = []
     for i in range(len(actualRoutesDriver)):
         all_routes.append(route_to_list_merch(actualRoutesDriver[i]["route"]))
@@ -54,6 +77,15 @@ def FIandAssoRulesForOneDriver(support, threshold, actualRoutesDriver, driver):
     return frequent_itemsets, rules
 
 def city_frequency(routes):
+    """
+    Calculates the frequency of each city in the given routes.
+
+    Args:
+        routes (list): A list of routes, where each route is a dictionary.
+
+    Returns:
+        dict: A dictionary containing the frequency of each city in the routes.
+    """
     all_cities = {}
     tot = 0
     for route in routes :
@@ -76,6 +108,18 @@ def city_frequency(routes):
     return freqs
 
 def fav_cities_driver(actualRoutesDriver, city_freq, mult):
+    """
+    Returns a list of favorite cities for a driver based on their actual routes,
+    city frequencies, and a multiplier.
+
+    Parameters:
+    actualRoutesDriver (list): List of actual routes taken by the driver.
+    city_freq (dict): Dictionary containing the frequency of each city.
+    mult (float): Multiplier used to determine the threshold for a favorite city.
+
+    Returns:
+    list: List of favorite cities for the driver.
+    """
     freqs_driver = city_frequency(actualRoutesDriver)
     fav_cities = []
     for city in freqs_driver.keys() :
@@ -84,10 +128,21 @@ def fav_cities_driver(actualRoutesDriver, city_freq, mult):
     return fav_cities
 
 def pairs_from_favs(fav_cities):
+    """
+    Generate pairs of favorite cities from a given list of favorite cities.
+
+    Args:
+        fav_cities (list): A list of favorite cities.
+
+    Returns:
+        list: A list of pairs, where each pair consists of two favorite cities.
+
+    Example:
+        >>> fav_cities = ['New York', 'Paris', 'Tokyo']
+        >>> pairs_from_favs(fav_cities)
+        [('New York', 'Paris'), ('New York', 'Tokyo'), ('Paris', 'New York'), ('Paris', 'Tokyo'), ('Tokyo', 'New York'), ('Tokyo', 'Paris')]
+    """
     pairs = []
-    """ for i in range(len(fav_cities)-1):
-        for j in range(i+1,len(fav_cities)):
-            pairs.append((fav_cities[i],fav_cities[j])) """
     for i in range(len(fav_cities)):
         for j in range(len(fav_cities)):
             if i != j :
@@ -95,6 +150,17 @@ def pairs_from_favs(fav_cities):
     return pairs
 
 def freq_cities_driver(actualRoutesDriver,number = 4,threshold = None):
+    """
+    Calculates the most frequent cities visited by a driver based on their routes.
+
+    Parameters:
+    actualRoutesDriver (list): A list of dictionaries representing the routes taken by the driver.
+    number (int, optional): The number of most frequent cities to return. Defaults to 4.
+    threshold (int, optional): The minimum frequency threshold for a city to be considered. Defaults to None.
+
+    Returns:
+    list: A list of the most frequent cities visited by the driver.
+    """
     all_cities = {}
     for route in actualRoutesDriver :
         true_route = route["route"]
@@ -111,6 +177,16 @@ def freq_cities_driver(actualRoutesDriver,number = 4,threshold = None):
     return order[:min(len(order),number)]
 
 def freq_pairs_driver(actualRoutesDriver,threshold):
+    """
+    Calculates the most frequent pairs of cities visited by a driver based on their routes.
+
+    Parameters:
+    actualRoutesDriver (list): A list of dictionaries representing the routes taken by the driver.
+    threshold (float): The minimum frequency threshold for a pair of cities to be considered.
+
+    Returns:
+    list: A list of the most frequent pairs of cities visited by the driver.
+    """
     all_cities = {}
     tot = 0
     for route in actualRoutesDriver :
@@ -135,10 +211,13 @@ def generate_recStandardForOneDriver(nb_routes, freq_items, freq_pairs):
     '''
     Generate a new standard route, given a set of pairs of cities and merchandise types
 
-    pairs_of_cities : List[(str, str)]
-    merchandise_types : List[List[str]]
+    Parameters:
+    nb_routes (int): The number of routes to generate
+    freq_items (DataFrame): DataFrame containing the frequent merchandise types and itemsets
+    freq_pairs (DataFrame): DataFrame containing the frequent pairs of cities
 
-    generate_new_route(pairs_of_cities, merchandise_types) -> List[Dict[str, Any]]
+    Returns:
+    List[Dict[str, Any]]: A list of dictionaries representing the generated routes
     '''
     # analyse the most frequent merchandise types and itemsets
     freq_items["itemsets"] = freq_items["itemsets"].apply(lambda x: re.findall(r'{.*?}', str(x))[0])
@@ -178,4 +257,6 @@ if __name__ == "__main__":
     # save data
     frequent_itemsets.to_json(f"./data/freq_items_driver{driver}.json", orient="records")
     with open(f"./results/perfectRoute.json", "w") as recstd_driver_file:
-        json.dump(perfect_routes, recstd_driver_file)
+        json.dump(perfect_routes, recstd_driver_file, indent=4)
+
+print(f"Perfect routes generated in ./results/perfectRoute.json")

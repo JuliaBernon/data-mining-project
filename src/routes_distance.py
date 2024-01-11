@@ -13,8 +13,13 @@ with open("./results/recStandard.json", "r") as recstd_file:
 def compute_distance(actual_route, recstd_route):
     '''
     Compute the distance between two routes.
-    actual_route : Dict[str, Any]
-    std_route : Dict[str, Any]
+
+    Parameters:
+    actual_route (Dict[str, Any]): The actual route as a dictionary.
+    recstd_route (Dict[str, Any]): The recommended route as a dictionary.
+
+    Returns:
+    int: The distance between the two routes.
     '''
     # flatten the routes
     actual_route_flattened = flatten_json(actual_route)

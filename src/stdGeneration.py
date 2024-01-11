@@ -20,7 +20,12 @@ with open("./data/merchTypes.json", "r") as merchTypes_file:
 def generate_standard_routes(nb_std_routes):
     '''
     Returns a list of standard routes.
-    nb_std_routes : int
+
+    Parameters:
+    nb_std_routes (int): The number of standard routes to generate.
+
+    Returns:
+    list: A list of dictionaries representing the standard routes. Each dictionary contains the "id" and "route" keys.
     '''
     standard_routes = []
     for i in range(nb_std_routes):
@@ -33,7 +38,7 @@ def generate_standard_routes(nb_std_routes):
 if len(sys.argv) > 1:
     nb_std_routes = int(sys.argv[1])
     standard_routes = generate_standard_routes(nb_std_routes)
-else:
+else: # default values if none given
     nb_std_routes = 500
     standard_routes = generate_standard_routes(500)
 
@@ -42,4 +47,5 @@ if __name__ == "__main__":
     with open(f"./data/standard{nb_std_routes}.json", "w") as standard_file:
         json.dump(standard_routes, standard_file, indent=4)
 
-print("stdGeneration done")
+print(f"stdGeneration.py executed successfully : {len(standard_routes)} routes generated in ./data/standard{nb_std_routes}.json")
+# run with default values : python3 ./src/stdGeneration.py 500
