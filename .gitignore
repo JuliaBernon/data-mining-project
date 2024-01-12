@@ -6,14 +6,24 @@ data/csv/*.csv
 data/*.json
 data/apriori/*
 data/fpgrowth/*
-results/*.json
-results/tests/*
-results/apriori/*
-results/fpgrowth/*
-results/tests/distances/*
 
-!results/recStandard.json
-!results/recStandard_driver1.json
+results/apriori/*.json
+!results/apriori/recStandard100_100.json
+results/fpgrowth/*.json
+!results/fpgrowth/recStandard100_100.json
+results/tests/distances/apriori/std100/*.txt
+!results/tests/distances/apriori/std100/20231220-104627.txt
+results/tests/distances/apriori/std500/*.txt
+!results/tests/distances/apriori/std500/20231220-104003.txt
+results/tests/distances/apriori/std1000/*.txt
+!results/tests/distances/apriori/std1000/20231220-103118.txt
+results/tests/distances/fpgrowth/std100/*.txt
+!results/tests/distances/fpgrowth/std100/20231220-093454.txt
+results/tests/distances/fpgrowth/std500/*.txt
+!results/tests/distances/fpgrowth/std500/20231220-094534.txt
+results/tests/distances/fpgrowth/std1000/*.txt
+!results/tests/distances/fpgrowth/std1000/20231220-095228.txt
+
 !data/cities.json
 !data/merchTypes.json
 

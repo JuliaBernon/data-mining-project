@@ -1,0 +1,16 @@
+Threshold : 0.8, Support : 0.3, Max_len : 3
+500 standard routes, 500 actual routes, 500 new actual routes, 500 rec standard routes
+
+Mean distance between actual routes and standard routes: 9.246
+Mean distance between new actual routes and new standard routes: 6.592
+
+Standard deviation of distances between actual routes and standard routes: 4.56217974218465
+Standard deviation of distances between new actual routes and new standard routes: 2.6858026733176064
+
+Minimum distance between actual routes and standard routes: 2
+Minimum distance between new actual routes and new standard routes: 2
+
+Maximum distance between actual routes and standard routes: 30
+Maximum distance between new actual routes and new standard routes: 15
+
+Execution time: 0.5652766227722168 seconds
