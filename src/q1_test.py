@@ -4,7 +4,7 @@ import json
 import time
 from routes_distance import compute_distance
 
-stdfileid = "100"
+stdfileid = "100" # 100, 500 or 1000
 nbactuals = ['100', '200', '300', '400',
              '500', '1000','2000', '4000', '8000',
              '10000', '15000', '20000',
