@@ -136,14 +136,6 @@ python3 ./src/actualGeneration.py <nb_act_routes> <std_routes_file> <actual_file
 # on PowerShell
 ```
 
-
-**By default**
-```sh
-python3 ./src/exe_script.py
-```
-
-This command will execute `driverGeneration.py`, `stdGeneration.py`, `actualGeneration.py`, and will create 10 drivers, 500 standard routes, 1000 actual routes, 500 recommended standard routes, and 1000 new actual routes, by default.
-
 **Step 3 - Identify association rules and frequent itemsets**
 ```sh
 python3 ./src/merchFIAndAssoRules.py <support> <threshold> <actual_routes_file> <FI_to_save_csv> <assoRules_to_save_csv> <FI_to_save_json>
@@ -151,6 +143,23 @@ python3 ./src/merchFIAndAssoRules.py <support> <threshold> <actual_routes_file> 
 Based on the <actual_routes_file> provided, extract the frequent itemsets and association rules with 'support' support and 'threshold' threshold.
 It will save the frequent itemsets and association rules into `./data/csv/` directory in CSV files. A JSON file with the found frequent itemsets will also be created in `./data/` directory.
 
+
+**By default**
+```sh
+python3 ./src/exe_script.py
+```
+
+This command will execute `mainRulesGeneration.py`, `driverGeneration.py`, `stdGeneration.py`, `actualGeneration.py`, `merchFIAndAssoRules`, and will create 10 drivers, 500 standard routes, 1000 actual routes, 500 recommended standard routes, and 1000 new actual routes, by default.
+
+It will store the data created in `./data/` directory.
+
+**Note for next steps**
+
+The main code, for each of the following steps, is respectively written in the files : 
+
+- `./src/q1_recStandard.py`
+- `./src/q2_driver.py`
+- `./src/q3_perfectRoute.py`
 
 # Step 1 : Recommanded standard routes
 
@@ -163,7 +172,7 @@ To make recommandation, it is necessary to have the following file :
 
 **Recommanding standard routes**
 ```sh
-python3 ./src/recStandard.py <nb_recStd_routes> <FI_file_csv> <recStandard_file_to_save>
+python3 ./src/q1_recStandard.py <nb_recStd_routes> <FI_file_csv> <recStandard_file_to_save>
 ```
 
 This returns `./results/recStandard.json`.
@@ -181,7 +190,7 @@ python3 ./src/rankings.py   # create ./data/std_rankings.json
 **Identify, for each driver, 5 best routes to minimize diversions**
 
 ```sh
-python3 ./src/question_2.py
+python3 ./src/q2_driver.py
 ```
 
 This returns `./results/driver.json`
@@ -191,7 +200,7 @@ This returns `./results/driver.json`
 **Best standard route for each driver**
 
 ```sh
-python3 ./src/routesPerDriver.py
+python3 ./src/q3_perfectRoute.py
 ```
 
 This returns `./results/perfectRoute.json`.
