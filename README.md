@@ -152,7 +152,20 @@ python3 ./src/exe_script.py
 
 This command will execute `mainRulesGeneration.py`, `driverGeneration.py`, `stdGeneration.py`, `actualGeneration.py`, `merchFIAndAssoRules`, and will create 10 drivers, 500 standard routes, 1000 actual routes, 500 recommended standard routes, and 1000 new actual routes, by default.
 
-It will store the data created in `./data/` directory.
+It will store the data created in `./data/` directory :
+
+```sh
+data
+├───apriori
+├───csv
+├    - freq_items.json
+└───fpgrowth
+- actual.json
+- drivers.json
+- freq_items.json
+- mainRules.json
+- standard500.json
+```
 
 **Note for next steps**
 
