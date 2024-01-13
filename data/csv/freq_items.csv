@@ -1,0 +1,4 @@
+support,itemsets
+0.4356654603940491,frozenset({'towels'})
+0.32569360675512665,frozenset({'puzzles'})
+0.3156413349416968,frozenset({'magazines'})

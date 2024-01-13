@@ -101,7 +101,7 @@ PS C:\> .\env\Scripts\activate
 
 ```
 
-The files that already exist in `./results/` when cloning the project have no other purposes than to be an example of the data we obtained and used.
+The files that already exist in `./results/` and `./data/` when cloning the project have no other purposes than to be an example of the data we obtained and used, and to ensure the existence of all needed directories.
 
 
 ## How2 - Prepare the synthetic datasets

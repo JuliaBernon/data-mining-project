@@ -3,9 +3,13 @@ test.py
 
 # files in data directory
 data/csv/*.csv
+!data/csv/asso_rules.csv
+!data/csv/freq_items.csv
 data/*.json
 data/apriori/*
+!data/apriori/actual100_100.json
 data/fpgrowth/*
+!data/fpgrowth/actual100_100.json
 
 results/apriori/*.json
 !results/apriori/recStandard100_100.json
