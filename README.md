@@ -106,12 +106,7 @@ The files that already exist in `./results/` and `./data/` when cloning the proj
 
 ## How2 - Prepare the synthetic datasets
 
-**Step 1 - Install the requirements**
-```sh
-pip install -r requirements.txt
-```
-
-**Step2 - Generate the data**
+**Step 1 - Generate the data**
 
 This step aim to create all the files needed for the execution of questions 1, 2, and 3. 
 
@@ -137,7 +132,7 @@ python3 ./src/actualGeneration.py <nb_act_routes> <std_routes_file> <actual_file
 # on PowerShell
 ```
 
-**Step 3 - Identify association rules and frequent itemsets**
+**Step 2 - Identify association rules and frequent itemsets**
 ```sh
 python3 ./src/merchFIAndAssoRules.py <support> <threshold> <actual_routes_file> <FI_to_save_csv> <assoRules_to_save_csv> <FI_to_save_json>
 ```
