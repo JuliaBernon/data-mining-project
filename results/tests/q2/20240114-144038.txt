@@ -1,0 +1,20 @@
+Threshold : 0.8, Support : 0.3, Max_len : 3
+nb_drivers :
+100
+nb_max_merch :
+10
+nb_standards :
+100
+nb_actuals :
+100
+nb_cities :
+20
+nb_merchtypes :
+92
+average error :
+46.62686567164178
+execution time :
+3.350358009338379
+test time :
+3.2359046936035156
+start of the new tests

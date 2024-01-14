@@ -44,8 +44,8 @@ else: # default values if none given
 
 # save data into standard.json
 if __name__ == "__main__":
-    with open(f"./data/standard{nb_std_routes}.json", "w") as standard_file:
+    with open(f"./data/standard.json", "w") as standard_file:
         json.dump(standard_routes, standard_file, indent=4)
 
-print(f"stdGeneration.py executed successfully : {len(standard_routes)} routes generated in ./data/standard{nb_std_routes}.json")
+print(f"stdGeneration.py executed successfully : {len(standard_routes)} routes generated in ./data/standard.json")
 # run with default values : python3 ./src/stdGeneration.py 500

@@ -1,24 +1,7 @@
 import json
 from routes_distance import compute_distance
 import time as t
-
-#get the standard routes
-with open("./data/standard.json", "r") as standard_file:
-    standards = json.load(standard_file)
-dict_standard_routes = {} 
-for standard in standards :
-    dict_standard_routes[standard["id"]] = standard["route"]
-
-#get the new standard routes
-with open("./results/recStandard.json", "r") as new_standard_file:
-    new_standards = json.load(new_standard_file)
-dict_new_standard_routes = {} 
-for new_standard in new_standards :
-    dict_new_standard_routes[new_standard["id"]] = new_standard["route"]
-
-#get the rankings
-with open("./data/std_rankings.json", "r") as rankings_file:
-    rankings = json.load(rankings_file)
+from rankings import get_rankings
 
 def question2(rankings, new_standards, dict_standard_routes):
     """
@@ -50,22 +33,50 @@ def question2(rankings, new_standards, dict_standard_routes):
         if len(list_driver) >= 5 :
             list_driver = list_driver[:5]
             #return list_dist_moy
-        print(list_driver)
+        #print(list_driver)
         for i in range(len(list_driver)) :
             list_driver[i] = list_driver[i][0]
         dict_drivers[driver]=list_driver
-        print(driver)
-        print(tot)
+        #print(driver)
+        #print(tot)
         tot+=1
-        print(t.time()-start)
+        #print(t.time()-start)
     dict_drivers["tps_ex"] = t.time()-start
     return dict_drivers
 
-q2 = question2(rankings,new_standards,dict_standard_routes)
+def run_q2():
+    #get the standard routes
+    with open("./data/standard.json", "r") as standard_file:
+        standards = json.load(standard_file)
+    dict_standard_routes = {} 
+    for standard in standards :
+        dict_standard_routes[standard["id"]] = standard["route"]
 
-# save data into q2.json
-if __name__ == "__main__":
+    #get the actual routes
+    with open("./data/actual.json", "r") as actual_file:
+        actuals = json.load(actual_file)
+    dict_actuals = {}
+    for actual in actuals :
+        dict_actuals[actual["id"]] = actual
+
+    #get the new standard routes
+    with open("./results/recStandard.json", "r") as new_standard_file:
+        new_standards = json.load(new_standard_file)
+    dict_new_standard_routes = {} 
+    for new_standard in new_standards :
+        dict_new_standard_routes[new_standard["id"]] = new_standard["route"]
+
+    #calculate the rankings
+    rankings = get_rankings(dict_actuals,dict_standard_routes)
+
+    #find the best routes for each driver
+    q2 = question2(rankings,new_standards,dict_standard_routes)
+
+    # save data into q2.json
     with open("./results/driver.json", "w") as q2_file:
-        json.dump(q2, q2_file, indent=4)
+            json.dump(q2, q2_file, indent=4)
 
-print(f"question2 done : {len(q2)} drivers ranked in ./results/driver.json")
+    print(f"question2 done : {len(q2)} drivers ranked in ./results/driver.json")
+
+if __name__ == "__main__":
+    run_q2()

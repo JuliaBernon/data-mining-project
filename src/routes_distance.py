@@ -4,11 +4,11 @@ from lev_distance import levenshtein_distance_list
 from flatten_json import flatten_json
 import json
 
-with open("./data/actual.json", "r") as actual_file:
-    actual_routes = json.load(actual_file)
+#with open("./data/actual.json", "r") as actual_file:
+#    actual_routes = json.load(actual_file)
 
-with open("./results/recStandard.json", "r") as recstd_file:
-    recstd_routes = json.load(recstd_file)
+#with open("./results/recStandard.json", "r") as recstd_file:
+#    recstd_routes = json.load(recstd_file)
 
 def compute_distance(actual_route, recstd_route):
     '''
