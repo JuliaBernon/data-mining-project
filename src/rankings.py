@@ -1,14 +1,6 @@
 import json
 import math
 from routes_distance import compute_distance
-'''
-Deux scénars :
--les drivers ont déja fait toutes les routes standards un nombre de fois élevé -> pour chaque route satandard on regarde la distance moyenne avec les routes actuelles basées dessus
--les drivers ont jamais vu les routes standards et elles sont assez différentes des routes standards utilisées pour fabriquer les actuelles
-Parce que :
-Si ont prend la route standard la plus proche en moyenne des routes actuelles ça va juste être celle qu'il a le plus fait.
--> en parler avec julia
-'''
 
 #get the actual routes
 with open("./data/actual.json", "r") as actual_file:
