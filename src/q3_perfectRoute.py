@@ -65,9 +65,11 @@ def FIandAssoRulesForOneDriver(support, threshold, actualRoutesDriver, driver):
     all_routes = []
     for i in range(len(actualRoutesDriver)):
         all_routes.append(route_to_list_merch(actualRoutesDriver[i]["route"]))
+    temp = []
     for route in all_routes:
-        if route ==  []:
-            all_routes.remove(route)
+        if route !=  []:
+            temp.append(route)
+    all_routes = temp
     all_routes = [[item for sublist in route for item in sublist] if isinstance(route[0], list) else route for route in all_routes]
     te = TransactionEncoder()
     te_ary = te.fit(all_routes).transform(all_routes)
@@ -114,7 +116,7 @@ def fav_cities_driver(actualRoutesDriver, city_freq, mult):
 
     Parameters:
     actualRoutesDriver (list): List of actual routes taken by the driver.
-    city_freq (dict): Dictionary containing the frequency of each city.
+    city_freq (dict): Dictionary containing the frequency of each city in the actual routes.
     mult (float): Multiplier used to determine the threshold for a favorite city.
 
     Returns:
@@ -122,9 +124,16 @@ def fav_cities_driver(actualRoutesDriver, city_freq, mult):
     """
     freqs_driver = city_frequency(actualRoutesDriver)
     fav_cities = []
+    backup_cities = []
     for city in freqs_driver.keys() :
         if freqs_driver[city] >= mult*city_freq[city]:
             fav_cities.append(city)
+        elif freqs_driver[city] >= city_freq[city] :
+            backup_cities.append([city,freqs_driver[city]/city_freq[city]])
+    backup_cities.sort(key=lambda tup : tup[1],reverse=True)
+    stop = False
+    while len(fav_cities)<2 and len(backup_cities) >= len(fav_cities)+1:
+        fav_cities.append(backup_cities[len(fav_cities)][0])
     return fav_cities
 
 def pairs_from_favs(fav_cities):
@@ -142,6 +151,8 @@ def pairs_from_favs(fav_cities):
         >>> pairs_from_favs(fav_cities)
         [('New York', 'Paris'), ('New York', 'Tokyo'), ('Paris', 'New York'), ('Paris', 'Tokyo'), ('Tokyo', 'New York'), ('Tokyo', 'Paris')]
     """
+    if len(fav_cities)==1:
+        return([(fav_cities[0],fav_cities[0])])
     pairs = []
     for i in range(len(fav_cities)):
         for j in range(len(fav_cities)):
@@ -149,6 +160,62 @@ def pairs_from_favs(fav_cities):
                 pairs.append((fav_cities[i],fav_cities[j]))
     return pairs
 
+def generate_recStandardForOneDriver(nb_routes, freq_items, freq_pairs):
+    '''
+    Generate a new standard route, given a set of pairs of cities and merchandise types
+
+    Parameters:
+    nb_routes (int): The number of routes to generate
+    freq_items (DataFrame): DataFrame containing the frequent merchandise types and itemsets
+    freq_pairs (DataFrame): DataFrame containing the frequent pairs of cities
+
+    Returns:
+    List[Dict[str, Any]]: A list of dictionaries representing the generated routes
+    '''
+    # analyse the most frequent merchandise types and itemsets
+    freq_items["itemsets"] = freq_items["itemsets"].apply(lambda x: re.findall(r'{.*?}', str(x))[0])
+    cleaned_freq_items = [item.replace("'", "").replace("{","[").replace("}","]") for item in freq_items["itemsets"].values.tolist()]
+
+    # find the most frequent pairs of cities in actual_routes based on freqCities.py
+    #most_freq_pairs = most_frequent_pairs(0.005)
+    recstd_routes = []
+    for i in range(nb_routes):
+        recstd_routes.append({
+            "route": dataGenerator.newStdGenerator.generate_new_route(freq_pairs, cleaned_freq_items)
+        })
+    return recstd_routes
+
+def run_q3():
+    # Read and parse standard routes
+    with open("./data/standard.json", "r") as standard_file:
+        standard_routes = json.load(standard_file)
+    # Read and parse actual routes
+    with open("./data/actual.json", "r") as actual_file:
+        actual_routes = json.load(actual_file)
+    city_freq = city_frequency(standard_routes)
+    drivers = get_drivers(actual_routes)
+    start = t.time()
+    perfect_routes = []
+    for driver in drivers :
+        actualRoutesDriver = get_routes_per_driver(actual_routes,driver)
+        frequent_itemsets, rules = FIandAssoRulesForOneDriver(0.2, 0.5, actualRoutesDriver, driver)
+        #frequent_itemsets.to_csv("./data/csv/freq_items_driver1.csv", index=False)
+        #rules.to_csv("./data/csv/asso_rules_driver1.csv", index=False)
+        fav_cit_driver = fav_cities_driver(actualRoutesDriver,city_freq,1.2)
+        fav_pairs_driver = pairs_from_favs(fav_cit_driver)
+        recstd_route = generate_recStandardForOneDriver(1, frequent_itemsets,fav_pairs_driver)
+        perfect_routes.append({"driver":driver,"route":recstd_route[0]["route"]})
+        #print(driver + " done")
+        #print(t.time()-start)
+    # save data
+    frequent_itemsets.to_json(f"./data/freq_items_driver{driver}.json", orient="records")
+    with open(f"./results/perfectRoute.json", "w") as recstd_driver_file:
+        json.dump(perfect_routes, recstd_driver_file, indent=4)
+    print(f"Perfect routes generated in ./results/perfectRoute.json")
+
+if __name__ == "__main__":
+    run_q3()
+#unused
 def freq_cities_driver(actualRoutesDriver,number = 4,threshold = None):
     """
     Calculates the most frequent cities visited by a driver based on their routes.
@@ -206,57 +273,3 @@ def freq_pairs_driver(actualRoutesDriver,threshold):
             over_treshold.append(pair)
     return over_treshold
     
-
-def generate_recStandardForOneDriver(nb_routes, freq_items, freq_pairs):
-    '''
-    Generate a new standard route, given a set of pairs of cities and merchandise types
-
-    Parameters:
-    nb_routes (int): The number of routes to generate
-    freq_items (DataFrame): DataFrame containing the frequent merchandise types and itemsets
-    freq_pairs (DataFrame): DataFrame containing the frequent pairs of cities
-
-    Returns:
-    List[Dict[str, Any]]: A list of dictionaries representing the generated routes
-    '''
-    # analyse the most frequent merchandise types and itemsets
-    freq_items["itemsets"] = freq_items["itemsets"].apply(lambda x: re.findall(r'{.*?}', str(x))[0])
-    cleaned_freq_items = [item.replace("'", "").replace("{","[").replace("}","]") for item in freq_items["itemsets"].values.tolist()]
-
-    # find the most frequent pairs of cities in actual_routes based on freqCities.py
-    #most_freq_pairs = most_frequent_pairs(0.005)
-    recstd_routes = []
-    for i in range(nb_routes):
-        recstd_routes.append({
-            "route": dataGenerator.newStdGenerator.generate_new_route(freq_pairs, cleaned_freq_items)
-        })
-    return recstd_routes
-
-if __name__ == "__main__":
-    # Read and parse standard routes
-    with open("./data/standard.json", "r") as standard_file:
-        standard_routes = json.load(standard_file)
-    # Read and parse actual routes
-    with open("./data/actual.json", "r") as actual_file:
-        actual_routes = json.load(actual_file)
-    city_freq = city_frequency(actual_routes)
-    drivers = get_drivers(actual_routes)
-    start = t.time()
-    perfect_routes = []
-    for driver in drivers :
-        actualRoutesDriver = get_routes_per_driver(actual_routes,driver)
-        frequent_itemsets, rules = FIandAssoRulesForOneDriver(0.2, 0.5, actualRoutesDriver, driver)
-        #frequent_itemsets.to_csv("./data/csv/freq_items_driver1.csv", index=False)
-        #rules.to_csv("./data/csv/asso_rules_driver1.csv", index=False)
-        fav_cit_driver = fav_cities_driver(actualRoutesDriver,city_freq,1.2)
-        fav_pairs_driver = pairs_from_favs(fav_cit_driver)
-        recstd_route = generate_recStandardForOneDriver(1, frequent_itemsets,fav_pairs_driver)
-        perfect_routes.append({"driver":driver,"route":recstd_route[0]["route"]})
-        #print(driver + " done")
-        #print(t.time()-start)
-    # save data
-    frequent_itemsets.to_json(f"./data/freq_items_driver{driver}.json", orient="records")
-    with open(f"./results/perfectRoute.json", "w") as recstd_driver_file:
-        json.dump(perfect_routes, recstd_driver_file, indent=4)
-
-print(f"Perfect routes generated in ./results/perfectRoute.json")

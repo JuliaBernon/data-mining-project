@@ -1,5 +1,2 @@
 support,itemsets
-0.325431900361591,frozenset({'towels'})
-0.3143330654881479,frozenset({'gloves'})
-0.32342306147047006,frozenset({'puzzles'})
-0.30233025311370026,frozenset({'backpacks'})
+0.32653061224489793,frozenset({'paint'})

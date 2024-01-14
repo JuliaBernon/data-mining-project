@@ -5,7 +5,7 @@ import time as t
 from dataGenerator.actualGenerator import generate_actual_route
 from routes_distance import compute_distance
 from q2_driver import run_q2
-from exe_script import exe_script
+from exe_script import exe_script,exe_q1
 
 def test_q2(drivers,new_standards,q2_res,cities,merchandise_types):
     """
@@ -103,11 +103,12 @@ def multiple_tests(dict_standard_actual):
         for i in dict_standard_actual[key]:
             print(f"Test q2 pour {key} standards et {i} actuals :")
             exe_script(key,i)
+            exe_q1(key)
             one_test()
 
 if __name__ == "__main__":
     #one_test()
-    dict_standard_actual = {100:[100,200,300,400,500,1000,2000,4000,8000,10000,15000,20000],500:[500,1000,2000,4000,8000,16000,32000]}
+    dict_standard_actual = {100:[20000],500:[500,1000,2000,4000,8000,16000,32000]}
     multiple_tests(dict_standard_actual)
 
    
