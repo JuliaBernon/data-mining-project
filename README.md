@@ -15,6 +15,12 @@ Instructor : Prof. Yannis Valagrakis
 
 ## How2 - Clone the project from GitHub
 
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get autoremove
+```
+
 **Clone the project**
 
 ```sh
@@ -47,6 +53,12 @@ source env/bin/activate
 (env) deactivate
 ```
 
+If not already installed, run the following command before creating a virtual environment : 
+
+```bash
+sudo apt install python3.8-venv
+```
+
 **Commands for PowerShell**
 
 ```powershell
@@ -77,16 +89,17 @@ PS C:\> .\env\Scripts\activate
 
 ## Project structure 
 ```sh
-├───data            # data files
-│   ├───apriori     # actualX_Y.json, using apriori algorithm
-│   ├───csv         # {asso_rulesX_Y,freq_itemsX_Y}.csv, other csv files
-│   └───fpgrowth    # actualX_Y.json, using fpgrowth algorithm
-├───figures         # figures generated for results and tests
-├───results         # results and test files
-│   ├───apriori     # recStandardX_Y.json, using apriori algorithm
-│   ├───fpgrowth    # recStandardX_Y.json, using fpgrowth algorithm
-│   └───tests       # files created for and by tests
-│       ├───distances       # tests concerning distances
+data-mining-project
+├───data                # data files
+│   ├───apriori         # actualX_Y.json, using apriori algorithm
+│   ├───csv             # {asso_rulesX_Y,freq_itemsX_Y}.csv, other csv files
+│   └───fpgrowth        # actualX_Y.json, using fpgrowth algorithm
+├───figures             # figures generated for results and tests
+├───results             # results and test files
+│   ├───apriori         # recStandardX_Y.json, using apriori algorithm
+│   ├───fpgrowth        # recStandardX_Y.json, using fpgrowth algorithm
+│   └───tests           # files created for and by tests
+│       ├───distances   # tests concerning distances
 │       │   ├───apriori         # using apriori algorithm
 │       │   │   ├───std100          # based on 100 standard routes
 │       │   │   ├───std1000         # based on 1000 standard routes
@@ -94,11 +107,12 @@ PS C:\> .\env\Scripts\activate
 │       │   ├───fpgrowth        # using fpgrowth algorithm
 │       │   │   ├───std100          # based on 100 standard routes
 │       │   │   ├───std1000         # based on 1000 standard routes
-│       │   │   └───std500          # based on 500 standard routes
-│       ├───q2              # tests concerning q2
+│       │   └───└───std500          # based on 500 standard routes
+│       ├───graphs      # graphs for questions 2 and 3
+│       ├───q2          # test files concerning question2
+│       └───q3          # test files concerning question3
 ├───src                     # main source code files
-│   ├───dataGenerator       # files to generate data
-
+└───└───dataGenerator       # files to generate data
 ```
 
 The files that already exist in `./results/` and `./data/` when cloning the project have no other purposes than to be an example of the data we obtained and used, and to ensure the existence of all needed directories.
