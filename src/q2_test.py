@@ -108,7 +108,7 @@ def multiple_tests(dict_standard_actual):
 
 if __name__ == "__main__":
     #one_test()
-    dict_standard_actual = {100:[20000],500:[500,1000,2000,4000,8000,16000,32000]}
+    dict_standard_actual = {1000:{1000,2000,4000,8000,16000,32000}}
     multiple_tests(dict_standard_actual)
 
    
