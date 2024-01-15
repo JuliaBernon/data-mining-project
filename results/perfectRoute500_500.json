@@ -1,0 +1,3045 @@
+[
+    {
+        "driver": "d29",
+        "route": [
+            {
+                "from": "Genova",
+                "to": "Potenza",
+                "merchandise": {
+                    "tablets": 8
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Venezia",
+                "merchandise": {
+                    "kitchen appliances": 32,
+                    "towels": 33,
+                    "puzzles": 36
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d65",
+        "route": [
+            {
+                "from": "Venezia",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "sugar": 2,
+                    "exercise equipment": 33,
+                    "butter": 21
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Perugia",
+                "merchandise": {
+                    "chargers": 30,
+                    "camping equipment": 24,
+                    "eggs": 32
+                }
+            },
+            {
+                "from": "Perugia",
+                "to": "Bari",
+                "merchandise": {
+                    "paint": 19,
+                    "shoes": 26,
+                    "bread": 4
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Bergamo",
+                "merchandise": {
+                    "chargers": 14,
+                    "candy": 50,
+                    "puzzles": 21
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d1",
+        "route": [
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "coffee": 2,
+                    "fishing gear": 33,
+                    "blankets": 14
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Cagliari",
+                "merchandise": {
+                    "kitchen appliances": 19,
+                    "puzzles": 45,
+                    "toilet paper": 43
+                }
+            },
+            {
+                "from": "Cagliari",
+                "to": "Bologna",
+                "merchandise": {
+                    "coffee": 2,
+                    "toothpaste": 29,
+                    "bedsheets": 32
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d44",
+        "route": [
+            {
+                "from": "Milan",
+                "to": "Venezia",
+                "merchandise": {
+                    "playing cards": 27,
+                    "toothpaste": 41,
+                    "nuts": 31
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d91",
+        "route": [
+            {
+                "from": "Genova",
+                "to": "Milan",
+                "merchandise": {
+                    "running shoes": 25
+                }
+            },
+            {
+                "from": "Milan",
+                "to": "Trieste",
+                "merchandise": {
+                    "towels": 4,
+                    "puzzles": 33
+                }
+            },
+            {
+                "from": "Trieste",
+                "to": "Rome",
+                "merchandise": {
+                    "bird feed": 24
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d92",
+        "route": [
+            {
+                "from": "Cagliari",
+                "to": "Venezia",
+                "merchandise": {
+                    "tea": 20,
+                    "vodka": 45,
+                    "shampoo": 8
+                }
+            },
+            {
+                "from": "Venezia",
+                "to": "Milan",
+                "merchandise": {
+                    "tea": 31,
+                    "toothpaste": 1,
+                    "shampoo": 47
+                }
+            },
+            {
+                "from": "Milan",
+                "to": "Verona",
+                "merchandise": {
+                    "vodka": 41,
+                    "umbrellas": 7,
+                    "flowers": 45
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Venezia",
+                "merchandise": {
+                    "cheese": 45,
+                    "books": 22,
+                    "shampoo": 36
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d88",
+        "route": [
+            {
+                "from": "Trieste",
+                "to": "Genova",
+                "merchandise": {
+                    "art supplies": 41,
+                    "blankets": 4
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Potenza",
+                "merchandise": {
+                    "pepper": 27,
+                    "toothpaste": 13,
+                    "cases": 23
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Cagliari",
+                "merchandise": {
+                    "games": 39,
+                    "laundry detergent": 7,
+                    "gloves": 46
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d28",
+        "route": [
+            {
+                "from": "Bologna",
+                "to": "Napoli",
+                "merchandise": {
+                    "cheese": 6,
+                    "umbrellas": 4
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d94",
+        "route": [
+            {
+                "from": "Catanzaro",
+                "to": "Genova",
+                "merchandise": {
+                    "tea": 49,
+                    "games": 48,
+                    "vases": 11
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d67",
+        "route": [
+            {
+                "from": "Potenza",
+                "to": "Trieste",
+                "merchandise": {
+                    "cheese": 7,
+                    "toilet paper": 20
+                }
+            },
+            {
+                "from": "Trieste",
+                "to": "Bergamo",
+                "merchandise": {
+                    "potting soil": 36
+                }
+            },
+            {
+                "from": "Bergamo",
+                "to": "Milan",
+                "merchandise": {
+                    "sugar": 10,
+                    "cutlery": 4,
+                    "plants": 43
+                }
+            },
+            {
+                "from": "Milan",
+                "to": "Bergamo",
+                "merchandise": {
+                    "exercise equipment": 41
+                }
+            },
+            {
+                "from": "Bergamo",
+                "to": "Milan",
+                "merchandise": {
+                    "pet toys": 36,
+                    "towels": 26
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d33",
+        "route": [
+            {
+                "from": "Genova",
+                "to": "Rome",
+                "merchandise": {
+                    "coca-cola": 19,
+                    "pillows": 15,
+                    "plants": 50
+                }
+            },
+            {
+                "from": "Rome",
+                "to": "Trieste",
+                "merchandise": {
+                    "cutlery": 26,
+                    "tomatoes": 19,
+                    "pet food": 19
+                }
+            },
+            {
+                "from": "Trieste",
+                "to": "Rome",
+                "merchandise": {
+                    "paint": 35,
+                    "towels": 9,
+                    "eggs": 48
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d60",
+        "route": [
+            {
+                "from": "Aquila",
+                "to": "Genova",
+                "merchandise": {
+                    "cheese": 47,
+                    "easels": 30,
+                    "cases": 21
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Trieste",
+                "merchandise": {
+                    "soap": 31,
+                    "playing cards": 5,
+                    "camping equipment": 20
+                }
+            },
+            {
+                "from": "Trieste",
+                "to": "Firenze",
+                "merchandise": {
+                    "fishing gear": 24,
+                    "towels": 35,
+                    "phones": 17
+                }
+            },
+            {
+                "from": "Firenze",
+                "to": "Bergamo",
+                "merchandise": {
+                    "toothpaste": 4,
+                    "vases": 49,
+                    "blankets": 42
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d66",
+        "route": [
+            {
+                "from": "Aquila",
+                "to": "Bologna",
+                "merchandise": {
+                    "cleaning supplies": 37,
+                    "milk": 37,
+                    "toothbrushes": 36
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d21",
+        "route": [
+            {
+                "from": "Palermo",
+                "to": "Cagliari",
+                "merchandise": {
+                    "cutlery": 48,
+                    "pet grooming supplies": 8,
+                    "water": 39
+                }
+            },
+            {
+                "from": "Cagliari",
+                "to": "Milan",
+                "merchandise": {
+                    "vodka": 33,
+                    "easels": 22
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d71",
+        "route": [
+            {
+                "from": "Trieste",
+                "to": "Palermo",
+                "merchandise": {
+                    "camping equipment": 28,
+                    "laptops": 14
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Bolzano",
+                "merchandise": {
+                    "pillows": 45,
+                    "pens": 38,
+                    "weights": 4
+                }
+            },
+            {
+                "from": "Bolzano",
+                "to": "Genova",
+                "merchandise": {
+                    "ice cream": 37,
+                    "towels": 36,
+                    "snacks": 31
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Bergamo",
+                "merchandise": {
+                    "weights": 46,
+                    "camping equipment": 32,
+                    "snacks": 15
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d93",
+        "route": [
+            {
+                "from": "Milan",
+                "to": "Milan",
+                "merchandise": {
+                    "umbrellas": 37,
+                    "toothbrushes": 22
+                }
+            },
+            {
+                "from": "Milan",
+                "to": "Milan",
+                "merchandise": {
+                    "nuts": 31,
+                    "potting soil": 39,
+                    "toys": 34
+                }
+            },
+            {
+                "from": "Milan",
+                "to": "Milan",
+                "merchandise": {
+                    "cookies": 12,
+                    "sportswear": 39,
+                    "cakes": 19
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d18",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Firenze",
+                "merchandise": {
+                    "towels": 40,
+                    "brushes": 19
+                }
+            },
+            {
+                "from": "Firenze",
+                "to": "Venezia",
+                "merchandise": {
+                    "cutlery": 17,
+                    "milk": 44
+                }
+            },
+            {
+                "from": "Venezia",
+                "to": "Ancona",
+                "merchandise": {
+                    "salt": 10,
+                    "fishing gear": 14,
+                    "towels": 12
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Venezia",
+                "merchandise": {
+                    "pepper": 18
+                }
+            },
+            {
+                "from": "Venezia",
+                "to": "Rome",
+                "merchandise": {
+                    "milk": 20,
+                    "shampoo": 21
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d11",
+        "route": [
+            {
+                "from": "Bolzano",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "soap": 24,
+                    "nuts": 4
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Trieste",
+                "merchandise": {
+                    "soap": 45,
+                    "nuts": 9
+                }
+            },
+            {
+                "from": "Trieste",
+                "to": "Bolzano",
+                "merchandise": {
+                    "cutlery": 44,
+                    "sportswear": 46,
+                    "juice": 25
+                }
+            },
+            {
+                "from": "Bolzano",
+                "to": "Bergamo",
+                "merchandise": {
+                    "sportswear": 21,
+                    "toilet paper": 22
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d58",
+        "route": [
+            {
+                "from": "Palermo",
+                "to": "Aquila",
+                "merchandise": {
+                    "pet toys": 48,
+                    "salt": 20,
+                    "candy": 21
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Bergamo",
+                "merchandise": {
+                    "milk": 11,
+                    "wine": 40,
+                    "potting soil": 39
+                }
+            },
+            {
+                "from": "Bergamo",
+                "to": "Genova",
+                "merchandise": {
+                    "yoga mats": 22,
+                    "playing cards": 34,
+                    "puzzles": 36
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Aquila",
+                "merchandise": {
+                    "puzzles": 37,
+                    "plants": 16,
+                    "running shoes": 19
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "ice cream": 48
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d52",
+        "route": [
+            {
+                "from": "Palermo",
+                "to": "Cagliari",
+                "merchandise": {
+                    "salt": 42,
+                    "scarves": 29,
+                    "running shoes": 46
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d45",
+        "route": [
+            {
+                "from": "Firenze",
+                "to": "Verona",
+                "merchandise": {
+                    "honey": 43,
+                    "shampoo": 38,
+                    "phones": 50
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Cagliari",
+                "merchandise": {
+                    "laptops": 13,
+                    "phones": 2
+                }
+            },
+            {
+                "from": "Cagliari",
+                "to": "Milan",
+                "merchandise": {
+                    "laptops": 33,
+                    "cases": 30
+                }
+            },
+            {
+                "from": "Milan",
+                "to": "Bergamo",
+                "merchandise": {
+                    "games": 32
+                }
+            },
+            {
+                "from": "Bergamo",
+                "to": "Cagliari",
+                "merchandise": {
+                    "art supplies": 6,
+                    "towels": 31
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d100",
+        "route": [
+            {
+                "from": "Trieste",
+                "to": "Perugia",
+                "merchandise": {
+                    "sugar": 36,
+                    "magazines": 21,
+                    "toilet paper": 39
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d59",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Venezia",
+                "merchandise": {
+                    "honey": 26,
+                    "tablets": 1,
+                    "bicycles": 21
+                }
+            },
+            {
+                "from": "Venezia",
+                "to": "Bologna",
+                "merchandise": {
+                    "paint": 34,
+                    "shampoo": 5,
+                    "bicycles": 34
+                }
+            },
+            {
+                "from": "Bologna",
+                "to": "Aquila",
+                "merchandise": {
+                    "pepper": 50,
+                    "hiking boots": 29,
+                    "camping equipment": 36
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d9",
+        "route": [
+            {
+                "from": "Firenze",
+                "to": "Palermo",
+                "merchandise": {
+                    "hats": 28,
+                    "beer": 49,
+                    "brushes": 28
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d19",
+        "route": [
+            {
+                "from": "Potenza",
+                "to": "Trieste",
+                "merchandise": {
+                    "cheese": 5,
+                    "cleaning supplies": 39
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d32",
+        "route": [
+            {
+                "from": "Bari",
+                "to": "Napoli",
+                "merchandise": {
+                    "magazines": 33,
+                    "pet food": 15
+                }
+            },
+            {
+                "from": "Napoli",
+                "to": "Genova",
+                "merchandise": {
+                    "pepper": 42,
+                    "ice cream": 5,
+                    "cutlery": 15
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Verona",
+                "merchandise": {
+                    "pens": 33,
+                    "towels": 44,
+                    "pet food": 38
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Firenze",
+                "merchandise": {
+                    "books": 32,
+                    "puzzles": 26,
+                    "snacks": 8
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d49",
+        "route": [
+            {
+                "from": "Catanzaro",
+                "to": "Palermo",
+                "merchandise": {
+                    "art supplies": 2,
+                    "towels": 34
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Firenze",
+                "merchandise": {
+                    "art supplies": 7
+                }
+            },
+            {
+                "from": "Firenze",
+                "to": "Aquila",
+                "merchandise": {
+                    "sportswear": 11
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d61",
+        "route": [
+            {
+                "from": "Palermo",
+                "to": "Trieste",
+                "merchandise": {
+                    "beer": 29,
+                    "towels": 26
+                }
+            },
+            {
+                "from": "Trieste",
+                "to": "Perugia",
+                "merchandise": {
+                    "headphones": 25,
+                    "running shoes": 37,
+                    "reptile habitats": 47
+                }
+            },
+            {
+                "from": "Perugia",
+                "to": "Napoli",
+                "merchandise": {
+                    "tablets": 43,
+                    "towels": 40,
+                    "nuts": 2
+                }
+            },
+            {
+                "from": "Napoli",
+                "to": "Venezia",
+                "merchandise": {
+                    "aquarium supplies": 21,
+                    "shoes": 4,
+                    "towels": 27
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d55",
+        "route": [
+            {
+                "from": "Catanzaro",
+                "to": "Perugia",
+                "merchandise": {
+                    "honey": 45,
+                    "vases": 40,
+                    "eggs": 22
+                }
+            },
+            {
+                "from": "Perugia",
+                "to": "Bergamo",
+                "merchandise": {
+                    "tea": 29,
+                    "vases": 36,
+                    "seeds": 33
+                }
+            },
+            {
+                "from": "Bergamo",
+                "to": "Firenze",
+                "merchandise": {
+                    "honey": 21,
+                    "socks": 46,
+                    "vases": 12
+                }
+            },
+            {
+                "from": "Firenze",
+                "to": "Cagliari",
+                "merchandise": {
+                    "socks": 10
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d13",
+        "route": [
+            {
+                "from": "Bologna",
+                "to": "Bolzano",
+                "merchandise": {
+                    "snacks": 1,
+                    "gloves": 38
+                }
+            },
+            {
+                "from": "Bolzano",
+                "to": "Perugia",
+                "merchandise": {
+                    "puzzles": 38
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d64",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Verona",
+                "merchandise": {
+                    "vases": 24,
+                    "towels": 9,
+                    "craft supplies": 48
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "art supplies": 44,
+                    "shampoo": 10,
+                    "towels": 32
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Trento",
+                "merchandise": {
+                    "pet grooming supplies": 39,
+                    "craft supplies": 8,
+                    "hiking boots": 24
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d43",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Ancona",
+                "merchandise": {
+                    "bird feed": 49,
+                    "shampoo": 33,
+                    "puzzles": 7
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d36",
+        "route": [
+            {
+                "from": "Genova",
+                "to": "Trieste",
+                "merchandise": {
+                    "craft supplies": 17,
+                    "potting soil": 40
+                }
+            },
+            {
+                "from": "Trieste",
+                "to": "Cagliari",
+                "merchandise": {
+                    "shampoo": 2,
+                    "towels": 17,
+                    "pet food": 29
+                }
+            },
+            {
+                "from": "Cagliari",
+                "to": "Genova",
+                "merchandise": {
+                    "salt": 35,
+                    "toothpaste": 22,
+                    "brushes": 23
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d48",
+        "route": [
+            {
+                "from": "Genova",
+                "to": "Potenza",
+                "merchandise": {
+                    "laundry detergent": 12,
+                    "towels": 50,
+                    "drawing paper": 33
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Milan",
+                "merchandise": {
+                    "pillows": 28,
+                    "playing cards": 49,
+                    "camping equipment": 13
+                }
+            },
+            {
+                "from": "Milan",
+                "to": "Genova",
+                "merchandise": {
+                    "scarves": 48,
+                    "candy": 47,
+                    "running shoes": 48
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d17",
+        "route": [
+            {
+                "from": "Genova",
+                "to": "Bari",
+                "merchandise": {
+                    "umbrellas": 6,
+                    "tablets": 26,
+                    "running shoes": 13
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d57",
+        "route": [
+            {
+                "from": "Venezia",
+                "to": "Trento",
+                "merchandise": {
+                    "pet toys": 14,
+                    "pet grooming supplies": 37,
+                    "cookies": 2
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "vases": 16,
+                    "tablets": 48,
+                    "butter": 47
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d90",
+        "route": [
+            {
+                "from": "Bari",
+                "to": "Milan",
+                "merchandise": {
+                    "art supplies": 1,
+                    "headphones": 27,
+                    "tomatoes": 3
+                }
+            },
+            {
+                "from": "Milan",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "shoes": 4,
+                    "hiking boots": 46,
+                    "laptops": 49
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d72",
+        "route": [
+            {
+                "from": "Firenze",
+                "to": "Palermo",
+                "merchandise": {
+                    "easels": 29,
+                    "eggs": 38
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Firenze",
+                "merchandise": {
+                    "cheese": 17,
+                    "potting soil": 6,
+                    "canvases": 27
+                }
+            },
+            {
+                "from": "Firenze",
+                "to": "Palermo",
+                "merchandise": {
+                    "seeds": 21,
+                    "puzzles": 15
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Ancona",
+                "merchandise": {
+                    "cheese": 30,
+                    "easels": 29,
+                    "puzzles": 4
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Aquila",
+                "merchandise": {
+                    "easels": 43,
+                    "puzzles": 36
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d97",
+        "route": [
+            {
+                "from": "Palermo",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 45,
+                    "snacks": 38,
+                    "pet food": 24
+                }
+            },
+            {
+                "from": "Venezia",
+                "to": "Palermo",
+                "merchandise": {
+                    "pens": 49,
+                    "backpacks": 25,
+                    "snacks": 41
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d83",
+        "route": [
+            {
+                "from": "Potenza",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "milk": 20,
+                    "shampoo": 24
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Bolzano",
+                "merchandise": {
+                    "aquarium supplies": 3
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d80",
+        "route": [
+            {
+                "from": "Firenze",
+                "to": "Palermo",
+                "merchandise": {
+                    "pillows": 38,
+                    "tents": 2,
+                    "headphones": 18
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d15",
+        "route": [
+            {
+                "from": "Genova",
+                "to": "Trento",
+                "merchandise": {
+                    "sugar": 36,
+                    "shampoo": 43
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "sugar": 43,
+                    "shampoo": 45
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Bolzano",
+                "merchandise": {
+                    "fishing gear": 18,
+                    "shampoo": 46,
+                    "laptops": 14
+                }
+            },
+            {
+                "from": "Bolzano",
+                "to": "Genova",
+                "merchandise": {
+                    "chargers": 6
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d46",
+        "route": [
+            {
+                "from": "Catanzaro",
+                "to": "Bologna",
+                "merchandise": {
+                    "seeds": 46,
+                    "pepper": 18,
+                    "fishing gear": 50
+                }
+            },
+            {
+                "from": "Bologna",
+                "to": "Trieste",
+                "merchandise": {
+                    "honey": 14,
+                    "shoes": 13,
+                    "cheese": 42
+                }
+            },
+            {
+                "from": "Trieste",
+                "to": "Venezia",
+                "merchandise": {
+                    "pens": 15,
+                    "tomatoes": 42,
+                    "bread": 26
+                }
+            },
+            {
+                "from": "Venezia",
+                "to": "Bologna",
+                "merchandise": {
+                    "seeds": 21,
+                    "aquarium supplies": 1,
+                    "brushes": 5
+                }
+            },
+            {
+                "from": "Bologna",
+                "to": "Trieste",
+                "merchandise": {
+                    "exercise equipment": 42,
+                    "tablets": 37,
+                    "puzzles": 17
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d84",
+        "route": [
+            {
+                "from": "Perugia",
+                "to": "Cagliari",
+                "merchandise": {
+                    "aquarium supplies": 36,
+                    "chargers": 12,
+                    "canvases": 9
+                }
+            },
+            {
+                "from": "Cagliari",
+                "to": "Bologna",
+                "merchandise": {
+                    "bird feed": 22,
+                    "potting soil": 31,
+                    "canvases": 47
+                }
+            },
+            {
+                "from": "Bologna",
+                "to": "Cagliari",
+                "merchandise": {
+                    "pillows": 2,
+                    "beer": 2,
+                    "canvases": 23
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d42",
+        "route": [
+            {
+                "from": "Venezia",
+                "to": "Rome",
+                "merchandise": {
+                    "pet grooming supplies": 17,
+                    "vases": 15
+                }
+            },
+            {
+                "from": "Rome",
+                "to": "Bologna",
+                "merchandise": {
+                    "honey": 33,
+                    "shoes": 32,
+                    "phones": 49
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d31",
+        "route": [
+            {
+                "from": "Bari",
+                "to": "Bolzano",
+                "merchandise": {
+                    "headphones": 43,
+                    "running shoes": 38
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d2",
+        "route": [
+            {
+                "from": "Cagliari",
+                "to": "Ancona",
+                "merchandise": {
+                    "pet toys": 42,
+                    "candy": 30
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Trieste",
+                "merchandise": {
+                    "blankets": 47,
+                    "milk": 50,
+                    "shampoo": 10
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d38",
+        "route": [
+            {
+                "from": "Milan",
+                "to": "Bolzano",
+                "merchandise": {
+                    "seeds": 44,
+                    "cleaning supplies": 2
+                }
+            },
+            {
+                "from": "Bolzano",
+                "to": "Firenze",
+                "merchandise": {
+                    "sugar": 27,
+                    "cleaning supplies": 12,
+                    "camping equipment": 24
+                }
+            },
+            {
+                "from": "Firenze",
+                "to": "Perugia",
+                "merchandise": {
+                    "gardening tools": 36,
+                    "fishing gear": 19,
+                    "flowers": 42
+                }
+            },
+            {
+                "from": "Perugia",
+                "to": "Potenza",
+                "merchandise": {
+                    "yoga mats": 12,
+                    "fishing gear": 7,
+                    "wine": 15
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d41",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Cagliari",
+                "merchandise": {
+                    "umbrellas": 4,
+                    "towels": 32,
+                    "gloves": 23
+                }
+            },
+            {
+                "from": "Cagliari",
+                "to": "Aquila",
+                "merchandise": {
+                    "laundry detergent": 29,
+                    "shampoo": 17
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Milan",
+                "merchandise": {
+                    "umbrellas": 1,
+                    "bread": 23
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d70",
+        "route": [
+            {
+                "from": "Trieste",
+                "to": "Ancona",
+                "merchandise": {
+                    "art supplies": 32,
+                    "cookware": 20,
+                    "towels": 10
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Trieste",
+                "merchandise": {
+                    "hats": 21,
+                    "towels": 23,
+                    "backpacks": 1
+                }
+            },
+            {
+                "from": "Trieste",
+                "to": "Ancona",
+                "merchandise": {
+                    "hats": 19,
+                    "wine": 40,
+                    "pet food": 31
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d76",
+        "route": [
+            {
+                "from": "Verona",
+                "to": "Rome",
+                "merchandise": {
+                    "hiking boots": 10
+                }
+            },
+            {
+                "from": "Rome",
+                "to": "Verona",
+                "merchandise": {
+                    "magazines": 34,
+                    "running shoes": 30,
+                    "bedsheets": 2
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Bari",
+                "merchandise": {
+                    "aquarium supplies": 41,
+                    "umbrellas": 32,
+                    "running shoes": 32
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Napoli",
+                "merchandise": {
+                    "camping equipment": 2
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d73",
+        "route": [
+            {
+                "from": "Genova",
+                "to": "Ancona",
+                "merchandise": {
+                    "tea": 35,
+                    "cookies": 19,
+                    "toys": 26
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Palermo",
+                "merchandise": {
+                    "milk": 19,
+                    "candy": 31,
+                    "craft supplies": 13
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Perugia",
+                "merchandise": {
+                    "vases": 22,
+                    "cookies": 38
+                }
+            },
+            {
+                "from": "Perugia",
+                "to": "Bergamo",
+                "merchandise": {
+                    "hiking boots": 21,
+                    "plants": 33
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d14",
+        "route": [
+            {
+                "from": "Cagliari",
+                "to": "Genova",
+                "merchandise": {
+                    "cutlery": 37,
+                    "pet grooming supplies": 1,
+                    "sleeping bags": 46
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Trento",
+                "merchandise": {
+                    "playing cards": 5,
+                    "hiking boots": 45,
+                    "reptile habitats": 3
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Cagliari",
+                "merchandise": {
+                    "coffee": 7,
+                    "games": 25,
+                    "magazines": 24
+                }
+            },
+            {
+                "from": "Cagliari",
+                "to": "Trieste",
+                "merchandise": {
+                    "playing cards": 42,
+                    "bird feed": 48,
+                    "reptile habitats": 23
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d95",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Aquila",
+                "merchandise": {
+                    "sugar": 21,
+                    "beer": 27
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Trento",
+                "merchandise": {
+                    "sugar": 30,
+                    "art supplies": 50,
+                    "beer": 27
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Aquila",
+                "merchandise": {
+                    "art supplies": 40,
+                    "magazines": 18,
+                    "beer": 48
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Bergamo",
+                "merchandise": {
+                    "ice cream": 25,
+                    "shoes": 22
+                }
+            },
+            {
+                "from": "Bergamo",
+                "to": "Aquila",
+                "merchandise": {
+                    "flowers": 21,
+                    "backpacks": 16
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d77",
+        "route": [
+            {
+                "from": "Firenze",
+                "to": "Bologna",
+                "merchandise": {
+                    "pens": 34,
+                    "bicycles": 15
+                }
+            },
+            {
+                "from": "Bologna",
+                "to": "Rome",
+                "merchandise": {
+                    "pet grooming supplies": 2,
+                    "scarves": 44,
+                    "headphones": 8
+                }
+            },
+            {
+                "from": "Rome",
+                "to": "Bologna",
+                "merchandise": {
+                    "running shoes": 35
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d10",
+        "route": [
+            {
+                "from": "Milan",
+                "to": "Trieste",
+                "merchandise": {
+                    "pillows": 24,
+                    "board games": 47,
+                    "chocolate": 10
+                }
+            },
+            {
+                "from": "Trieste",
+                "to": "Palermo",
+                "merchandise": {
+                    "candy": 15,
+                    "canvases": 1,
+                    "reptile habitats": 4
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d74",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Trieste",
+                "merchandise": {
+                    "shampoo": 35,
+                    "easels": 3
+                }
+            },
+            {
+                "from": "Trieste",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "tea": 48,
+                    "ice cream": 33,
+                    "board games": 26
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Trieste",
+                "merchandise": {
+                    "cheese": 49,
+                    "bird feed": 47
+                }
+            },
+            {
+                "from": "Trieste",
+                "to": "Cagliari",
+                "merchandise": {
+                    "shampoo": 47,
+                    "juice": 27,
+                    "bicycles": 42
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d96",
+        "route": [
+            {
+                "from": "Trieste",
+                "to": "Bergamo",
+                "merchandise": {
+                    "phones": 40
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d20",
+        "route": [
+            {
+                "from": "Perugia",
+                "to": "Bergamo",
+                "merchandise": {
+                    "gardening tools": 30,
+                    "milk": 5,
+                    "water": 4
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d26",
+        "route": [
+            {
+                "from": "Catanzaro",
+                "to": "Venezia",
+                "merchandise": {
+                    "blankets": 39,
+                    "sportswear": 16,
+                    "hiking boots": 40
+                }
+            },
+            {
+                "from": "Venezia",
+                "to": "Bergamo",
+                "merchandise": {
+                    "games": 37,
+                    "plants": 8,
+                    "cookies": 32
+                }
+            },
+            {
+                "from": "Bergamo",
+                "to": "Firenze",
+                "merchandise": {
+                    "blankets": 50,
+                    "chargers": 28,
+                    "hiking boots": 3
+                }
+            },
+            {
+                "from": "Firenze",
+                "to": "Verona",
+                "merchandise": {
+                    "games": 25,
+                    "cookies": 41,
+                    "cases": 13
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Bolzano",
+                "merchandise": {
+                    "bird feed": 3,
+                    "eggs": 28
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d78",
+        "route": [
+            {
+                "from": "Bologna",
+                "to": "Cagliari",
+                "merchandise": {
+                    "bird feed": 18,
+                    "camping equipment": 41
+                }
+            },
+            {
+                "from": "Cagliari",
+                "to": "Bari",
+                "merchandise": {
+                    "playing cards": 49,
+                    "socks": 19,
+                    "tents": 8
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "books": 45,
+                    "bird feed": 34
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d85",
+        "route": [
+            {
+                "from": "Cagliari",
+                "to": "Rome",
+                "merchandise": {
+                    "pens": 27,
+                    "craft supplies": 10
+                }
+            },
+            {
+                "from": "Rome",
+                "to": "Cagliari",
+                "merchandise": {
+                    "craft supplies": 11,
+                    "shampoo": 23
+                }
+            },
+            {
+                "from": "Cagliari",
+                "to": "Trento",
+                "merchandise": {
+                    "cakes": 46
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Bolzano",
+                "merchandise": {
+                    "shoes": 49,
+                    "craft supplies": 26
+                }
+            },
+            {
+                "from": "Bolzano",
+                "to": "Milan",
+                "merchandise": {
+                    "puzzles": 23
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d63",
+        "route": [
+            {
+                "from": "Bari",
+                "to": "Firenze",
+                "merchandise": {
+                    "toothbrushes": 37,
+                    "headphones": 36,
+                    "snacks": 36
+                }
+            },
+            {
+                "from": "Firenze",
+                "to": "Bari",
+                "merchandise": {
+                    "yoga mats": 19,
+                    "headphones": 46,
+                    "chocolate": 2
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d79",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Napoli",
+                "merchandise": {
+                    "flowers": 7,
+                    "puzzles": 42,
+                    "sleeping bags": 45
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d68",
+        "route": [
+            {
+                "from": "Bergamo",
+                "to": "Bari",
+                "merchandise": {
+                    "nuts": 22,
+                    "potting soil": 7,
+                    "craft supplies": 42
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d86",
+        "route": [
+            {
+                "from": "Venezia",
+                "to": "Verona",
+                "merchandise": {
+                    "laundry detergent": 34,
+                    "plants": 25,
+                    "cakes": 29
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "tents": 27,
+                    "cookware": 41,
+                    "hiking boots": 16
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Cagliari",
+                "merchandise": {
+                    "cookware": 31,
+                    "brushes": 29,
+                    "sleeping bags": 15
+                }
+            },
+            {
+                "from": "Cagliari",
+                "to": "Verona",
+                "merchandise": {
+                    "pepper": 11,
+                    "gardening tools": 23,
+                    "plants": 16
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d54",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Palermo",
+                "merchandise": {
+                    "towels": 37,
+                    "bicycles": 17,
+                    "sleeping bags": 39
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Aquila",
+                "merchandise": {
+                    "pet toys": 12,
+                    "towels": 22,
+                    "chocolate": 39
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Trento",
+                "merchandise": {
+                    "coca-cola": 22,
+                    "backpacks": 49
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Bergamo",
+                "merchandise": {
+                    "towels": 17,
+                    "cookies": 26,
+                    "bicycles": 23
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d6",
+        "route": [
+            {
+                "from": "Perugia",
+                "to": "Firenze",
+                "merchandise": {
+                    "hiking boots": 10,
+                    "tablets": 42,
+                    "towels": 47
+                }
+            },
+            {
+                "from": "Firenze",
+                "to": "Trieste",
+                "merchandise": {
+                    "pepper": 31,
+                    "tents": 28,
+                    "hats": 15
+                }
+            },
+            {
+                "from": "Trieste",
+                "to": "Firenze",
+                "merchandise": {
+                    "bread": 39,
+                    "sportswear": 33,
+                    "bedsheets": 7
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d39",
+        "route": [
+            {
+                "from": "Perugia",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "phones": 41,
+                    "shoes": 1,
+                    "running shoes": 37
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Perugia",
+                "merchandise": {
+                    "puzzles": 50,
+                    "gloves": 42
+                }
+            },
+            {
+                "from": "Perugia",
+                "to": "Bergamo",
+                "merchandise": {
+                    "nuts": 21
+                }
+            },
+            {
+                "from": "Bergamo",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "scarves": 17,
+                    "shoes": 13,
+                    "phones": 45
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d99",
+        "route": [
+            {
+                "from": "Bologna",
+                "to": "Napoli",
+                "merchandise": {
+                    "playing cards": 50,
+                    "plants": 43
+                }
+            },
+            {
+                "from": "Napoli",
+                "to": "Bergamo",
+                "merchandise": {
+                    "salt": 50,
+                    "ice cream": 31,
+                    "nuts": 15
+                }
+            },
+            {
+                "from": "Bergamo",
+                "to": "Firenze",
+                "merchandise": {
+                    "coffee": 31,
+                    "brushes": 11,
+                    "running shoes": 32
+                }
+            },
+            {
+                "from": "Firenze",
+                "to": "Milan",
+                "merchandise": {
+                    "socks": 10,
+                    "sportswear": 3,
+                    "easels": 16
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d75",
+        "route": [
+            {
+                "from": "Cagliari",
+                "to": "Bolzano",
+                "merchandise": {
+                    "soap": 8,
+                    "gardening tools": 5,
+                    "cases": 26
+                }
+            },
+            {
+                "from": "Bolzano",
+                "to": "Bologna",
+                "merchandise": {
+                    "weights": 34,
+                    "hats": 42,
+                    "puzzles": 32
+                }
+            },
+            {
+                "from": "Bologna",
+                "to": "Cagliari",
+                "merchandise": {
+                    "puzzles": 16,
+                    "cases": 29
+                }
+            },
+            {
+                "from": "Cagliari",
+                "to": "Palermo",
+                "merchandise": {
+                    "coffee": 16,
+                    "magazines": 29,
+                    "towels": 16
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d23",
+        "route": [
+            {
+                "from": "Napoli",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "fishing gear": 13,
+                    "tents": 5,
+                    "toilet paper": 29
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Milan",
+                "merchandise": {
+                    "aquarium supplies": 17,
+                    "toothpaste": 37,
+                    "shampoo": 47
+                }
+            },
+            {
+                "from": "Milan",
+                "to": "Napoli",
+                "merchandise": {
+                    "coca-cola": 39,
+                    "fishing gear": 24,
+                    "toothpaste": 47
+                }
+            },
+            {
+                "from": "Napoli",
+                "to": "Bologna",
+                "merchandise": {
+                    "fishing gear": 30,
+                    "vases": 50,
+                    "beer": 11
+                }
+            },
+            {
+                "from": "Bologna",
+                "to": "Milan",
+                "merchandise": {
+                    "hats": 14,
+                    "fishing gear": 26,
+                    "toilet paper": 46
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d25",
+        "route": [
+            {
+                "from": "Trieste",
+                "to": "Ancona",
+                "merchandise": {
+                    "pens": 21,
+                    "towels": 32,
+                    "toys": 8
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Verona",
+                "merchandise": {
+                    "towels": 18,
+                    "brushes": 19,
+                    "toys": 42
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Ancona",
+                "merchandise": {
+                    "pet grooming supplies": 50,
+                    "toys": 10,
+                    "sleeping bags": 27
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "ice cream": 13,
+                    "camping equipment": 34,
+                    "brushes": 24
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d47",
+        "route": [
+            {
+                "from": "Palermo",
+                "to": "Perugia",
+                "merchandise": {
+                    "laundry detergent": 40,
+                    "tents": 45,
+                    "nuts": 45
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d24",
+        "route": [
+            {
+                "from": "Potenza",
+                "to": "Trento",
+                "merchandise": {
+                    "laundry detergent": 20,
+                    "shampoo": 49,
+                    "sleeping bags": 50
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Bolzano",
+                "merchandise": {
+                    "pet grooming supplies": 32,
+                    "vases": 49,
+                    "magazines": 12
+                }
+            },
+            {
+                "from": "Bolzano",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "honey": 17,
+                    "exercise equipment": 6,
+                    "drawing paper": 37
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Cagliari",
+                "merchandise": {
+                    "toothpaste": 28,
+                    "beer": 6,
+                    "sleeping bags": 31
+                }
+            },
+            {
+                "from": "Cagliari",
+                "to": "Genova",
+                "merchandise": {
+                    "toys": 15,
+                    "bedsheets": 21,
+                    "running shoes": 49
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d3",
+        "route": [
+            {
+                "from": "Aquila",
+                "to": "Trento",
+                "merchandise": {
+                    "camping equipment": 33,
+                    "running shoes": 47,
+                    "reptile habitats": 38
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Firenze",
+                "merchandise": {
+                    "cutlery": 14,
+                    "beer": 12,
+                    "board games": 27
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d7",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Bologna",
+                "merchandise": {
+                    "camping equipment": 18,
+                    "headphones": 4
+                }
+            },
+            {
+                "from": "Bologna",
+                "to": "Firenze",
+                "merchandise": {
+                    "toothpaste": 6,
+                    "eggs": 28,
+                    "reptile habitats": 45
+                }
+            },
+            {
+                "from": "Firenze",
+                "to": "Ancona",
+                "merchandise": {
+                    "honey": 27,
+                    "umbrellas": 27,
+                    "toilet paper": 32
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Firenze",
+                "merchandise": {
+                    "honey": 49,
+                    "exercise equipment": 48
+                }
+            },
+            {
+                "from": "Firenze",
+                "to": "Bologna",
+                "merchandise": {
+                    "cutlery": 14,
+                    "tablets": 6,
+                    "headphones": 28
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d5",
+        "route": [
+            {
+                "from": "Milan",
+                "to": "Trieste",
+                "merchandise": {
+                    "salt": 9,
+                    "easels": 22,
+                    "camping equipment": 32
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d16",
+        "route": [
+            {
+                "from": "Potenza",
+                "to": "Napoli",
+                "merchandise": {
+                    "pet toys": 23,
+                    "camping equipment": 11,
+                    "easels": 31
+                }
+            },
+            {
+                "from": "Napoli",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "cookware": 24,
+                    "tablets": 38,
+                    "board games": 30
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Cagliari",
+                "merchandise": {
+                    "sugar": 16,
+                    "shampoo": 30,
+                    "bread": 2
+                }
+            },
+            {
+                "from": "Cagliari",
+                "to": "Venezia",
+                "merchandise": {
+                    "pet toys": 12,
+                    "tablets": 11,
+                    "cakes": 10
+                }
+            },
+            {
+                "from": "Venezia",
+                "to": "Verona",
+                "merchandise": {
+                    "sugar": 12,
+                    "sportswear": 15,
+                    "cookware": 37
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d8",
+        "route": [
+            {
+                "from": "Perugia",
+                "to": "Genova",
+                "merchandise": {
+                    "toothpaste": 17,
+                    "cookies": 36,
+                    "water": 18
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Firenze",
+                "merchandise": {
+                    "tea": 41,
+                    "socks": 29,
+                    "board games": 41
+                }
+            },
+            {
+                "from": "Firenze",
+                "to": "Palermo",
+                "merchandise": {
+                    "shoes": 16,
+                    "flowers": 28,
+                    "reptile habitats": 28
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "cleaning supplies": 42,
+                    "chargers": 47,
+                    "backpacks": 14
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d69",
+        "route": [
+            {
+                "from": "Trieste",
+                "to": "Bologna",
+                "merchandise": {
+                    "shampoo": 47
+                }
+            },
+            {
+                "from": "Bologna",
+                "to": "Palermo",
+                "merchandise": {
+                    "cookware": 41,
+                    "hiking boots": 32
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Bologna",
+                "merchandise": {
+                    "shampoo": 15,
+                    "hiking boots": 10,
+                    "chocolate": 32
+                }
+            },
+            {
+                "from": "Bologna",
+                "to": "Genova",
+                "merchandise": {
+                    "pepper": 17,
+                    "shampoo": 49,
+                    "hiking boots": 45
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Cagliari",
+                "merchandise": {
+                    "pepper": 15,
+                    "cookware": 1,
+                    "shampoo": 34
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d82",
+        "route": [
+            {
+                "from": "Milan",
+                "to": "Verona",
+                "merchandise": {
+                    "exercise equipment": 5,
+                    "juice": 36
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Aquila",
+                "merchandise": {
+                    "laptops": 32,
+                    "cases": 30
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Perugia",
+                "merchandise": {
+                    "easels": 38,
+                    "juice": 40,
+                    "shampoo": 3
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d12",
+        "route": [
+            {
+                "from": "Firenze",
+                "to": "Potenza",
+                "merchandise": {
+                    "yoga mats": 5,
+                    "bird feed": 39,
+                    "plants": 32
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Verona",
+                "merchandise": {
+                    "cheese": 26,
+                    "pet food": 49,
+                    "gloves": 13
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d35",
+        "route": [
+            {
+                "from": "Trieste",
+                "to": "Perugia",
+                "merchandise": {
+                    "honey": 39,
+                    "toothpaste": 10,
+                    "kitchen appliances": 14
+                }
+            },
+            {
+                "from": "Perugia",
+                "to": "Rome",
+                "merchandise": {
+                    "honey": 48,
+                    "cutlery": 24,
+                    "blankets": 41
+                }
+            },
+            {
+                "from": "Rome",
+                "to": "Venezia",
+                "merchandise": {
+                    "craft supplies": 32,
+                    "hiking boots": 20,
+                    "snacks": 18
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d34",
+        "route": [
+            {
+                "from": "Bolzano",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "aquarium supplies": 14,
+                    "toothpaste": 36,
+                    "backpacks": 5
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d62",
+        "route": [
+            {
+                "from": "Genova",
+                "to": "Potenza",
+                "merchandise": {
+                    "nuts": 10,
+                    "headphones": 16,
+                    "plants": 21
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Trieste",
+                "merchandise": {
+                    "bird feed": 1,
+                    "tablets": 9,
+                    "puzzles": 45
+                }
+            },
+            {
+                "from": "Trieste",
+                "to": "Cagliari",
+                "merchandise": {
+                    "blankets": 27,
+                    "pens": 49,
+                    "easels": 16
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d56",
+        "route": [
+            {
+                "from": "Aquila",
+                "to": "Bologna",
+                "merchandise": {
+                    "cheese": 13,
+                    "exercise equipment": 4,
+                    "candy": 29
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d89",
+        "route": [
+            {
+                "from": "Catanzaro",
+                "to": "Venezia",
+                "merchandise": {
+                    "vodka": 46
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d50",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Bari",
+                "merchandise": {
+                    "socks": 40,
+                    "flowers": 47,
+                    "sleeping bags": 3
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Firenze",
+                "merchandise": {
+                    "camping equipment": 19,
+                    "brushes": 32
+                }
+            },
+            {
+                "from": "Firenze",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "flowers": 10,
+                    "sleeping bags": 15
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Bari",
+                "merchandise": {
+                    "seeds": 13,
+                    "toilet paper": 33,
+                    "canvases": 24
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d22",
+        "route": [
+            {
+                "from": "Napoli",
+                "to": "Perugia",
+                "merchandise": {
+                    "art supplies": 19,
+                    "tents": 17,
+                    "gloves": 49
+                }
+            },
+            {
+                "from": "Perugia",
+                "to": "Napoli",
+                "merchandise": {
+                    "blankets": 16,
+                    "easels": 3,
+                    "toothbrushes": 50
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d98",
+        "route": [
+            {
+                "from": "Genova",
+                "to": "Perugia",
+                "merchandise": {
+                    "art supplies": 38,
+                    "candy": 44,
+                    "toothbrushes": 9
+                }
+            },
+            {
+                "from": "Perugia",
+                "to": "Bari",
+                "merchandise": {
+                    "magazines": 5,
+                    "juice": 3,
+                    "eggs": 4
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Perugia",
+                "merchandise": {
+                    "pepper": 3,
+                    "magazines": 41,
+                    "bicycles": 33
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d87",
+        "route": [
+            {
+                "from": "Catanzaro",
+                "to": "Napoli",
+                "merchandise": {
+                    "cleaning supplies": 18,
+                    "toothpaste": 28
+                }
+            },
+            {
+                "from": "Napoli",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "cleaning supplies": 30,
+                    "craft supplies": 29,
+                    "kitchen appliances": 33
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Napoli",
+                "merchandise": {
+                    "games": 47,
+                    "toothpaste": 28,
+                    "kitchen appliances": 15
+                }
+            },
+            {
+                "from": "Napoli",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "cleaning supplies": 18,
+                    "pet toys": 37,
+                    "toothpaste": 19
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Napoli",
+                "merchandise": {
+                    "kitchen appliances": 40,
+                    "potting soil": 47,
+                    "laptops": 6
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d27",
+        "route": [
+            {
+                "from": "Catanzaro",
+                "to": "Genova",
+                "merchandise": {
+                    "camping equipment": 3,
+                    "gardening tools": 4,
+                    "beer": 3
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Firenze",
+                "merchandise": {
+                    "pillows": 19,
+                    "toilet paper": 17,
+                    "water": 43
+                }
+            },
+            {
+                "from": "Firenze",
+                "to": "Trento",
+                "merchandise": {
+                    "laundry detergent": 47,
+                    "potting soil": 20,
+                    "water": 46
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Cagliari",
+                "merchandise": {
+                    "beer": 49
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d51",
+        "route": [
+            {
+                "from": "Bolzano",
+                "to": "Cagliari",
+                "merchandise": {
+                    "towels": 18,
+                    "hiking boots": 35,
+                    "puzzles": 44
+                }
+            },
+            {
+                "from": "Cagliari",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "plants": 12,
+                    "canvases": 25,
+                    "pet food": 32
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Bergamo",
+                "merchandise": {
+                    "camping equipment": 50,
+                    "backpacks": 31
+                }
+            },
+            {
+                "from": "Bergamo",
+                "to": "Perugia",
+                "merchandise": {
+                    "tents": 40,
+                    "towels": 14
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d40",
+        "route": [
+            {
+                "from": "Potenza",
+                "to": "Bari",
+                "merchandise": {
+                    "toothpaste": 40,
+                    "umbrellas": 24,
+                    "nuts": 31
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "exercise equipment": 36,
+                    "socks": 17,
+                    "toothpaste": 24
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Bolzano",
+                "merchandise": {
+                    "tea": 48,
+                    "nuts": 3,
+                    "towels": 7
+                }
+            },
+            {
+                "from": "Bolzano",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "shampoo": 5,
+                    "running shoes": 4,
+                    "phones": 45
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d37",
+        "route": [
+            {
+                "from": "Aquila",
+                "to": "Milan",
+                "merchandise": {
+                    "cutlery": 14,
+                    "shampoo": 5,
+                    "brushes": 46
+                }
+            },
+            {
+                "from": "Milan",
+                "to": "Cagliari",
+                "merchandise": {
+                    "salt": 1,
+                    "juice": 23,
+                    "reptile habitats": 37
+                }
+            },
+            {
+                "from": "Cagliari",
+                "to": "Bergamo",
+                "merchandise": {
+                    "water": 23,
+                    "board games": 29,
+                    "reptile habitats": 39
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d53",
+        "route": [
+            {
+                "from": "Bologna",
+                "to": "Genova",
+                "merchandise": {
+                    "sugar": 1,
+                    "gardening tools": 3,
+                    "brushes": 23
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Bolzano",
+                "merchandise": {
+                    "cheese": 9,
+                    "weights": 13,
+                    "paint": 20
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d30",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Bolzano",
+                "merchandise": {
+                    "gardening tools": 35,
+                    "wine": 45
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d4",
+        "route": [
+            {
+                "from": "Catanzaro",
+                "to": "Bari",
+                "merchandise": {
+                    "yoga mats": 26,
+                    "tea": 26,
+                    "water": 7
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "milk": 48,
+                    "juice": 22,
+                    "camping equipment": 4
+                }
+            },
+            {
+                "from": "Catanzaro",
+                "to": "Genova",
+                "merchandise": {
+                    "aquarium supplies": 40,
+                    "milk": 15,
+                    "exercise equipment": 5
+                }
+            }
+        ]
+    },
+    {
+        "driver": "d81",
+        "route": [
+            {
+                "from": "Bergamo",
+                "to": "Palermo",
+                "merchandise": {
+                    "tablets": 44,
+                    "blankets": 36,
+                    "gloves": 6
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Bergamo",
+                "merchandise": {
+                    "blankets": 48,
+                    "puzzles": 21,
+                    "brushes": 13
+                }
+            }
+        ]
+    }
+]
