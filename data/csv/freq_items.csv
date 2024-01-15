@@ -1,4 +1,5 @@
 support,itemsets
-0.33634538152610444,frozenset({'juice'})
-0.3002008032128514,frozenset({'camping equipment'})
-0.3192771084337349,frozenset({'puzzles'})
+0.329855436832181,frozenset({'puzzles'})
+0.3088623507228158,frozenset({'pillows'})
+0.30949088623507226,frozenset({'towels'})
+0.32193588937774986,frozenset({'bicycles'})
