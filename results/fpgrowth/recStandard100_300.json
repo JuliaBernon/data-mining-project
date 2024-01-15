@@ -1,0 +1,1853 @@
+[
+    {
+        "id": "s1",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 18
+                }
+            }
+        ]
+    },
+    {
+        "id": "s2",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "puzzles": 10
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "shampoo": 3
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "shampoo": 37
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "towels": 36
+                }
+            }
+        ]
+    },
+    {
+        "id": "s3",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "puzzles": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "s4",
+        "route": [
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "puzzles": 41
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "puzzles": 17
+                }
+            }
+        ]
+    },
+    {
+        "id": "s5",
+        "route": [
+            {
+                "from": "Trieste",
+                "to": "Verona",
+                "merchandise": {
+                    "puzzles": 48
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Venezia",
+                "merchandise": {
+                    "puzzles": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": "s6",
+        "route": [
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "puzzles": 24
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "shampoo": 43
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "towels": 37
+                }
+            }
+        ]
+    },
+    {
+        "id": "s7",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Ancona",
+                "merchandise": {
+                    "towels": 49
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "puzzles": 49
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 29
+                }
+            }
+        ]
+    },
+    {
+        "id": "s8",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "towels": 1
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 39
+                }
+            }
+        ]
+    },
+    {
+        "id": "s9",
+        "route": [
+            {
+                "from": "Verona",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 46
+                }
+            }
+        ]
+    },
+    {
+        "id": "s10",
+        "route": [
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "puzzles": 32
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "puzzles": 27
+                }
+            }
+        ]
+    },
+    {
+        "id": "s11",
+        "route": [
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "towels": 44
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 10
+                }
+            }
+        ]
+    },
+    {
+        "id": "s12",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "shampoo": 21
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 8
+                }
+            }
+        ]
+    },
+    {
+        "id": "s13",
+        "route": [
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "puzzles": 8
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "towels": 33
+                }
+            }
+        ]
+    },
+    {
+        "id": "s14",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "towels": 7
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Venezia",
+                "merchandise": {
+                    "puzzles": 17
+                }
+            }
+        ]
+    },
+    {
+        "id": "s15",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Perugia",
+                "merchandise": {
+                    "towels": 50
+                }
+            }
+        ]
+    },
+    {
+        "id": "s16",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "towels": 50
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "puzzles": 28
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "towels": 46
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "puzzles": 9
+                }
+            }
+        ]
+    },
+    {
+        "id": "s17",
+        "route": [
+            {
+                "from": "Firenze",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "puzzles": 31
+                }
+            }
+        ]
+    },
+    {
+        "id": "s18",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Ancona",
+                "merchandise": {
+                    "towels": 15
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "towels": 13
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 10
+                }
+            }
+        ]
+    },
+    {
+        "id": "s19",
+        "route": [
+            {
+                "from": "Trieste",
+                "to": "Verona",
+                "merchandise": {
+                    "towels": 50
+                }
+            }
+        ]
+    },
+    {
+        "id": "s20",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Ancona",
+                "merchandise": {
+                    "puzzles": 16
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "puzzles": 24
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Venezia",
+                "merchandise": {
+                    "puzzles": 48
+                }
+            }
+        ]
+    },
+    {
+        "id": "s21",
+        "route": [
+            {
+                "from": "Verona",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 24
+                }
+            }
+        ]
+    },
+    {
+        "id": "s22",
+        "route": [
+            {
+                "from": "Firenze",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "puzzles": 23
+                }
+            }
+        ]
+    },
+    {
+        "id": "s23",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "puzzles": 30
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Venezia",
+                "merchandise": {
+                    "puzzles": 14
+                }
+            }
+        ]
+    },
+    {
+        "id": "s24",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "puzzles": 23
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "puzzles": 49
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "towels": 1
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "towels": 10
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "shampoo": 42
+                }
+            }
+        ]
+    },
+    {
+        "id": "s25",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "shampoo": 13
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "shampoo": 24
+                }
+            }
+        ]
+    },
+    {
+        "id": "s26",
+        "route": [
+            {
+                "from": "Cagliari",
+                "to": "Trento",
+                "merchandise": {
+                    "shampoo": 40
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "puzzles": 29
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "towels": 42
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "puzzles": 9
+                }
+            }
+        ]
+    },
+    {
+        "id": "s27",
+        "route": [
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "towels": 46
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "shampoo": 1
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "puzzles": 28
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 48
+                }
+            }
+        ]
+    },
+    {
+        "id": "s28",
+        "route": [
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "towels": 38
+                }
+            }
+        ]
+    },
+    {
+        "id": "s29",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 8
+                }
+            }
+        ]
+    },
+    {
+        "id": "s30",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Ancona",
+                "merchandise": {
+                    "shampoo": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "s31",
+        "route": [
+            {
+                "from": "Trieste",
+                "to": "Verona",
+                "merchandise": {
+                    "towels": 42
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Venezia",
+                "merchandise": {
+                    "puzzles": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "s32",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "towels": 31
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "puzzles": 3
+                }
+            }
+        ]
+    },
+    {
+        "id": "s33",
+        "route": [
+            {
+                "from": "Firenze",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "towels": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "s34",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 21
+                }
+            }
+        ]
+    },
+    {
+        "id": "s35",
+        "route": [
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "shampoo": 41
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "towels": 14
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "shampoo": 29
+                }
+            }
+        ]
+    },
+    {
+        "id": "s36",
+        "route": [
+            {
+                "from": "Verona",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 19
+                }
+            }
+        ]
+    },
+    {
+        "id": "s37",
+        "route": [
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "shampoo": 41
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 14
+                }
+            }
+        ]
+    },
+    {
+        "id": "s38",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "shampoo": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": "s39",
+        "route": [
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "towels": 21
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "towels": 41
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "towels": 14
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "puzzles": 5
+                }
+            }
+        ]
+    },
+    {
+        "id": "s40",
+        "route": [
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "puzzles": 22
+                }
+            }
+        ]
+    },
+    {
+        "id": "s41",
+        "route": [
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "puzzles": 7
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "shampoo": 46
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 32
+                }
+            }
+        ]
+    },
+    {
+        "id": "s42",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 37
+                }
+            }
+        ]
+    },
+    {
+        "id": "s43",
+        "route": [
+            {
+                "from": "Verona",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 25
+                }
+            }
+        ]
+    },
+    {
+        "id": "s44",
+        "route": [
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "puzzles": 50
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "shampoo": 45
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "puzzles": 5
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "towels": 13
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 44
+                }
+            }
+        ]
+    },
+    {
+        "id": "s45",
+        "route": [
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "shampoo": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": "s46",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Perugia",
+                "merchandise": {
+                    "shampoo": 7
+                }
+            }
+        ]
+    },
+    {
+        "id": "s47",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "shampoo": 6
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "towels": 5
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "shampoo": 48
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "towels": 10
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "puzzles": 25
+                }
+            }
+        ]
+    },
+    {
+        "id": "s48",
+        "route": [
+            {
+                "from": "Bolzano",
+                "to": "Ancona",
+                "merchandise": {
+                    "puzzles": 3
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "shampoo": 17
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "towels": 29
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "shampoo": 22
+                }
+            }
+        ]
+    },
+    {
+        "id": "s49",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "towels": 24
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "shampoo": 11
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "puzzles": 17
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "shampoo": 28
+                }
+            }
+        ]
+    },
+    {
+        "id": "s50",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Bologna",
+                "merchandise": {
+                    "puzzles": 6
+                }
+            }
+        ]
+    },
+    {
+        "id": "s51",
+        "route": [
+            {
+                "from": "Verona",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "s52",
+        "route": [
+            {
+                "from": "Verona",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 40
+                }
+            }
+        ]
+    },
+    {
+        "id": "s53",
+        "route": [
+            {
+                "from": "Cagliari",
+                "to": "Trento",
+                "merchandise": {
+                    "puzzles": 41
+                }
+            }
+        ]
+    },
+    {
+        "id": "s54",
+        "route": [
+            {
+                "from": "Milan",
+                "to": "Genova",
+                "merchandise": {
+                    "towels": 2
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "puzzles": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "s55",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "towels": 41
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "shampoo": 12
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "shampoo": 46
+                }
+            }
+        ]
+    },
+    {
+        "id": "s56",
+        "route": [
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "towels": 20
+                }
+            }
+        ]
+    },
+    {
+        "id": "s57",
+        "route": [
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 40
+                }
+            }
+        ]
+    },
+    {
+        "id": "s58",
+        "route": [
+            {
+                "from": "Bolzano",
+                "to": "Bologna",
+                "merchandise": {
+                    "puzzles": 3
+                }
+            }
+        ]
+    },
+    {
+        "id": "s59",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Ancona",
+                "merchandise": {
+                    "puzzles": 35
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "puzzles": 9
+                }
+            }
+        ]
+    },
+    {
+        "id": "s60",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Perugia",
+                "merchandise": {
+                    "puzzles": 15
+                }
+            }
+        ]
+    },
+    {
+        "id": "s61",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Perugia",
+                "merchandise": {
+                    "shampoo": 44
+                }
+            }
+        ]
+    },
+    {
+        "id": "s62",
+        "route": [
+            {
+                "from": "Firenze",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "puzzles": 43
+                }
+            }
+        ]
+    },
+    {
+        "id": "s63",
+        "route": [
+            {
+                "from": "Verona",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 15
+                }
+            }
+        ]
+    },
+    {
+        "id": "s64",
+        "route": [
+            {
+                "from": "Trieste",
+                "to": "Verona",
+                "merchandise": {
+                    "puzzles": 47
+                }
+            },
+            {
+                "from": "Verona",
+                "to": "Venezia",
+                "merchandise": {
+                    "puzzles": 4
+                }
+            }
+        ]
+    },
+    {
+        "id": "s65",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Bologna",
+                "merchandise": {
+                    "shampoo": 2
+                }
+            }
+        ]
+    },
+    {
+        "id": "s66",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Ancona",
+                "merchandise": {
+                    "towels": 1
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "shampoo": 33
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "puzzles": 36
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "puzzles": 6
+                }
+            }
+        ]
+    },
+    {
+        "id": "s67",
+        "route": [
+            {
+                "from": "Cagliari",
+                "to": "Trento",
+                "merchandise": {
+                    "puzzles": 32
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "towels": 13
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "towels": 3
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "towels": 30
+                }
+            }
+        ]
+    },
+    {
+        "id": "s68",
+        "route": [
+            {
+                "from": "Cagliari",
+                "to": "Trento",
+                "merchandise": {
+                    "towels": 43
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Venezia",
+                "merchandise": {
+                    "puzzles": 40
+                }
+            }
+        ]
+    },
+    {
+        "id": "s69",
+        "route": [
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "towels": 37
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 38
+                }
+            }
+        ]
+    },
+    {
+        "id": "s70",
+        "route": [
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "towels": 24
+                }
+            }
+        ]
+    },
+    {
+        "id": "s71",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "towels": 35
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 28
+                }
+            }
+        ]
+    },
+    {
+        "id": "s72",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Bologna",
+                "merchandise": {
+                    "puzzles": 39
+                }
+            }
+        ]
+    },
+    {
+        "id": "s73",
+        "route": [
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 42
+                }
+            }
+        ]
+    },
+    {
+        "id": "s74",
+        "route": [
+            {
+                "from": "Trieste",
+                "to": "Verona",
+                "merchandise": {
+                    "puzzles": 35
+                }
+            }
+        ]
+    },
+    {
+        "id": "s75",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Ancona",
+                "merchandise": {
+                    "puzzles": 10
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "shampoo": 43
+                }
+            }
+        ]
+    },
+    {
+        "id": "s76",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 41
+                }
+            }
+        ]
+    },
+    {
+        "id": "s77",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Ancona",
+                "merchandise": {
+                    "shampoo": 42
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "puzzles": 34
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 24
+                }
+            }
+        ]
+    },
+    {
+        "id": "s78",
+        "route": [
+            {
+                "from": "Milan",
+                "to": "Genova",
+                "merchandise": {
+                    "shampoo": 39
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 48
+                }
+            }
+        ]
+    },
+    {
+        "id": "s79",
+        "route": [
+            {
+                "from": "Bolzano",
+                "to": "Bologna",
+                "merchandise": {
+                    "shampoo": 47
+                }
+            }
+        ]
+    },
+    {
+        "id": "s80",
+        "route": [
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "shampoo": 49
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 3
+                }
+            }
+        ]
+    },
+    {
+        "id": "s81",
+        "route": [
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "puzzles": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": "s82",
+        "route": [
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "puzzles": 20
+                }
+            }
+        ]
+    },
+    {
+        "id": "s83",
+        "route": [
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "puzzles": 30
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 50
+                }
+            }
+        ]
+    },
+    {
+        "id": "s84",
+        "route": [
+            {
+                "from": "Firenze",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "shampoo": 48
+                }
+            }
+        ]
+    },
+    {
+        "id": "s85",
+        "route": [
+            {
+                "from": "Firenze",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "towels": 32
+                }
+            }
+        ]
+    },
+    {
+        "id": "s86",
+        "route": [
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "shampoo": 3
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 17
+                }
+            }
+        ]
+    },
+    {
+        "id": "s87",
+        "route": [
+            {
+                "from": "Verona",
+                "to": "Venezia",
+                "merchandise": {
+                    "shampoo": 1
+                }
+            }
+        ]
+    },
+    {
+        "id": "s88",
+        "route": [
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "shampoo": 21
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "shampoo": 36
+                }
+            },
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "towels": 30
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "towels": 16
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "shampoo": 15
+                }
+            }
+        ]
+    },
+    {
+        "id": "s89",
+        "route": [
+            {
+                "from": "Bolzano",
+                "to": "Bologna",
+                "merchandise": {
+                    "towels": 46
+                }
+            }
+        ]
+    },
+    {
+        "id": "s90",
+        "route": [
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "shampoo": 40
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "puzzles": 42
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "towels": 12
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "puzzles": 9
+                }
+            }
+        ]
+    },
+    {
+        "id": "s91",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Bologna",
+                "merchandise": {
+                    "shampoo": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": "s92",
+        "route": [
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "puzzles": 35
+                }
+            }
+        ]
+    },
+    {
+        "id": "s93",
+        "route": [
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "shampoo": 40
+                }
+            },
+            {
+                "from": "Palermo",
+                "to": "Genova",
+                "merchandise": {
+                    "puzzles": 33
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "puzzles": 22
+                }
+            }
+        ]
+    },
+    {
+        "id": "s94",
+        "route": [
+            {
+                "from": "Firenze",
+                "to": "Catanzaro",
+                "merchandise": {
+                    "shampoo": 44
+                }
+            }
+        ]
+    },
+    {
+        "id": "s95",
+        "route": [
+            {
+                "from": "Aquila",
+                "to": "Bari",
+                "merchandise": {
+                    "shampoo": 24
+                }
+            },
+            {
+                "from": "Bari",
+                "to": "Palermo",
+                "merchandise": {
+                    "towels": 30
+                }
+            }
+        ]
+    },
+    {
+        "id": "s96",
+        "route": [
+            {
+                "from": "Rome",
+                "to": "Ancona",
+                "merchandise": {
+                    "shampoo": 46
+                }
+            },
+            {
+                "from": "Ancona",
+                "to": "Trento",
+                "merchandise": {
+                    "shampoo": 24
+                }
+            },
+            {
+                "from": "Trento",
+                "to": "Potenza",
+                "merchandise": {
+                    "shampoo": 32
+                }
+            },
+            {
+                "from": "Potenza",
+                "to": "Aquila",
+                "merchandise": {
+                    "puzzles": 14
+                }
+            }
+        ]
+    },
+    {
+        "id": "s97",
+        "route": [
+            {
+                "from": "Bolzano",
+                "to": "Bologna",
+                "merchandise": {
+                    "shampoo": 29
+                }
+            }
+        ]
+    },
+    {
+        "id": "s98",
+        "route": [
+            {
+                "from": "Milan",
+                "to": "Genova",
+                "merchandise": {
+                    "puzzles": 28
+                }
+            },
+            {
+                "from": "Genova",
+                "to": "Venezia",
+                "merchandise": {
+                    "towels": 20
+                }
+            }
+        ]
+    },
+    {
+        "id": "s99",
+        "route": [
+            {
+                "from": "Cagliari",
+                "to": "Trento",
+                "merchandise": {
+                    "towels": 27
+                }
+            }
+        ]
+    },
+    {
+        "id": "s100",
+        "route": [
+            {
+                "from": "Bolzano",
+                "to": "Ancona",
+                "merchandise": {
+                    "shampoo": 48
+                }
+            }
+        ]
+    }
+]
