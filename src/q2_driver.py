@@ -76,7 +76,7 @@ def run_q2():
     with open("./results/driver.json", "w") as q2_file:
             json.dump(q2, q2_file, indent=4)
 
-    print(f"question2 done : {len(q2)} drivers ranked in ./results/driver.json")
+    print(f"question2 done : {len(q2)-1} drivers ranked in ./results/driver.json")
 
 if __name__ == "__main__":
     run_q2()
