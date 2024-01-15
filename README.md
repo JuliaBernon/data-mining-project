@@ -178,7 +178,7 @@ data
 
 **WARNING**
 
-Because of random selections concerning the routes creations, it may happen this error could be raised : 
+Because of random selections concerning the routes creations, this error may be raised : 
 ```bash
 ValueError: The input DataFrame `df` containing the frequent itemsets is empty.
 ```
