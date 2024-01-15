@@ -138,19 +138,18 @@ python3 ./src/stdGeneration.py <nb_std_routes>
 # create <nb_std_routes> standard routes into  (if none, create 500)
 # save file into standard<nb_std_routes>.json file
 
-python3 ./src/actualGeneration.py <nb_act_routes> <std_routes_file> <actual_file_to_save>  
-# create <nb_act_routes> actual routes (if none, create 1000) based on <std_routes_file> file
-# save data into <actual_file_to_save> file
+python3 ./src/actualGeneration.py <nb_act_routes> ./data/<std_routes_file>.json ./data/<actual_file_to_save>.json 
+# create <nb_act_routes> actual routes based on <std_routes_file> file
+# save data into <actual_file_to_save> file (./data/actual.json, according to the subject)
 # warning : all arguments must be filled !
-
-# on PowerShell
 ```
 
 **Step 2 - Identify association rules and frequent itemsets**
 ```sh
-python3 ./src/merchFIAndAssoRules.py <support> <threshold> <actual_routes_file> <FI_to_save_csv> <assoRules_to_save_csv> <FI_to_save_json>
+python3 ./src/merchFIAndAssoRules.py <support> <threshold> ./data/<actual_routes_file> ./data/csv/<FI_to_save_csv>.csv ./data/csv/<assoRules_to_save_csv>.csv ./data/<FI_to_save_json>.json
+# e.g. support = 0.3, threshold = 0.8
 ```
-Based on the <actual_routes_file> provided, extract the frequent itemsets and association rules with 'support' support and 'threshold' threshold.
+Based on the <actual_routes_file> provided (i.e. the one previously created for example), extract the frequent itemsets and association rules with 'support' support and 'threshold' threshold.
 It will save the frequent itemsets and association rules into `./data/csv/` directory in CSV files. A JSON file with the found frequent itemsets will also be created in `./data/` directory.
 
 
@@ -159,22 +158,31 @@ It will save the frequent itemsets and association rules into `./data/csv/` dire
 python3 ./src/exe_script.py
 ```
 
-This command will execute `mainRulesGeneration.py`, `driverGeneration.py`, `stdGeneration.py`, `actualGeneration.py`, `merchFIAndAssoRules`, and will create 10 drivers, 500 standard routes, 1000 actual routes, 500 recommended standard routes, and 1000 new actual routes, by default.
+This command will execute `mainRulesGeneration.py`, `driverGeneration.py`, `stdGeneration.py`, `actualGeneration.py`, `merchFIAndAssoRules`, and will create 100 drivers, 500 standard routes, 5000 actual routes, and create frequent itemsets and association rules files, by default.
 
-It will store the data created in `./data/` directory :
+It will store the data created in `./data/` directory, as followed :
 
 ```sh
 data
 ├───apriori
 ├───csv
-├    - freq_items.json
+├    - freq_items.csv
+├    - asso_rules.csv
 └───fpgrowth
 - actual.json
 - drivers.json
 - freq_items.json
 - mainRules.json
-- standard500.json
+- standard.json
 ```
+
+**WARNING**
+
+Because of random selections concerning the routes creations, it may happen this error could be raised : 
+```bash
+ValueError: The input DataFrame `df` containing the frequent itemsets is empty.
+```
+In that case, execute the script again. 
 
 **Note for next steps**
 
@@ -188,14 +196,16 @@ The main code, for each of the following steps, is respectively written in the f
 
 **Prerequisites**
 
-To make recommandation, it is necessary to have the following file :
+To make recommandations, it is necessary to have the following file (or any other frequent itemsets csv file in that directory):
 
 - `./data/csv/freq_items.csv`
 
 
 **Recommanding standard routes**
+To create a list of recommanded standard routes, execute the following command : 
+
 ```sh
-python3 ./src/q1_recStandard.py <nb_recStd_routes> <FI_file_csv> <recStandard_file_to_save>
+python3 ./src/q1_recStandard.py <nb_recStd_routes> ./data/csv/<FI_file_csv>.csv ./results/<recStandard_file_to_save>.json
 ```
 
 This returns `./results/recStandard.json`.
@@ -204,19 +214,17 @@ This returns `./results/recStandard.json`.
 
 **Prerequisites**
 
-- `./results/recStandard.json`
-
-```sh
-python3 ./src/rankings.py   # create ./data/std_rankings.json
-```
+- `./results/recStandard.json` (the file must have this name)
 
 **Identify, for each driver, 5 best routes to minimize diversions**
+
+In order to identify, for each driver, the five routes that, if a driver does them, it minimizes the diversion, run the following command : 
 
 ```sh
 python3 ./src/q2_driver.py
 ```
 
-This returns `./results/driver.json`
+It will create `./data/std_rankings.json`, and will return `./results/driver.json`.
 
 # Step 3 : Best standard route for each driver
 
