@@ -30,6 +30,7 @@ data/fpgrowth/actual1000_100000.json
 !data/standard100.json
 !data/standard500.json
 !data/standard1000.json
+!data/mainRules_example.json
 
 !results/apriori/*.json
 !results/fpgrowth/*.json

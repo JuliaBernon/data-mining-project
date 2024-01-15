@@ -1,0 +1,53 @@
+{
+    "proba_main_rules": 1,
+    "best_cities": [
+        "Napoli"
+    ],
+    "worst_cities": [
+        "Cagliari"
+    ],
+    "best_roads": [
+        [
+            "Perugia",
+            "Trieste"
+        ],
+        [
+            "Perugia",
+            "Napoli"
+        ],
+        [
+            "Bologna",
+            "Genova"
+        ]
+    ],
+    "worst_roads": [
+        [
+            "Rome",
+            "Milan"
+        ],
+        [
+            "Trento",
+            "Perugia"
+        ],
+        [
+            "Milan",
+            "Genova"
+        ]
+    ],
+    "best_merchs": [
+        "camping equipment"
+    ],
+    "worst_merchs": [
+        "pens"
+    ],
+    "assoc_rules": [
+        [
+            "shampoo",
+            "bedsheets"
+        ],
+        [
+            "chessboard",
+            "milk"
+        ]
+    ]
+}
