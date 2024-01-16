@@ -10,7 +10,7 @@ Subject :
 
 This project falls within the *Data Mining Course, University of Trento*, 2023-2024
 
-Instructor : Prof. Yannis Valagrakis
+Instructor : Prof. Yannis Velegrakis
 
 
 ## How2 - Clone the project from GitHub
